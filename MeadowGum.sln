@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.Shared", "MeadowGum.Shared\MeadowGum.Shared.csproj", "{52D1F8BF-7EEC-474D-8612-39456FFD22A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gum", "Gum", "{B216E3DD-5B91-4EE6-A7EE-1D027B41807E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GumCommon", "Gum\GumCommon\GumCommon.csproj", "{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GumDataTypesNet6", "Gum\GumDataTypes\GumDataTypesNet6.csproj", "{F5DCA451-CDD8-4451-9092-9F093A73D909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsUtilitiesStandard", "Gum\ToolsUtilities\ToolsUtilitiesStandard.csproj", "{1D30291E-4FA3-46D8-8890-B635644080DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52D1F8BF-7EEC-474D-8612-39456FFD22A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D1F8BF-7EEC-474D-8612-39456FFD22A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D1F8BF-7EEC-474D-8612-39456FFD22A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D1F8BF-7EEC-474D-8612-39456FFD22A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DCA451-CDD8-4451-9092-9F093A73D909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DCA451-CDD8-4451-9092-9F093A73D909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DCA451-CDD8-4451-9092-9F093A73D909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DCA451-CDD8-4451-9092-9F093A73D909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D30291E-4FA3-46D8-8890-B635644080DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D30291E-4FA3-46D8-8890-B635644080DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D30291E-4FA3-46D8-8890-B635644080DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D30291E-4FA3-46D8-8890-B635644080DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
+		{F5DCA451-CDD8-4451-9092-9F093A73D909} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
+		{1D30291E-4FA3-46D8-8890-B635644080DF} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
+	EndGlobalSection
+EndGlobal
