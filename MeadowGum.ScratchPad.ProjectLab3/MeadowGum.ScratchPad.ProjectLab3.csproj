@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AssemblyName>App</AssemblyName>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Meadow.ProjectLab" Version="1.6.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MeadowGum.Renderer.MicroGraphics\MeadowGum.Renderer.MicroGraphics.csproj" />
+      <ProjectReference Include="..\MeadowGum.ScratchPad.Common\MeadowGum.ScratchPad.Common.csproj" />
+    </ItemGroup>
+
+</Project>

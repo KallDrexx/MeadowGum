@@ -10,6 +10,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GumDataTypesNet6", "Gum\Gum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsUtilitiesStandard", "Gum\ToolsUtilities\ToolsUtilitiesStandard.csproj", "{1D30291E-4FA3-46D8-8890-B635644080DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.ScratchPad.Common", "MeadowGum.ScratchPad.Common\MeadowGum.ScratchPad.Common.csproj", "{4C573143-E901-4723-BA99-84AFA9089643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.ScratchPad.Monogame", "MeadowGum.ScratchPad.Monogame\MeadowGum.ScratchPad.Monogame.csproj", "{1F98DA57-7782-4F18-AAA7-065C381F6BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.Renderer.MicroGraphics", "MeadowGum.Renderer.MicroGraphics\MeadowGum.Renderer.MicroGraphics.csproj", "{71D0B35B-F5FD-4D66-81D3-658D622B985E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.ScratchPad.ProjectLab3", "MeadowGum.ScratchPad.ProjectLab3\MeadowGum.ScratchPad.ProjectLab3.csproj", "{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +40,22 @@ Global
 		{1D30291E-4FA3-46D8-8890-B635644080DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D30291E-4FA3-46D8-8890-B635644080DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D30291E-4FA3-46D8-8890-B635644080DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C573143-E901-4723-BA99-84AFA9089643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C573143-E901-4723-BA99-84AFA9089643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C573143-E901-4723-BA99-84AFA9089643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C573143-E901-4723-BA99-84AFA9089643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F98DA57-7782-4F18-AAA7-065C381F6BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F98DA57-7782-4F18-AAA7-065C381F6BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F98DA57-7782-4F18-AAA7-065C381F6BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F98DA57-7782-4F18-AAA7-065C381F6BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D0B35B-F5FD-4D66-81D3-658D622B985E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D0B35B-F5FD-4D66-81D3-658D622B985E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D0B35B-F5FD-4D66-81D3-658D622B985E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D0B35B-F5FD-4D66-81D3-658D622B985E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
