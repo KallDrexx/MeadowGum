@@ -58,7 +58,7 @@ public class TextRuntime : MeadowGumComponent
         SetContainedObject(_renderable);
     }
 
-    private class Renderable : IRenderableIpso
+    private class Renderable : IRenderableIpso, IText
     {
         private readonly TextRuntime _parent;
 
@@ -74,12 +74,26 @@ public class TextRuntime : MeadowGumComponent
         public string Name { get; set; }
         public object Tag { get; set; }
         public bool Visible { get; set; } = true;
-        public bool AbsoluteVisible { get; }
         public IRenderableIpso Parent { get; set; }
         public ObservableCollection<IRenderableIpso> Children { get; } = new();
         public ColorOperation ColorOperation { get; }
         public bool ClipsChildren { get; }
         IVisible IVisible.Parent { get; }
+
+        public bool AbsoluteVisible
+        {
+            get
+            {
+                if (((IVisible)this).Parent == null)
+                {
+                    return Visible;
+                }
+                else
+                {
+                    return Visible && ((IVisible)this).Parent.AbsoluteVisible;
+                }
+            }
+        }
 
         public string Text { get; set; } = string.Empty;
         public MeadowFont Font { get; set; } = MeadowFont.Font8X12;
@@ -132,5 +146,25 @@ public class TextRuntime : MeadowGumComponent
             MeadowFont.Font8X12 => 12,
             _ => throw new NotSupportedException(Font.ToString()),
         };
+
+        public void SetNeedsRefreshToTrue()
+        {
+        }
+
+        public void UpdatePreRenderDimensions()
+        {
+        }
+
+        public float DescenderHeight => 0;
+
+        public float FontScale => 1;
+
+        public float WrappedTextWidth => WidthPerCharacter * Text.Length;
+
+        public float WrappedTextHeight => HeightPerCharacter;
+
+        public string RawText => Text;
+
+        public TextOverflowVerticalMode TextOverflowVerticalMode { get; set; }
     }
 }
