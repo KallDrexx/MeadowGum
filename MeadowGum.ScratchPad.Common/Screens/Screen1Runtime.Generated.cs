@@ -19,6 +19,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public ColoredRectangleRuntime BottomLeft { get; protected set; }
         public ColoredRectangleRuntime BottomRight { get; protected set; }
         public ColoredRectangleRuntime Center { get; protected set; }
+        public TextRuntime TextInstance { get; protected set; }
 
         public Screen1Runtime(bool fullInstantiation = true)
         {
@@ -51,6 +52,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             BottomRight.Name = "BottomRight";
             Center = new ColoredRectangleRuntime();
             Center.Name = "Center";
+            TextInstance = new TextRuntime();
+            TextInstance.Name = "TextInstance";
         }
         protected virtual void AssignParents()
         {
@@ -60,6 +63,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             OuterRectangle.Children.Add(BottomLeft);
             OuterRectangle.Children.Add(BottomRight);
             OuterRectangle.Children.Add(Center);
+            this.Children.Add(TextInstance);
         }
         private void ApplyDefaultVariables()
         {
@@ -124,6 +128,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Center.Y = 0f;
             this.Center.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Center.YUnits = GeneralUnitType.PixelsFromMiddle;
+
+            this.TextInstance.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.TextInstance.Text = "Helloi";
+            this.TextInstance.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
+            this.TextInstance.X = 0f;
+            this.TextInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.TextInstance.XUnits = GeneralUnitType.PixelsFromLarge;
+            this.TextInstance.Y = 0f;
+            this.TextInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
+            this.TextInstance.YUnits = GeneralUnitType.PixelsFromSmall;
 
         }
         partial void CustomInitialize();
