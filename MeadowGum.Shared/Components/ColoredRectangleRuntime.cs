@@ -10,8 +10,10 @@ namespace MeadowGum.Shared.Components
         public byte Green { get; set; } = 255;
         public byte Blue { get; set; } = 255;
         
-        public ColoredRectangleRuntime() 
+        public ColoredRectangleRuntime()
         {
+            Width = 50;
+            Height = 50;
             SetContainedObject(new InvisibleRenderable { Visible = true });
         }
 
@@ -22,15 +24,16 @@ namespace MeadowGum.Shared.Components
                 const string message = "No default renderer set yet";
                 throw new InvalidOperationException(message);
             }
-            
-            DefaultRenderer.RenderRectangle(
+
+            var area = new Rectangle(
                 (int)this.GetAbsoluteLeft(),
                 (int)this.GetAbsoluteTop(),
-                (int)GetAbsoluteWidth(), 
-                (int)GetAbsoluteHeight(), 
-                Red, 
-                Green, 
-                Blue);
+                (int)GetAbsoluteWidth(),
+                (int)GetAbsoluteHeight());
+
+            var color = new RgbColor(Red, Green, Blue);
+
+            DefaultRenderer.RenderRectangle(area, color);
         }
     }
 }

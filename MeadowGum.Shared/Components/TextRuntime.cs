@@ -69,8 +69,8 @@ public class TextRuntime : MeadowGumComponent
         public float Z { get; set; }
         public float Rotation { get; set; }
         public bool FlipHorizontal { get; set; }
-        public float Width { get; set; }
-        public float Height { get; set; }
+        public float Width { get; set; } = 100;
+        public float Height { get; set; } = 50;
         public string Name { get; set; }
         public object Tag { get; set; }
         public bool Visible { get; set; } = true;
@@ -95,7 +95,7 @@ public class TextRuntime : MeadowGumComponent
             }
         }
 
-        public string Text { get; set; } = string.Empty;
+        public string Text { get; set; } = "Hello";
         public MeadowFont Font { get; set; } = MeadowFont.Font8X12;
         public HorizontalAlignment HorizontalAlignment { get; set; } = HorizontalAlignment.Left;
         public VerticalAlignment VerticalAlignment { get; set; } = VerticalAlignment.Top;
@@ -115,15 +115,16 @@ public class TextRuntime : MeadowGumComponent
                 throw new InvalidOperationException("No default renderer set");
             }
 
-            DefaultRenderer.RenderText((int)_parent.GetAbsoluteLeft(), 
-                (int)_parent.GetAbsoluteTop(), 
-                Font,
-                HorizontalAlignment, 
-                VerticalAlignment, 
-                Text, 
-                Red, 
-                Green, 
-                Blue);
+            var area = new Rectangle(
+                (int)_parent.GetAbsoluteLeft(),
+                (int)_parent.GetAbsoluteTop(),
+                (int)Width,
+                (int)Height);
+
+            var color = new RgbColor(Red, Green, Blue);
+            var textAlignment = new TextAlignment(HorizontalAlignment, VerticalAlignment);
+
+            DefaultRenderer.RenderText(area, textAlignment, color, Font, Text);
         }
 
         public void PreRender()

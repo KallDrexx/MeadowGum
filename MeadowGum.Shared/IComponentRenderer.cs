@@ -1,20 +1,23 @@
 ﻿using RenderingLibrary.Graphics;
 
-namespace MeadowGum.Shared
+namespace MeadowGum.Shared;
+
+public readonly record struct Rectangle(int X, int Y, int Width, int Height);
+public readonly record struct RgbColor(byte Red, byte Green, byte Blue);
+
+public readonly record struct TextAlignment(
+    HorizontalAlignment HorizontalAlignment,
+    VerticalAlignment VerticalAlignment);
+
+public interface IComponentRenderer
 {
-    public interface IComponentRenderer
-    {
-        void RenderRectangle(int x, int y, int width, int height, byte red, byte green, byte blue);
-        void RenderText(int x, 
-            int y, 
-            MeadowFont font, 
-            HorizontalAlignment horizontalAlignment, 
-            VerticalAlignment verticalAlignment,  
-            string text, 
-            byte red, 
-            byte green, 
-            byte blue);
-        
-        void Show();
-    }
+    void RenderRectangle(Rectangle area, RgbColor color);
+
+    void RenderText(Rectangle area,
+        TextAlignment textAlignment,
+        RgbColor color,
+        MeadowFont font,
+        string text);
+
+    void Show();
 }

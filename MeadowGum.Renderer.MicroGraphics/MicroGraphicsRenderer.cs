@@ -19,20 +19,17 @@ public class MicroGraphicsRenderer : IComponentRenderer
         _buffer = new Meadow.Foundation.Graphics.MicroGraphics(display);
     }
     
-    public void RenderRectangle(int x, int y, int width, int height, byte red, byte green, byte blue)
+    public void RenderRectangle(Rectangle area, RgbColor color)
     {
-        _buffer.DrawRectangle(x, y, width, height, new Color(red, green, blue), true);
+        _buffer.DrawRectangle(area.X, area.Y, area.Width, area.Height, color.ToColor(), true);
     }
 
-    public void RenderText(int x, 
-        int y, 
-        MeadowFont font, 
-        HorizontalAlignment horizontalAlignment, 
-        VerticalAlignment verticalAlignment, 
-        string text, 
-        byte red, 
-        byte green, 
-        byte blue)
+    public void RenderText(
+        Rectangle area,
+        TextAlignment textAlignment,
+        RgbColor color,
+        MeadowFont font,
+        string text)
     {
         switch (font)
         {
@@ -45,74 +42,46 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 throw new NotSupportedException(font.ToString());
         }
 
-        switch (horizontalAlignment)
+        switch (textAlignment.HorizontalAlignment)
         {
-            case HorizontalAlignment.Left:
-                break;
-            
             case HorizontalAlignment.Right:
-                // MG starts rendering from X to the left, so we have to adjust it so X is the right edge
-                x += font.WidthPerCharacter() * text.Length;
+                // MicroGraphics will render right aligned text starting from the X position and going left, but
+                // the X position will be the left position of the text area. So we need to adjust the X position
+                // to be the right side of the text area, instead of the left.
+                area = area with { X = area.X + area.Width };
                 break;
             
             case HorizontalAlignment.Center:
-                // MG starts rendering with X being the center, so we have to adjust it so X is the left edge
-                x += font.WidthPerCharacter() * text.Length / 2;
+                // Adjust the X position to be the center of the text area
+                area = area with { X = area.X + area.Width / 2 };
                 break;
         }
 
-        switch (verticalAlignment)
+        switch (textAlignment.VerticalAlignment)
         {
-            case VerticalAlignment.Top:
-                break;
-            
             case VerticalAlignment.Bottom:
-                // MG starts rendering from Y to the top, so we have to adjust it so Y is the bottom edge
-                y += font.HeightPerCharacter();
+                // Adjust the Y position to be the bottom of the text area
+                area = area with { Y = area.Y + area.Height };
                 break;
             
             case VerticalAlignment.Center:
-                // MG starts rendering with Y being the center, so we have to adjust it so Y is the top edge
-                y += font.HeightPerCharacter() / 2;
+                // Adjust the Y position to be the center of the text area
+                area = area with { Y = area.Y + area.Height / 2 };
                 break;
         }
-        
-        var color = new Color(red, green, blue);
-        _buffer.DrawText(x, 
-            y, 
+
+        _buffer.DrawText(area.X, 
+            area.Y, 
             text, 
-            color, 
+            color.ToColor(), 
             ScaleFactor.X1, 
-            ConvertHorizontalAlignment(horizontalAlignment), 
-            ConvertVerticalAlignment(verticalAlignment));
+            textAlignment.HorizontalAlignment.ToHorizontalAlignment(),
+            textAlignment.VerticalAlignment.ToVerticalAlignment());
     }
 
     public void Show()
     {
         _buffer.Show();
         _buffer.Clear(Color.Black);
-    }
-    
-    private Meadow.Foundation.Graphics.HorizontalAlignment ConvertHorizontalAlignment(HorizontalAlignment horizontalAlignment)
-    {
-        return horizontalAlignment switch
-        {
-            HorizontalAlignment.Center => Meadow.Foundation.Graphics.HorizontalAlignment.Center,
-            HorizontalAlignment.Left => Meadow.Foundation.Graphics.HorizontalAlignment.Left,
-            HorizontalAlignment.Right => Meadow.Foundation.Graphics.HorizontalAlignment.Right,
-            _ => throw new NotSupportedException(horizontalAlignment.ToString())
-        };
-    }
-    
-    private Meadow.Foundation.Graphics.VerticalAlignment ConvertVerticalAlignment(VerticalAlignment verticalAlignment)
-    {
-        return verticalAlignment switch
-        {
-            VerticalAlignment.Bottom => Meadow.Foundation.Graphics.VerticalAlignment.Bottom,
-            VerticalAlignment.Center => Meadow.Foundation.Graphics.VerticalAlignment.Center,
-            VerticalAlignment.Top => Meadow.Foundation.Graphics.VerticalAlignment.Top,
-            VerticalAlignment.TextBaseline => Meadow.Foundation.Graphics.VerticalAlignment.Top,
-            _ => throw new NotSupportedException(verticalAlignment.ToString())
-        };
     }
 }
