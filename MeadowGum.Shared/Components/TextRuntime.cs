@@ -135,18 +135,6 @@ public class TextRuntime : MeadowGumComponent
             Parent = newParent;
         }
 
-        private int WidthPerCharacter => Font switch
-        {
-            MeadowFont.Font8X12 => 8,
-            _ => throw new NotSupportedException(Font.ToString()),
-        };
-
-        private int HeightPerCharacter => Font switch
-        {
-            MeadowFont.Font8X12 => 12,
-            _ => throw new NotSupportedException(Font.ToString()),
-        };
-
         public void SetNeedsRefreshToTrue()
         {
         }
@@ -159,9 +147,9 @@ public class TextRuntime : MeadowGumComponent
 
         public float FontScale => 1;
 
-        public float WrappedTextWidth => WidthPerCharacter * Text.Length;
+        public float WrappedTextWidth => Font.WidthPerCharacter() * Text.Length;
 
-        public float WrappedTextHeight => HeightPerCharacter;
+        public float WrappedTextHeight => Font.HeightPerCharacter();
 
         public string RawText => Text;
 

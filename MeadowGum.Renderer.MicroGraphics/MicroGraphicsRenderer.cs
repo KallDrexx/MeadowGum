@@ -40,8 +40,41 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 _buffer.CurrentFont = _font8X12;
                 break;
             
+            case MeadowFont.Unspecified:
             default:
                 throw new NotSupportedException(font.ToString());
+        }
+
+        switch (horizontalAlignment)
+        {
+            case HorizontalAlignment.Left:
+                break;
+            
+            case HorizontalAlignment.Right:
+                // MG starts rendering from X to the left, so we have to adjust it so X is the right edge
+                x += font.WidthPerCharacter() * text.Length;
+                break;
+            
+            case HorizontalAlignment.Center:
+                // MG starts rendering with X being the center, so we have to adjust it so X is the left edge
+                x += font.WidthPerCharacter() * text.Length / 2;
+                break;
+        }
+
+        switch (verticalAlignment)
+        {
+            case VerticalAlignment.Top:
+                break;
+            
+            case VerticalAlignment.Bottom:
+                // MG starts rendering from Y to the top, so we have to adjust it so Y is the bottom edge
+                y += font.HeightPerCharacter();
+                break;
+            
+            case VerticalAlignment.Center:
+                // MG starts rendering with Y being the center, so we have to adjust it so Y is the top edge
+                y += font.HeightPerCharacter() / 2;
+                break;
         }
         
         var color = new Color(red, green, blue);

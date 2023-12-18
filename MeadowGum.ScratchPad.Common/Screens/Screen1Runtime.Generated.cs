@@ -129,15 +129,21 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Center.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Center.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.TextInstance.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.TextInstance.Blue = 0;
+            this.TextInstance.Green = 0;
+            this.TextInstance.Height = 0f;
+            this.TextInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.TextInstance.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.TextInstance.Text = "Helloi";
-            this.TextInstance.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
+            this.TextInstance.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
+            this.TextInstance.Width = 0f;
+            this.TextInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.TextInstance.X = 0f;
-            this.TextInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.TextInstance.XUnits = GeneralUnitType.PixelsFromLarge;
+            this.TextInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
+            this.TextInstance.XUnits = GeneralUnitType.PixelsFromMiddle;
             this.TextInstance.Y = 0f;
-            this.TextInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
-            this.TextInstance.YUnits = GeneralUnitType.PixelsFromSmall;
+            this.TextInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
+            this.TextInstance.YUnits = GeneralUnitType.PixelsFromMiddle;
 
         }
         partial void CustomInitialize();
