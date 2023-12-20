@@ -7,6 +7,20 @@
         "ElementType": "Screens",
         "EventType": 5,
         "TimestampUtc": "2023-12-17T02:10:18.7194349Z"
+      },
+      {
+        "NewName": "Screen1.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-19T02:02:09.5186387Z"
+      },
+      {
+        "NewName": "Screen1.Sun",
+        "OldName": "Screen1.SpriteInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-19T02:45:48.6426567Z"
       }
     ]
   }

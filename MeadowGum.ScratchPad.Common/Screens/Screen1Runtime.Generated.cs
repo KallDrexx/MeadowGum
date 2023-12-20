@@ -20,6 +20,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public ColoredRectangleRuntime BottomRight { get; protected set; }
         public ColoredRectangleRuntime Center { get; protected set; }
         public TextRuntime TextInstance { get; protected set; }
+        public SpriteRuntime Sun { get; protected set; }
 
         public Screen1Runtime(bool fullInstantiation = true)
         {
@@ -54,6 +55,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             Center.Name = "Center";
             TextInstance = new TextRuntime();
             TextInstance.Name = "TextInstance";
+            Sun = new SpriteRuntime();
+            Sun.Name = "Sun";
         }
         protected virtual void AssignParents()
         {
@@ -64,6 +67,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             OuterRectangle.Children.Add(BottomRight);
             OuterRectangle.Children.Add(Center);
             this.Children.Add(TextInstance);
+            this.Children.Add(Sun);
         }
         private void ApplyDefaultVariables()
         {
@@ -144,6 +148,24 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TextInstance.Y = 0f;
             this.TextInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.TextInstance.YUnits = GeneralUnitType.PixelsFromSmall;
+
+            this.Sun.FlipHorizontal = false;
+            this.Sun.Height = 14f;
+            this.Sun.SourceFile = "spritesheet.bmp";
+            this.Sun.TextureAddress = global::Gum.Managers.TextureAddress.DimensionsBased;
+            this.Sun.TextureHeight = 128;
+            this.Sun.TextureHeightScale = 1f;
+            this.Sun.TextureLeft = 0;
+            this.Sun.TextureTop = 48;
+            this.Sun.TextureWidth = 128;
+            this.Sun.TextureWidthScale = 1f;
+            this.Sun.Width = 14f;
+            this.Sun.X = 0f;
+            this.Sun.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.Sun.XUnits = GeneralUnitType.PixelsFromLarge;
+            this.Sun.Y = 0f;
+            this.Sun.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
+            this.Sun.YUnits = GeneralUnitType.PixelsFromLarge;
 
         }
         partial void CustomInitialize();
