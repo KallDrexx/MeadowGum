@@ -23,7 +23,7 @@ public class MeadowApp : App<F7CoreComputeV2>
 
     public override Task Run()
     {
-        var renderer = new MicroGraphicsRenderer(_display);
+        var renderer = new MicroGraphicsRenderer(_display, MeadowOS.FileSystem.UserFileSystemRoot);
         MeadowGumComponent.DefaultRenderer = renderer;
         
         var screen = new Screen1Runtime();

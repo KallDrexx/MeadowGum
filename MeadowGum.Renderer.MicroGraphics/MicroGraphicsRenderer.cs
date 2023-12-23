@@ -1,24 +1,29 @@
 ﻿using Gum.Wireframe;
 using Meadow.Foundation;
 using Meadow.Foundation.Graphics;
+using Meadow.Foundation.Graphics.Buffers;
 using MeadowGum.Shared;
 using HorizontalAlignment = RenderingLibrary.Graphics.HorizontalAlignment;
+using Point = MeadowGum.Shared.Point;
 using VerticalAlignment = RenderingLibrary.Graphics.VerticalAlignment;
 
 namespace MeadowGum.Renderer.MicroGraphics;
 
 public class MicroGraphicsRenderer : IComponentRenderer
 {
+    private readonly Dictionary<string, IPixelBuffer> _textureBuffers = new();
     private readonly Meadow.Foundation.Graphics.MicroGraphics _buffer;
     private readonly Font8x12 _font8X12 = new Font8x12();
+    private readonly string _contentRoot;
 
-    public MicroGraphicsRenderer(IGraphicsDisplay display)
+    public MicroGraphicsRenderer(IGraphicsDisplay display, string contentRoot)
     {
+        _contentRoot = contentRoot;
         GraphicalUiElement.CanvasWidth = display.Width;
         GraphicalUiElement.CanvasHeight = display.Height;
         _buffer = new Meadow.Foundation.Graphics.MicroGraphics(display);
     }
-    
+
     public void RenderRectangle(Rectangle area, RgbColor color)
     {
         _buffer.DrawRectangle(area.X, area.Y, area.Width, area.Height, color.ToColor(), true);
@@ -36,7 +41,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
             case MeadowFont.Font8X12:
                 _buffer.CurrentFont = _font8X12;
                 break;
-            
+
             case MeadowFont.Unspecified:
             default:
                 throw new NotSupportedException(font.ToString());
@@ -50,7 +55,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 // to be the right side of the text area, instead of the left.
                 area = area with { X = area.X + area.Width };
                 break;
-            
+
             case HorizontalAlignment.Center:
                 // Adjust the X position to be the center of the text area
                 area = area with { X = area.X + area.Width / 2 };
@@ -63,25 +68,104 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 // Adjust the Y position to be the bottom of the text area
                 area = area with { Y = area.Y + area.Height };
                 break;
-            
+
             case VerticalAlignment.Center:
                 // Adjust the Y position to be the center of the text area
                 area = area with { Y = area.Y + area.Height / 2 };
                 break;
         }
 
-        _buffer.DrawText(area.X, 
-            area.Y, 
-            text, 
-            color.ToColor(), 
-            ScaleFactor.X1, 
+        _buffer.DrawText(area.X,
+            area.Y,
+            text,
+            color.ToColor(),
+            ScaleFactor.X1,
             textAlignment.HorizontalAlignment.ToHorizontalAlignment(),
             textAlignment.VerticalAlignment.ToVerticalAlignment());
+    }
+
+    public void RenderSprite(string textureName,
+        Rectangle textureArea,
+        Point screenPosition,
+        RgbColor? transparentColor)
+    {
+        var textureBuffer = GetTextureBuffer(textureName);
+        DrawPartialBuffer(textureBuffer, textureArea, screenPosition, transparentColor);
     }
 
     public void Show()
     {
         _buffer.Show();
         _buffer.Clear(Color.Black);
+    }
+
+    private IPixelBuffer GetTextureBuffer(string textureName)
+    {
+        if (_textureBuffers.TryGetValue(textureName, out var texture))
+        {
+            return texture;
+        }
+
+        texture = LoadBitmapFile(textureName);
+        _textureBuffers.Add(textureName, texture);
+        return texture;
+    }
+
+    /// <summary>
+    /// Loads a bitmap file from disk and creates an IDisplayBuffer
+    /// </summary>
+    /// <param name="name">The bitmap file path</param>
+    /// <returns>An IDisplayBuffer containing bitmap data</returns>
+    private IPixelBuffer LoadBitmapFile(string name)
+    {
+        var filePath = Path.Combine(_contentRoot, "GumLayouts", name);
+
+        try
+        {
+            var img = Image.LoadFromFile(filePath);
+
+            // Always make sure that the texture is formatted in the same color mode as the display
+            var imgBuffer = CreateBuffer(img.Width, img.Height);
+            imgBuffer.WriteBuffer(0, 0, img.DisplayBuffer);
+            Console.WriteLine($"{name} loaded to buffer of type {imgBuffer.GetType()}");
+            return imgBuffer;
+        }
+        catch (Exception exception)
+        {
+            throw new Exception($"Failed to load {filePath}: The file should be a 24bit bmp, in the root " +
+                                "directory with BuildAction = Content, and Copy if Newer!",
+                exception);
+        }
+    }
+
+    private IPixelBuffer CreateBuffer(int width, int height)
+    {
+        switch (_buffer.ColorMode)
+        {
+            case ColorMode.Format16bppRgb565: return new BufferRgb565(width, height);
+            default:
+                throw new NotSupportedException($"Color mode {_buffer.ColorMode} is not supported");
+        }
+    }
+
+    private void DrawPartialBuffer(IPixelBuffer source,
+        Rectangle sourceArea,
+        Point destinationPosition,
+        RgbColor? transparentColor)
+    {
+        for (var x = 0; x < sourceArea.Width; x++)
+        for (var y = 0; y < sourceArea.Height; y++)
+        {
+            var pixel = source.GetPixel(x + sourceArea.X, y + sourceArea.Y);
+            if (transparentColor != null &&
+                transparentColor.Value.Red == pixel.R &&
+                transparentColor.Value.Green == pixel.G &&
+                transparentColor.Value.Blue == pixel.B)
+            {
+                continue;
+            }
+
+            _buffer.DrawPixel(x + destinationPosition.X, y + destinationPosition.Y, pixel);
+        }
     }
 }

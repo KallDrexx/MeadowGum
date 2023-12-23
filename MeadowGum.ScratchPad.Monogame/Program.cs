@@ -12,7 +12,7 @@ var environment = new TestEnvironment(320, 240)
     }
 };
 
-var renderer = new MeadowGum.Renderer.MicroGraphics.MicroGraphicsRenderer(environment.Display);
+var renderer = new MeadowGum.Renderer.MicroGraphics.MicroGraphicsRenderer(environment.Display, Environment.CurrentDirectory);
 MeadowGumComponent.DefaultRenderer = renderer;
 
 
