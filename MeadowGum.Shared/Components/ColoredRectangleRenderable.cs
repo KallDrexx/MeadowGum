@@ -21,7 +21,7 @@ public class ColoredRectangleRenderable : IRenderableIpso
     public float Height { get; set; }
     public string Name { get; set; }
     public object Tag { get; set; }
-    public bool Visible { get; set; }
+    public bool Visible { get; set; } = true;
     public ObservableCollection<IRenderableIpso> Children { get; } = new();
     public ColorOperation ColorOperation => ColorOperation.ColorTextureAlpha;
     public BlendState BlendState => BlendState.Opaque;

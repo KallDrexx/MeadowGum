@@ -251,6 +251,18 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>string</Type>
+      <Name>SplashScreenInstance.DescriptionText</Name>
+      <Value xsi:type="xsd:string">Some Description</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>SplashScreenInstance.TitleText</Name>
+      <Value xsi:type="xsd:string">Some Title</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>bool</Type>
       <Name>Sun.FlipHorizontal</Name>
       <Value xsi:type="xsd:boolean">false</Value>
@@ -621,6 +633,11 @@
   <Instance>
     <Name>Sun</Name>
     <BaseType>Sprite</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>SplashScreenInstance</Name>
+    <BaseType>SplashScreen</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

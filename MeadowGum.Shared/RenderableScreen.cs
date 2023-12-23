@@ -14,7 +14,15 @@ public abstract class RenderableScreen
 
     private void DoRender(IRenderableIpso ipso)
     {
+        if (!ipso.Visible)
+        {
+            return;
+        }
+        
         ipso.Render(null);
-        foreach (var child in ipso.Children) DoRender(child);
+        foreach (var child in ipso.Children)
+        {
+            DoRender(child);
+        }
     }
 }

@@ -23,7 +23,7 @@ public class SpriteRenderable : IRenderableIpso, IAspectRatio, ITextureCoordinat
     public float Height { get; set; }
     public string Name { get; set; }
     public object? Tag { get; set; }
-    public bool Visible { get; set; }
+    public bool Visible { get; set; } = true;
     public bool AbsoluteVisible { get; } = true;
     public IRenderableIpso Parent { get; set; }
     public ObservableCollection<IRenderableIpso> Children { get; } = new();

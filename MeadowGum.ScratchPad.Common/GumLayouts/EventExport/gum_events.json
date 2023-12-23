@@ -21,6 +21,216 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2023-12-19T02:45:48.6426567Z"
+      },
+      {
+        "NewName": "Splash Screen",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-23T19:25:05.257936Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Splash Screen",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2023-12-23T19:26:20.9878327Z"
+      },
+      {
+        "NewName": "SplashScreen",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-23T19:26:40.4925731Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:30:25.5440291Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).Title",
+        "OldName": "SplashScreen (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-23T19:30:33.4930573Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:30:59.9885401Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).Description",
+        "OldName": "SplashScreen (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-23T19:31:04.7343338Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:31:41.8535026Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).Instruction",
+        "OldName": "SplashScreen (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-23T19:32:04.9168971Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:33:14.8891394Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).Background",
+        "OldName": "SplashScreen (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-23T19:33:24.0568316Z"
+      },
+      {
+        "NewName": "Screen1.SplashScreenInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:35:59.7790401Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.SplashScreen SplashScreenInstance in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:36:15.2187963Z"
+      },
+      {
+        "NewName": "Screen1.SplashScreenInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:37:52.0310089Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle OuterRectangle in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:01.3454694Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle BottomLeft in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:01.4043238Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle BottomRight in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:01.4093224Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle Center in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:01.4138317Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle TopLeft in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:01.417839Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle TopRight in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:01.4218374Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.Text TextInstance in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:04.4173259Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.Sprite Sun in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:46:08.4757173Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "SplashScreen (Container).Text Description in SplashScreen (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:49:10.6809242Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "SplashScreen (Container).Text Instruction in SplashScreen (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:49:12.3142548Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.SplashScreen SplashScreenInstance in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:54:21.7275127Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "SplashScreen (Container).ColoredRectangle Background in SplashScreen (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:54:23.8858208Z"
+      },
+      {
+        "NewName": "Screen1.ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:54:33.5754834Z"
+      },
+      {
+        "NewName": "SplashScreen (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:56:23.9919629Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ColoredRectangle ColoredRectangleInstance in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-23T19:56:42.5536174Z"
+      },
+      {
+        "NewName": "Screen1.SplashScreenInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-23T19:56:44.1194563Z"
       }
     ]
   }
