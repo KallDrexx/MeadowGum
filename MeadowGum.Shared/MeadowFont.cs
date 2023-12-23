@@ -5,7 +5,7 @@ namespace MeadowGum.Shared;
 public enum MeadowFont
 {
     Unspecified = 0,
-    Font8X12 = 1,
+    Font8X12 = 1
 }
 
 public static class MeadowFontExtensions

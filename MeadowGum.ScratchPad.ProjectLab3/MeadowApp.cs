@@ -17,7 +17,7 @@ public class MeadowApp : App<F7CoreComputeV2>
     {
         _projectLab = ProjectLab.Create();
         _display = _projectLab.Display!;
-        
+
         return Task.CompletedTask;
     }
 
@@ -25,7 +25,7 @@ public class MeadowApp : App<F7CoreComputeV2>
     {
         var renderer = new MicroGraphicsRenderer(_display, MeadowOS.FileSystem.UserFileSystemRoot);
         MeadowGumComponent.DefaultRenderer = renderer;
-        
+
         var screen = new Screen1Runtime();
         while (true)
         {

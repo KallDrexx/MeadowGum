@@ -6,11 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MeadowGum.Shared\MeadowGum.Shared.csproj" />
+        <ProjectReference Include="..\MeadowGum.Shared\MeadowGum.Shared.csproj"/>
     </ItemGroup>
-    
+
     <ItemGroup>
-        <None Include="GumLayouts/**/*" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+        <None Include="GumLayouts/**/*" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always"/>
     </ItemGroup>
 
 </Project>

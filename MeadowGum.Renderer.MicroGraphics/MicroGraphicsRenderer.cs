@@ -11,10 +11,10 @@ namespace MeadowGum.Renderer.MicroGraphics;
 
 public class MicroGraphicsRenderer : IComponentRenderer
 {
-    private readonly Dictionary<string, IPixelBuffer> _textureBuffers = new();
     private readonly Meadow.Foundation.Graphics.MicroGraphics _buffer;
-    private readonly Font8x12 _font8X12 = new Font8x12();
     private readonly string _contentRoot;
+    private readonly Font8x12 _font8X12 = new();
+    private readonly Dictionary<string, IPixelBuffer> _textureBuffers = new();
 
     public MicroGraphicsRenderer(IGraphicsDisplay display, string contentRoot)
     {
@@ -101,10 +101,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
 
     private IPixelBuffer GetTextureBuffer(string textureName)
     {
-        if (_textureBuffers.TryGetValue(textureName, out var texture))
-        {
-            return texture;
-        }
+        if (_textureBuffers.TryGetValue(textureName, out var texture)) return texture;
 
         texture = LoadBitmapFile(textureName);
         _textureBuffers.Add(textureName, texture);
@@ -112,7 +109,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
     }
 
     /// <summary>
-    /// Loads a bitmap file from disk and creates an IDisplayBuffer
+    ///     Loads a bitmap file from disk and creates an IDisplayBuffer
     /// </summary>
     /// <param name="name">The bitmap file path</param>
     /// <returns>An IDisplayBuffer containing bitmap data</returns>
@@ -161,9 +158,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 transparentColor.Value.Red == pixel.R &&
                 transparentColor.Value.Green == pixel.G &&
                 transparentColor.Value.Blue == pixel.B)
-            {
                 continue;
-            }
 
             _buffer.DrawPixel(x + destinationPosition.X, y + destinationPosition.Y, pixel);
         }

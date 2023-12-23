@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Gum\GumCommon\GumCommon.csproj" />
+        <ProjectReference Include="..\Gum\GumCommon\GumCommon.csproj"/>
     </ItemGroup>
 
 </Project>

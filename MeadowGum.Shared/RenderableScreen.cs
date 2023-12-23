@@ -1,27 +1,20 @@
 ﻿using System.Collections.Generic;
 using RenderingLibrary.Graphics;
 
-namespace MeadowGum.Shared
-{
-    public abstract class RenderableScreen
-    {
-        protected List<IRenderableIpso> Children { get; } = new();
+namespace MeadowGum.Shared;
 
-        public void Render()
-        {
-            foreach (var child in Children)
-            {
-                DoRender(child);
-            }
-        }
-        
-        private void DoRender(IRenderableIpso ipso)
-        {
-            ipso.Render(null);
-            foreach (var child in ipso.Children)
-            {
-                DoRender(child);
-            }
-        }
+public abstract class RenderableScreen
+{
+    protected List<IRenderableIpso> Children { get; } = new();
+
+    public void Render()
+    {
+        foreach (var child in Children) DoRender(child);
+    }
+
+    private void DoRender(IRenderableIpso ipso)
+    {
+        ipso.Render(null);
+        foreach (var child in ipso.Children) DoRender(child);
     }
 }

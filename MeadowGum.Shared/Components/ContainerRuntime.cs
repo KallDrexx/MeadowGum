@@ -1,13 +1,11 @@
-﻿using Gum.Wireframe;
-using RenderingLibrary.Graphics;
+﻿using RenderingLibrary.Graphics;
 
-namespace MeadowGum.Shared.Components
+namespace MeadowGum.Shared.Components;
+
+public class ContainerRuntime : MeadowGumComponent
 {
-    public class ContainerRuntime : MeadowGumComponent
+    public ContainerRuntime()
     {
-        public ContainerRuntime() 
-        {
-            SetContainedObject(new InvisibleRenderable { Visible = true });
-        }
+        SetContainedObject(new InvisibleRenderable { Visible = true });
     }
 }
