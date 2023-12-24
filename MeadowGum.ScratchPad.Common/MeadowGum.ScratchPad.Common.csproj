@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
+        <LangVersion>11</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,6 +12,11 @@
 
     <ItemGroup>
         <None Include="GumLayouts/**/*" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Meadow.Contracts" Version="1.6.0"/>
+        <PackageReference Include="Meadow.Foundation" Version="1.6.0"/>
     </ItemGroup>
 
 </Project>

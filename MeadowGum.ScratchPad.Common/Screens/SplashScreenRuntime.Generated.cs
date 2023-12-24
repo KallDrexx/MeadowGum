@@ -1,4 +1,4 @@
-//Code for SplashScreen (Container)
+//Code for SplashScreen
 using Gum.Converters;
 using Gum.DataTypes;
 using Gum.Managers;
@@ -8,10 +8,9 @@ using RenderingLibrary.Graphics;
 
 using MeadowGum.Shared;
 using MeadowGum.Shared.Components;
-using MeadowGum.ScratchPad.Common.Components;
 
 
-namespace MeadowGum.ScratchPad.Common.Components
+namespace MeadowGum.ScratchPad.Common.Screens
 {
     public partial class SplashScreenRuntime
     {
@@ -36,13 +35,8 @@ namespace MeadowGum.ScratchPad.Common.Components
         {
             if(fullInstantiation)
             {
-                this.SetContainedObject(new InvisibleRenderable());
 
-                this.Height = 100f;
-                this.HeightUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
                  
-                this.Width = 100f;
-                this.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
 
                 InitializeInstances();
 
@@ -88,10 +82,9 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Background.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Background.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.Title.Height = 25f;
             this.Title.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
+            this.Title.Text = "Title";
             this.Title.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
-            this.Title.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
             this.Title.X = 0f;
             this.Title.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.Title.XUnits = GeneralUnitType.PixelsFromMiddle;
@@ -99,8 +92,8 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Title.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.Title.YUnits = GeneralUnitType.PixelsFromSmall;
 
-            this.Description.Height = 100f;
             this.Description.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
+            this.Description.Text = "Description";
             this.Description.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Description.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
             this.Description.X = 0f;
@@ -111,7 +104,7 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Description.YUnits = GeneralUnitType.PixelsFromMiddle;
 
             this.Instruction.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
-            this.Instruction.Text = "Press 'up' to continue";
+            this.Instruction.Text = "Press 'up' to continue...";
             this.Instruction.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
             this.Instruction.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
             this.Instruction.X = 0f;

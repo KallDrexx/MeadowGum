@@ -20,11 +20,11 @@
     <ElementType>Screen</ElementType>
     <LinkType>ReferenceOriginal</LinkType>
   </ScreenReference>
-  <ComponentReference>
+  <ScreenReference>
     <Name>SplashScreen</Name>
-    <ElementType>Component</ElementType>
+    <ElementType>Screen</ElementType>
     <LinkType>ReferenceOriginal</LinkType>
-  </ComponentReference>
+  </ScreenReference>
   <StandardElementReference>
     <Name>Circle</Name>
     <ElementType>Standard</ElementType>
