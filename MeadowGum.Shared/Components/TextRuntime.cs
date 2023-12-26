@@ -10,6 +10,8 @@ public class TextRuntime : MeadowGumComponent
     {
         _renderable = new TextRenderable();
         SetContainedObject(_renderable);
+        Width = 100;
+        Height = 50;
     }
 
     public string Text
@@ -52,5 +54,11 @@ public class TextRuntime : MeadowGumComponent
     {
         get => _renderable.Blue;
         set => _renderable.Blue = value;
+    }
+
+    public bool Wrap
+    {
+        get => _renderable.Wrap;
+        set => _renderable.Wrap = value;
     }
 }

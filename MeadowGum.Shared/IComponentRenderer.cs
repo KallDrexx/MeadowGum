@@ -20,6 +20,7 @@ public interface IComponentRenderer
         TextAlignment textAlignment,
         RgbColor color,
         MeadowFont font,
+        bool wrap,
         string text);
 
     void RenderSprite(string textureName, Rectangle textureArea, Point screenPosition, RgbColor? transparentColor);

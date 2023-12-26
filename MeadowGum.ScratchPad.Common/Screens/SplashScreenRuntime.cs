@@ -8,6 +8,7 @@ partial class SplashScreenRuntime : MeadowGumScreen
 {
     partial void CustomInitialize()
     {
+        Description.Wrap = true;
     }
 
     public override async Task<MeadowGumScreen?> RunAsync(CancellationToken cancellationToken)

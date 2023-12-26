@@ -16,7 +16,7 @@ public class TextRenderable : IRenderableIpso, IText
     public byte Green { get; set; } = 255;
     public byte Blue { get; set; } = 255;
     public BlendState BlendState { get; } = BlendState.Opaque;
-    public bool Wrap { get; } = false;
+    public bool Wrap { get; set; } = false;
     public float X { get; set; }
     public float Y { get; set; }
     public float Z { get; set; }
@@ -56,7 +56,7 @@ public class TextRenderable : IRenderableIpso, IText
         var color = new RgbColor(Red, Green, Blue);
         var textAlignment = new TextAlignment(HorizontalAlignment, VerticalAlignment);
 
-        MeadowGumComponent.DefaultRenderer.RenderText(area, textAlignment, color, Font, Text);
+        MeadowGumComponent.DefaultRenderer.RenderText(area, textAlignment, color, Font, Wrap, Text);
     }
 
     public void PreRender()

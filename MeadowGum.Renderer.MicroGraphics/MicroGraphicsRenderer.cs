@@ -34,6 +34,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
         TextAlignment textAlignment,
         RgbColor color,
         MeadowFont font,
+        bool wrap,
         string text)
     {
         switch (font)
@@ -47,41 +48,14 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 throw new NotSupportedException(font.ToString());
         }
 
-        switch (textAlignment.HorizontalAlignment)
+        if (!wrap)
         {
-            case HorizontalAlignment.Right:
-                // MicroGraphics will render right aligned text starting from the X position and going left, but
-                // the X position will be the left position of the text area. So we need to adjust the X position
-                // to be the right side of the text area, instead of the left.
-                area = area with { X = area.X + area.Width };
-                break;
-
-            case HorizontalAlignment.Center:
-                // Adjust the X position to be the center of the text area
-                area = area with { X = area.X + area.Width / 2 };
-                break;
+            RenderUnwrappedText(area, textAlignment, color, text);
         }
-
-        switch (textAlignment.VerticalAlignment)
+        else
         {
-            case VerticalAlignment.Bottom:
-                // Adjust the Y position to be the bottom of the text area
-                area = area with { Y = area.Y + area.Height };
-                break;
-
-            case VerticalAlignment.Center:
-                // Adjust the Y position to be the center of the text area
-                area = area with { Y = area.Y + area.Height / 2 };
-                break;
+            RenderWrappedText(area, textAlignment, color, font, text);
         }
-
-        _buffer.DrawText(area.X,
-            area.Y,
-            text,
-            color.ToColor(),
-            ScaleFactor.X1,
-            textAlignment.HorizontalAlignment.ToHorizontalAlignment(),
-            textAlignment.VerticalAlignment.ToVerticalAlignment());
     }
 
     public void RenderSprite(string textureName,
@@ -108,11 +82,6 @@ public class MicroGraphicsRenderer : IComponentRenderer
         return texture;
     }
 
-    /// <summary>
-    ///     Loads a bitmap file from disk and creates an IDisplayBuffer
-    /// </summary>
-    /// <param name="name">The bitmap file path</param>
-    /// <returns>An IDisplayBuffer containing bitmap data</returns>
     private IPixelBuffer LoadBitmapFile(string name)
     {
         var filePath = Path.Combine(_contentRoot, "GumLayouts", name);
@@ -162,5 +131,125 @@ public class MicroGraphicsRenderer : IComponentRenderer
 
             _buffer.DrawPixel(x + destinationPosition.X, y + destinationPosition.Y, pixel);
         }
+    }
+    
+    private void RenderUnwrappedText(
+        Rectangle area,
+        TextAlignment textAlignment,
+        RgbColor color,
+        string text)
+    {
+        switch (textAlignment.HorizontalAlignment)
+        {
+            case HorizontalAlignment.Right:
+                // MicroGraphics will render right aligned text starting from the X position and going left, but
+                // the X position will be the left position of the text area. So we need to adjust the X position
+                // to be the right side of the text area, instead of the left.
+                area = area with { X = area.X + area.Width };
+                break;
+
+            case HorizontalAlignment.Center:
+                // Adjust the X position to be the center of the text area
+                area = area with { X = area.X + area.Width / 2 };
+                break;
+        }
+
+        switch (textAlignment.VerticalAlignment)
+        {
+            case VerticalAlignment.Bottom:
+                // Adjust the Y position to be the bottom of the text area
+                area = area with { Y = area.Y + area.Height };
+                break;
+
+            case VerticalAlignment.Center:
+                // Adjust the Y position to be the center of the text area
+                area = area with { Y = area.Y + area.Height / 2 };
+                break;
+        }
+
+        _buffer.DrawText(area.X,
+            area.Y,
+            text,
+            color.ToColor(),
+            ScaleFactor.X1,
+            textAlignment.HorizontalAlignment.ToHorizontalAlignment(),
+            textAlignment.VerticalAlignment.ToVerticalAlignment());
+    }
+
+    private void RenderWrappedText(Rectangle area, TextAlignment textAlignment, RgbColor color, MeadowFont font, string text)
+    {
+        var lines = SplitText(text, font, area.Width);
+        var lineHeight = font.HeightPerCharacter();
+
+        switch (textAlignment.VerticalAlignment)
+        {
+            case VerticalAlignment.Top:
+                // Starting at the top of the given area, so nothing to do
+                break;
+
+            case VerticalAlignment.Center:
+            {
+                var centerY = area.Y + (area.Height / 2);
+                var totalHeight = lines.Count * lineHeight;
+                area = area with {Y = centerY - (totalHeight / 2), Height = lineHeight};
+                break;
+            }
+
+            case VerticalAlignment.Bottom:
+            {
+                var bottomY = area.Y + area.Height;
+                var totalHeight = lines.Count * lineHeight;
+                area = area with {Y = bottomY - totalHeight, Height = lineHeight};
+                break;
+            }
+        }
+        
+        foreach (var line in lines)
+        {
+            RenderUnwrappedText(area, textAlignment, color, line);
+            area = area with {Y = area.Y + lineHeight};
+        }
+    }
+
+    private static List<string> SplitText(string text, MeadowFont font, int areaWidth)
+    {
+        var lines = new List<string>();
+        var widthPerCharacter = font.WidthPerCharacter();
+        var lastSpaceIndex = 0;
+        var currentLineStartIndex = 0;
+        for (var x = 0; x < text.Length; x++)
+        {
+            switch (text[x])
+            {
+                case ' ':
+                    lastSpaceIndex = x;
+                    break;
+                
+                case '\n':
+                    lines.Add(text.Substring(currentLineStartIndex, x - currentLineStartIndex));
+                    currentLineStartIndex = x + 1;
+                    continue;
+            }
+            
+            var lineWidth = (x - currentLineStartIndex) * widthPerCharacter;
+            if (lineWidth > areaWidth)
+            {
+                if (lastSpaceIndex == 0)
+                {
+                    // no spaces in the line, so we need to split the word
+                    lines.Add(text.Substring(currentLineStartIndex, x - currentLineStartIndex));
+                    currentLineStartIndex = x;
+                }
+                else
+                {
+                    // there was a space in the line, so we can split on that
+                    lines.Add(text.Substring(currentLineStartIndex, lastSpaceIndex - currentLineStartIndex));
+                    currentLineStartIndex = lastSpaceIndex + 1;
+                }
+            }
+        }
+        
+        lines.Add(text[currentLineStartIndex..]);
+        return lines;
     }
 }
