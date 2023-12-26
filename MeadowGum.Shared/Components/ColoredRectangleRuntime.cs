@@ -12,21 +12,21 @@ public class ColoredRectangleRuntime : MeadowGumComponent
         Height = 50;
     }
 
-    public byte Red
+    public int Red
     {
         get => _renderable.Red;
-        set => _renderable.Red = value;
+        set => _renderable.Red = (byte)value;
     }
 
-    public byte Green
+    public int Green
     {
         get => _renderable.Green;
-        set => _renderable.Green = value;
+        set => _renderable.Green = (byte)value;
     }
 
-    public byte Blue
+    public int Blue
     {
         get => _renderable.Blue;
-        set => _renderable.Blue = value;
+        set => _renderable.Blue = (byte)value;
     }
 }

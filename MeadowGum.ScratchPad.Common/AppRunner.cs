@@ -12,7 +12,8 @@ public static class AppRunner
         var splashScreen = new SplashScreenRuntime
         {
             TitleText = "Welcome to MeadowGum",
-            DescriptionText = "This is a demonstration of the MeadowGum UI framework."
+            DescriptionText = "This is a demonstration of the MeadowGum UI framework.",
+            NextScreen = () => new MainMenuRuntime(),
         };
 
         await screenManager.StartScreen(splashScreen);

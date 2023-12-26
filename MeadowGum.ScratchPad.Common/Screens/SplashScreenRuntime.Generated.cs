@@ -88,14 +88,14 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Title.X = 0f;
             this.Title.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.Title.XUnits = GeneralUnitType.PixelsFromMiddle;
-            this.Title.Y = 0f;
+            this.Title.Y = 10f;
             this.Title.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.Title.YUnits = GeneralUnitType.PixelsFromSmall;
 
             this.Description.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.Description.Text = "Description";
             this.Description.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
-            this.Description.Width = 80f;
+            this.Description.Width = 75f;
             this.Description.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
             this.Description.X = 0f;
             this.Description.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
@@ -111,7 +111,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Instruction.X = 0f;
             this.Instruction.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.Instruction.XUnits = GeneralUnitType.PixelsFromMiddle;
-            this.Instruction.Y = 0f;
+            this.Instruction.Y = -10f;
             this.Instruction.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
             this.Instruction.YUnits = GeneralUnitType.PixelsFromLarge;
 

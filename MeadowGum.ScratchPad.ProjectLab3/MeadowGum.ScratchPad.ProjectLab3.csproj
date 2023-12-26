@@ -16,5 +16,9 @@
         <ProjectReference Include="..\MeadowGum.Renderer.MicroGraphics\MeadowGum.Renderer.MicroGraphics.csproj"/>
         <ProjectReference Include="..\MeadowGum.ScratchPad.Common\MeadowGum.ScratchPad.Common.csproj"/>
     </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\Spritesheet.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always"/>
+    </ItemGroup>
 
 </Project>

@@ -8,5 +8,7 @@ public class ContainerRuntime : MeadowGumComponent
     {
         SetContainedObject(new InvisibleRenderable { Visible = true });
         Visible = true;
+        Width = 150;
+        Height = 150;
     }
 }

@@ -84,7 +84,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
 
     private IPixelBuffer LoadBitmapFile(string name)
     {
-        var filePath = Path.Combine(_contentRoot, "GumLayouts", name);
+        var filePath = Path.Combine(_contentRoot, name);
 
         try
         {

@@ -315,6 +315,209 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2023-12-24T19:29:51.5200774Z"
+      },
+      {
+        "NewName": "SimpleButton",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-26T18:55:24.2314803Z"
+      },
+      {
+        "NewName": "SimpleButton (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T18:56:06.8636065Z"
+      },
+      {
+        "NewName": "SimpleButton (Container).OuterRectangle",
+        "OldName": "SimpleButton (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T18:56:19.4216469Z"
+      },
+      {
+        "NewName": "SimpleButton (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T18:56:25.2385714Z"
+      },
+      {
+        "NewName": "SimpleButton (Container).InnerRectangel",
+        "OldName": "SimpleButton (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T18:56:30.3540595Z"
+      },
+      {
+        "NewName": "SimpleButton (Container).InnerRectangle",
+        "OldName": "SimpleButton (Container).InnerRectangel",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T18:56:34.5665374Z"
+      },
+      {
+        "NewName": "SimpleButton (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T18:58:26.0144936Z"
+      },
+      {
+        "NewName": "mainMenu",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-26T19:04:00.9715629Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "mainMenu",
+        "ElementType": "Screens",
+        "EventType": 1,
+        "TimestampUtc": "2023-12-26T19:04:07.4250378Z"
+      },
+      {
+        "NewName": "MainMenu",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-26T19:04:13.0262838Z"
+      },
+      {
+        "NewName": "MainMenu.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:04:24.2442127Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonContainer",
+        "OldName": "MainMenu.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T19:04:34.2002076Z"
+      },
+      {
+        "NewName": "MainMenu.SimpleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:05:16.0401677Z"
+      },
+      {
+        "NewName": "MainMenu.Screen1Button",
+        "OldName": "MainMenu.SimpleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T19:05:37.5919723Z"
+      },
+      {
+        "NewName": "MainMenu.SimpleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:05:47.5368789Z"
+      },
+      {
+        "NewName": "MainMenu.SimpleButtonInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:05:52.122264Z"
+      },
+      {
+        "NewName": "MainMenu.SecondScreenButton",
+        "OldName": "MainMenu.SimpleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T19:07:02.9551079Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Container ButtonContainer in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-26T19:07:42.7370529Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.SimpleButton Screen1Button in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-26T19:07:42.7796427Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.SimpleButton SecondScreenButton in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-26T19:07:42.8065047Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.SimpleButton SimpleButtonInstance1 in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-26T19:07:42.8287009Z"
+      },
+      {
+        "NewName": "MainMenu.SimpleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:15:23.48451Z"
+      },
+      {
+        "NewName": "MainMenu.TestScreen1Button",
+        "OldName": "MainMenu.SimpleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T19:15:33.1209564Z"
+      },
+      {
+        "NewName": "MainMenu.SimpleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:15:53.9130728Z"
+      },
+      {
+        "NewName": "MainMenu.SimpleButtonInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:15:57.2459756Z"
+      },
+      {
+        "NewName": "MainMenu.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-26T19:16:01.4083261Z"
+      },
+      {
+        "NewName": "Selection",
+        "OldName": "State",
+        "ElementType": "Components",
+        "EventType": 4,
+        "TimestampUtc": "2023-12-26T19:34:59.5800791Z"
+      },
+      {
+        "NewName": "MainMenu.Second",
+        "OldName": "MainMenu.SimpleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T19:42:54.5926007Z"
+      },
+      {
+        "NewName": "MainMenu.ButtonContainer",
+        "OldName": "MainMenu.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-26T19:47:03.8471514Z"
       }
     ]
   }

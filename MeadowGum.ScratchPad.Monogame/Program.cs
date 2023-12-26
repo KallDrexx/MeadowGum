@@ -14,9 +14,15 @@ var environment = new TestEnvironment(320, 240)
 };
 
 var upButton = new PushButton(environment.CreatePortForKey(Keys.Up));
+var downButton = new PushButton(environment.CreatePortForKey(Keys.Down));
+var rightButton = new PushButton(environment.CreatePortForKey(Keys.Right));
+var leftButton = new PushButton(environment.CreatePortForKey(Keys.Left));
 InputManager.Instance.RegisterButton(upButton, ButtonNames.Up);
+InputManager.Instance.RegisterButton(downButton, ButtonNames.Down);
+InputManager.Instance.RegisterButton(rightButton, ButtonNames.Right);
+InputManager.Instance.RegisterButton(leftButton, ButtonNames.Left);
 
-var renderer = new MicroGraphicsRenderer(environment.Display, Environment.CurrentDirectory);
+var renderer = new MicroGraphicsRenderer(environment.Display, Path.Combine(Environment.CurrentDirectory, "GumLayouts"));
 MeadowGumComponent.DefaultRenderer = renderer;
 
 await AppRunner.RunAsync();

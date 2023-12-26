@@ -9,7 +9,18 @@ public partial class Screen1Runtime : MeadowGumScreen
     public override async Task<MeadowGumScreen?> RunAsync(CancellationToken cancellationToken)
     {
         Render();
-
-        while (true) await Task.Delay(1000, cancellationToken);
+        
+        while (true)
+        {
+            var buttonEvent = await InputManager.Instance.WaitForNextButtonAsync(cancellationToken);
+            if (buttonEvent?.Name == ButtonNames.Left)
+            {
+                if (buttonEvent.State == InputManager.ButtonState.Clicked ||
+                    buttonEvent.State == InputManager.ButtonState.NoLongerHeld)
+                {
+                    return new MainMenuRuntime();
+                }
+            }
+        }
     }
 }
