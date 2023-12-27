@@ -37,8 +37,6 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.ColoredRectangleInstance.Blue = 49;
                             this.ColoredRectangleInstance.Green = 61;
                             this.ColoredRectangleInstance.Red = 228;
-                            this.ContainerInstance.Height = 0f;
-                            this.ContainerInstance.Width = 0f;
                             this.Left.TextureHeight = 32;
                             this.Left.TextureLeft = 64;
                             this.Left.TextureTop = 48;
@@ -52,8 +50,6 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.ColoredRectangleInstance.Blue = 106;
                             this.ColoredRectangleInstance.Green = 116;
                             this.ColoredRectangleInstance.Red = 81;
-                            this.ContainerInstance.Height = 100f;
-                            this.ContainerInstance.Width = 100f;
                             this.Left.TextureHeight = 32;
                             this.Left.TextureLeft = 0;
                             this.Left.TextureTop = 48;
@@ -67,7 +63,6 @@ namespace MeadowGum.ScratchPad.Common.Components
                 }
             }
         }
-        public ContainerRuntime ContainerInstance { get; protected set; }
         public SpriteRuntime Left { get; protected set; }
         public ColoredRectangleRuntime ColoredRectangleInstance { get; protected set; }
         public SpriteRuntime Right { get; protected set; }
@@ -85,6 +80,7 @@ namespace MeadowGum.ScratchPad.Common.Components
             {
                 this.SetContainedObject(new InvisibleRenderable());
 
+                this.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
                 this.Height = 0f;
                 this.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
                  
@@ -103,8 +99,6 @@ namespace MeadowGum.ScratchPad.Common.Components
         }
         protected virtual void InitializeInstances()
         {
-            ContainerInstance = new ContainerRuntime();
-            ContainerInstance.Name = "ContainerInstance";
             Left = new SpriteRuntime();
             Left.Name = "Left";
             ColoredRectangleInstance = new ColoredRectangleRuntime();
@@ -116,20 +110,15 @@ namespace MeadowGum.ScratchPad.Common.Components
         }
         protected virtual void AssignParents()
         {
-            this.Children.Add(ContainerInstance);
-            ContainerInstance.Children.Add(Left);
-            ContainerInstance.Children.Add(ColoredRectangleInstance);
-            ContainerInstance.Children.Add(Right);
+            this.Children.Add(Left);
+            this.Children.Add(ColoredRectangleInstance);
+            this.Children.Add(Right);
             ColoredRectangleInstance.Children.Add(TextInstance);
         }
         private void ApplyDefaultVariables()
         {
-            this.ContainerInstance.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
-            this.ContainerInstance.Height = 0f;
-            this.ContainerInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.ContainerInstance.Width = 0f;
-            this.ContainerInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-
+            this.Left.Height = 100f;
+            this.Left.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.Left.SourceFile = "retro-meadow-ui.bmp";
             this.Left.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.Left.TextureHeight = 32;
@@ -138,6 +127,8 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Left.TextureTop = 48;
             this.Left.TextureWidth = 9;
             this.Left.TextureWidthScale = 1f;
+            this.Left.Width = 100f;
+            this.Left.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
 
             this.ColoredRectangleInstance.Blue = 106;
             this.ColoredRectangleInstance.Green = 116;
@@ -147,6 +138,8 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.ColoredRectangleInstance.Width = 16f;
             this.ColoredRectangleInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
 
+            this.Right.Height = 100f;
+            this.Right.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.Right.SourceFile = "retro-meadow-ui.bmp";
             this.Right.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.Right.TextureHeight = 32;
@@ -155,6 +148,8 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Right.TextureTop = 48;
             this.Right.TextureWidth = 10;
             this.Right.TextureWidthScale = 1f;
+            this.Right.Width = 100f;
+            this.Right.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
 
             this.TextInstance.Blue = 194;
             this.TextInstance.Green = 229;

@@ -31,6 +31,10 @@ public class SpriteRenderable : IRenderableIpso, IAspectRatio, ITextureCoordinat
     public bool ClipsChildren { get; } = false;
     IVisible IVisible.Parent { get; }
 
+    public System.Drawing.Rectangle? SourceRectangle { get; set; }
+    public float? TextureWidth => null; // We don't have full texture info atm. Rely on source rectangle
+    public float? TextureHeight => null; 
+
     public void Render(ISystemManagers managers)
     {
         if (MeadowGumComponent.DefaultRenderer == null)
@@ -48,7 +52,7 @@ public class SpriteRenderable : IRenderableIpso, IAspectRatio, ITextureCoordinat
             SourceRectangle.Value.Width,
             SourceRectangle.Value.Height);
 
-        var renderLocation = new Point((int)X, (int)Y);
+        var renderLocation = new Point((int)this.GetAbsoluteLeft(), (int)this.GetAbsoluteTop());
 
         MeadowGumComponent.DefaultRenderer.RenderSprite(SourceFile, textureArea, renderLocation, TransparentColor);
     }
@@ -59,9 +63,6 @@ public class SpriteRenderable : IRenderableIpso, IAspectRatio, ITextureCoordinat
 
     public void SetParentDirect(IRenderableIpso newParent)
     {
+        Parent = newParent;
     }
-
-    public System.Drawing.Rectangle? SourceRectangle { get; set; }
-    public float? TextureWidth { get; }
-    public float? TextureHeight { get; }
 }

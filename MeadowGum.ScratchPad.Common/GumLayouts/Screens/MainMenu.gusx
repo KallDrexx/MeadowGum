@@ -12,7 +12,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ButtonContainer.Height</Name>
-      <Value xsi:type="xsd:float">50</Value>
+      <Value xsi:type="xsd:float">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -30,7 +30,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ButtonContainer.Width</Name>
-      <Value xsi:type="xsd:float">50</Value>
+      <Value xsi:type="xsd:float">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -158,6 +158,12 @@
       <Type>PositionUnitType</Type>
       <Name>TestScreen1Button.X Units</Name>
       <Value xsi:type="xsd:int">6</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>TestScreen1Button.Y Origin</Name>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

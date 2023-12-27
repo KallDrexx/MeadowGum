@@ -5,6 +5,12 @@
   <State>
     <Name>Default</Name>
     <Variable>
+      <Type>ChildrenLayout</Type>
+      <Name>Children Layout</Name>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>int</Type>
       <Name>ColoredRectangleInstance.Blue</Name>
       <Value xsi:type="xsd:int">106</Value>
@@ -31,7 +37,6 @@
     <Variable>
       <Type>string</Type>
       <Name>ColoredRectangleInstance.Parent</Name>
-      <Value xsi:type="xsd:string">ContainerInstance</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -49,36 +54,6 @@
     <Variable>
       <Type>DimensionUnitType</Type>
       <Name>ColoredRectangleInstance.Width Units</Name>
-      <Value xsi:type="xsd:int">4</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>ChildrenLayout</Type>
-      <Name>ContainerInstance.Children Layout</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>float</Type>
-      <Name>ContainerInstance.Height</Name>
-      <Value xsi:type="xsd:float">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>DimensionUnitType</Type>
-      <Name>ContainerInstance.Height Units</Name>
-      <Value xsi:type="xsd:int">4</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>float</Type>
-      <Name>ContainerInstance.Width</Name>
-      <Value xsi:type="xsd:float">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>DimensionUnitType</Type>
-      <Name>ContainerInstance.Width Units</Name>
       <Value xsi:type="xsd:int">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
@@ -108,9 +83,20 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>float</Type>
+      <Name>Left.Height</Name>
+      <Value xsi:type="xsd:float">100</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>Left.Height Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>string</Type>
       <Name>Left.Parent</Name>
-      <Value xsi:type="xsd:string">ContainerInstance</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -163,9 +149,32 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>float</Type>
+      <Name>Left.Width</Name>
+      <Value xsi:type="xsd:float">100</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>Left.Width Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>Right.Height</Name>
+      <Value xsi:type="xsd:float">100</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>Right.Height Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>string</Type>
       <Name>Right.Parent</Name>
-      <Value xsi:type="xsd:string">ContainerInstance</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -215,6 +224,18 @@
       <Type>float</Type>
       <Name>Right.Texture Width Scale</Name>
       <Value xsi:type="xsd:float">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>Right.Width</Name>
+      <Value xsi:type="xsd:float">100</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>Right.Width Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -358,18 +379,6 @@
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Height</Name>
-        <Value xsi:type="xsd:float">0</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Width</Name>
-        <Value xsi:type="xsd:float">0</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
         <Type>int</Type>
         <Name>Left.Texture Height</Name>
         <Value xsi:type="xsd:int">32</Value>
@@ -439,18 +448,6 @@
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Height</Name>
-        <Value xsi:type="xsd:float">100</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Width</Name>
-        <Value xsi:type="xsd:float">100</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
         <Type>int</Type>
         <Name>Left.Texture Height</Name>
         <Value xsi:type="xsd:int">32</Value>
@@ -500,11 +497,6 @@
       </Variable>
     </State>
   </Category>
-  <Instance>
-    <Name>ContainerInstance</Name>
-    <BaseType>Container</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
   <Instance>
     <Name>Left</Name>
     <BaseType>Sprite</BaseType>

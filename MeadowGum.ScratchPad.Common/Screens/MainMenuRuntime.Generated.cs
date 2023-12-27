@@ -60,13 +60,14 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TestScreen1Button.ButtonText = "Test Screen #1";
             this.TestScreen1Button.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.TestScreen1Button.XUnits = GeneralUnitType.PixelsFromMiddle;
+            this.TestScreen1Button.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.TestScreen1Button.YUnits = GeneralUnitType.PixelsFromSmall;
 
             this.ButtonContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
-            this.ButtonContainer.Height = 50f;
+            this.ButtonContainer.Height = 0f;
             this.ButtonContainer.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.ButtonContainer.StackSpacing = 25f;
-            this.ButtonContainer.Width = 50f;
+            this.ButtonContainer.Width = 0f;
             this.ButtonContainer.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.ButtonContainer.X = 0f;
             this.ButtonContainer.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
