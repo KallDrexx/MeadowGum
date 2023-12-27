@@ -4,6 +4,12 @@
   <State>
     <Name>Default</Name>
     <Variable>
+      <Type>float</Type>
+      <Name>BackgroundInstance.X</Name>
+      <Value xsi:type="xsd:float">0</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>ChildrenLayout</Type>
       <Name>ButtonContainer.Children Layout</Name>
       <Value xsi:type="xsd:int">1</Value>
@@ -42,7 +48,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ButtonContainer.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">25</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -176,6 +182,11 @@
   <Instance>
     <Name>TestScreen1Button</Name>
     <BaseType>SpriteButton</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>BackgroundInstance</Name>
+    <BaseType>Background</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>

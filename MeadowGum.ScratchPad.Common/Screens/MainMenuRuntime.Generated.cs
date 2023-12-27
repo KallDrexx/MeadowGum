@@ -16,6 +16,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
     public partial class MainMenuRuntime
     {
         public SpriteButtonRuntime TestScreen1Button { get; protected set; }
+        public BackgroundRuntime BackgroundInstance { get; protected set; }
         public ContainerRuntime ButtonContainer { get; protected set; }
         public SpriteButtonRuntime SpriteButtonInstance1 { get; protected set; }
         public SpriteButtonRuntime SpriteButtonInstance { get; protected set; }
@@ -41,6 +42,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
         {
             TestScreen1Button = new SpriteButtonRuntime();
             TestScreen1Button.Name = "TestScreen1Button";
+            BackgroundInstance = new BackgroundRuntime();
+            BackgroundInstance.Name = "BackgroundInstance";
             ButtonContainer = new ContainerRuntime();
             ButtonContainer.Name = "ButtonContainer";
             SpriteButtonInstance1 = new SpriteButtonRuntime();
@@ -51,6 +54,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         protected virtual void AssignParents()
         {
             ButtonContainer.Children.Add(TestScreen1Button);
+            this.Children.Add(BackgroundInstance);
             this.Children.Add(ButtonContainer);
             ButtonContainer.Children.Add(SpriteButtonInstance1);
             ButtonContainer.Children.Add(SpriteButtonInstance);
@@ -63,13 +67,15 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TestScreen1Button.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.TestScreen1Button.YUnits = GeneralUnitType.PixelsFromSmall;
 
+            this.BackgroundInstance.X = 0f;
+
             this.ButtonContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.ButtonContainer.Height = 0f;
             this.ButtonContainer.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.ButtonContainer.StackSpacing = 25f;
             this.ButtonContainer.Width = 0f;
             this.ButtonContainer.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.ButtonContainer.X = 0f;
+            this.ButtonContainer.X = 25f;
             this.ButtonContainer.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.ButtonContainer.XUnits = GeneralUnitType.PixelsFromMiddle;
             this.ButtonContainer.Y = 0f;

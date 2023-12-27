@@ -70,6 +70,13 @@
         "ElementType": "Components",
         "EventType": 6,
         "TimestampUtc": "2023-12-27T20:40:36.6714436Z"
+      },
+      {
+        "NewName": "MainMenu.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-27T20:49:09.9282157Z"
       }
     ]
   }
