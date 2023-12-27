@@ -15,10 +15,10 @@ namespace MeadowGum.ScratchPad.Common.Screens
 {
     public partial class MainMenuRuntime
     {
-        public SimpleButtonRuntime TestScreen1Button { get; protected set; }
-        public SimpleButtonRuntime Second { get; protected set; }
-        public SimpleButtonRuntime SimpleButtonInstance1 { get; protected set; }
+        public SpriteButtonRuntime TestScreen1Button { get; protected set; }
         public ContainerRuntime ButtonContainer { get; protected set; }
+        public SpriteButtonRuntime SpriteButtonInstance1 { get; protected set; }
+        public SpriteButtonRuntime SpriteButtonInstance { get; protected set; }
 
         public MainMenuRuntime(bool fullInstantiation = true)
         {
@@ -39,40 +39,28 @@ namespace MeadowGum.ScratchPad.Common.Screens
         }
         protected virtual void InitializeInstances()
         {
-            TestScreen1Button = new SimpleButtonRuntime();
+            TestScreen1Button = new SpriteButtonRuntime();
             TestScreen1Button.Name = "TestScreen1Button";
-            Second = new SimpleButtonRuntime();
-            Second.Name = "Second";
-            SimpleButtonInstance1 = new SimpleButtonRuntime();
-            SimpleButtonInstance1.Name = "SimpleButtonInstance1";
             ButtonContainer = new ContainerRuntime();
             ButtonContainer.Name = "ButtonContainer";
+            SpriteButtonInstance1 = new SpriteButtonRuntime();
+            SpriteButtonInstance1.Name = "SpriteButtonInstance1";
+            SpriteButtonInstance = new SpriteButtonRuntime();
+            SpriteButtonInstance.Name = "SpriteButtonInstance";
         }
         protected virtual void AssignParents()
         {
             ButtonContainer.Children.Add(TestScreen1Button);
-            ButtonContainer.Children.Add(Second);
-            ButtonContainer.Children.Add(SimpleButtonInstance1);
             this.Children.Add(ButtonContainer);
+            ButtonContainer.Children.Add(SpriteButtonInstance1);
+            ButtonContainer.Children.Add(SpriteButtonInstance);
         }
         private void ApplyDefaultVariables()
         {
-            this.TestScreen1Button.BorderMarginHeight = -5f;
-            this.TestScreen1Button.BorderMarginWidth = -5f;
             this.TestScreen1Button.ButtonText = "Test Screen #1";
-            this.TestScreen1Button.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.TestScreen1Button.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.TestScreen1Button.XUnits = GeneralUnitType.PixelsFromMiddle;
-
-            this.Second.BorderMarginHeight = -5f;
-            this.Second.BorderMarginWidth = -5f;
-            this.Second.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
-            this.Second.XUnits = GeneralUnitType.PixelsFromMiddle;
-
-            this.SimpleButtonInstance1.BorderMarginHeight = -5f;
-            this.SimpleButtonInstance1.BorderMarginWidth = -5f;
-            this.SimpleButtonInstance1.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
-            this.SimpleButtonInstance1.XUnits = GeneralUnitType.PixelsFromMiddle;
+            this.TestScreen1Button.YUnits = GeneralUnitType.PixelsFromSmall;
 
             this.ButtonContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.ButtonContainer.Height = 50f;
@@ -86,6 +74,14 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.ButtonContainer.Y = 0f;
             this.ButtonContainer.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.ButtonContainer.YUnits = GeneralUnitType.PixelsFromMiddle;
+
+            this.SpriteButtonInstance1.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
+            this.SpriteButtonInstance1.XUnits = GeneralUnitType.PixelsFromMiddle;
+            this.SpriteButtonInstance1.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
+
+            this.SpriteButtonInstance.ButtonText = "SomeOtherButton";
+            this.SpriteButtonInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
+            this.SpriteButtonInstance.XUnits = GeneralUnitType.PixelsFromMiddle;
 
         }
         partial void CustomInitialize();

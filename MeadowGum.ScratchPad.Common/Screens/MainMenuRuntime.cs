@@ -9,12 +9,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
 {
     partial class MainMenuRuntime : MeadowGumScreen
     {
-        private List<SimpleButtonRuntime> _buttons = null!;
+        private List<SpriteButtonRuntime> _buttons = null!;
         private int _selectedIndex = 0;
         
         partial void CustomInitialize()
         {
-            _buttons = ButtonContainer.Children.OfType<SimpleButtonRuntime>().ToList();
+            _buttons = ButtonContainer.Children.OfType<SpriteButtonRuntime>().ToList();
 
             if (_buttons.Any())
             {
@@ -35,7 +35,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
                     {
                         _selectedIndex--;
                         _buttons[_selectedIndex].Select();
-                        _buttons[_selectedIndex + 1].Unselect();
+                        _buttons[_selectedIndex + 1].Deselect();
                     }
                     
                     Render();
@@ -48,7 +48,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
                     {
                         _selectedIndex++;
                         _buttons[_selectedIndex].Select();
-                        _buttons[_selectedIndex - 1].Unselect();
+                        _buttons[_selectedIndex - 1].Deselect();
                     }
                     
                     Render();
