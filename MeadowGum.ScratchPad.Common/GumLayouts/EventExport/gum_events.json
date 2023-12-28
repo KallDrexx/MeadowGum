@@ -77,6 +77,34 @@
         "ElementType": "Screens",
         "EventType": 5,
         "TimestampUtc": "2023-12-27T20:49:09.9282157Z"
+      },
+      {
+        "NewName": "MainMenu.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T18:56:39.062031Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Container ContainerInstance in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T18:56:57.225011Z"
+      },
+      {
+        "NewName": "MainMenu.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T18:57:00.9720107Z"
+      },
+      {
+        "NewName": "MainMenu.Label",
+        "OldName": "MainMenu.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T18:57:09.7063068Z"
       }
     ]
   }
