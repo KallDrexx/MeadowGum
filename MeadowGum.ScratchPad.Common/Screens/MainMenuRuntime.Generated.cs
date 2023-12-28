@@ -17,10 +17,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
     {
         public SpriteButtonRuntime TestScreen1Button { get; protected set; }
         public BackgroundRuntime BackgroundInstance { get; protected set; }
-        public TextRuntime Label { get; protected set; }
         public ContainerRuntime ButtonContainer { get; protected set; }
-        public SpriteButtonRuntime SpriteButtonInstance1 { get; protected set; }
+        public SpriteButtonRuntime ControlsDemoScreenButton { get; protected set; }
         public SpriteButtonRuntime SpriteButtonInstance { get; protected set; }
+        public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
+
+        public string ButtonText
+        {
+            get => ControlsDemoScreenButton.ButtonText;
+            set => ControlsDemoScreenButton.ButtonText = value;
+        }
 
         public MainMenuRuntime(bool fullInstantiation = true)
         {
@@ -45,23 +51,23 @@ namespace MeadowGum.ScratchPad.Common.Screens
             TestScreen1Button.Name = "TestScreen1Button";
             BackgroundInstance = new BackgroundRuntime();
             BackgroundInstance.Name = "BackgroundInstance";
-            Label = new TextRuntime();
-            Label.Name = "Label";
             ButtonContainer = new ContainerRuntime();
             ButtonContainer.Name = "ButtonContainer";
-            SpriteButtonInstance1 = new SpriteButtonRuntime();
-            SpriteButtonInstance1.Name = "SpriteButtonInstance1";
+            ControlsDemoScreenButton = new SpriteButtonRuntime();
+            ControlsDemoScreenButton.Name = "ControlsDemoScreenButton";
             SpriteButtonInstance = new SpriteButtonRuntime();
             SpriteButtonInstance.Name = "SpriteButtonInstance";
+            ScreenLabelInstance = new ScreenLabelRuntime();
+            ScreenLabelInstance.Name = "ScreenLabelInstance";
         }
         protected virtual void AssignParents()
         {
             ButtonContainer.Children.Add(TestScreen1Button);
             this.Children.Add(BackgroundInstance);
-            this.Children.Add(Label);
             this.Children.Add(ButtonContainer);
-            ButtonContainer.Children.Add(SpriteButtonInstance1);
+            ButtonContainer.Children.Add(ControlsDemoScreenButton);
             ButtonContainer.Children.Add(SpriteButtonInstance);
+            this.Children.Add(ScreenLabelInstance);
         }
         private void ApplyDefaultVariables()
         {
@@ -72,19 +78,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TestScreen1Button.YUnits = GeneralUnitType.PixelsFromSmall;
 
             this.BackgroundInstance.X = 0f;
-
-            this.Label.Blue = 106;
-            this.Label.Green = 116;
-            this.Label.Height = 0f;
-            this.Label.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.Label.Red = 81;
-            this.Label.Text = "MAIN MENU";
-            this.Label.Width = 0f;
-            this.Label.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.Label.X = -10f;
-            this.Label.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.Label.XUnits = GeneralUnitType.PixelsFromLarge;
-            this.Label.Y = 15f;
 
             this.ButtonContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.ButtonContainer.Height = 0f;
@@ -99,13 +92,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.ButtonContainer.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
             this.ButtonContainer.YUnits = GeneralUnitType.PixelsFromLarge;
 
-            this.SpriteButtonInstance1.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.SpriteButtonInstance1.XUnits = GeneralUnitType.PixelsFromLarge;
-            this.SpriteButtonInstance1.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
+            this.ControlsDemoScreenButton.ButtonText = "Controls Demo";
+            this.ControlsDemoScreenButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.ControlsDemoScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
+            this.ControlsDemoScreenButton.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
 
             this.SpriteButtonInstance.ButtonText = "SomeOtherButton";
             this.SpriteButtonInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.SpriteButtonInstance.XUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.ScreenLabelInstance.Text = "Main Menu";
 
         }
         partial void CustomInitialize();

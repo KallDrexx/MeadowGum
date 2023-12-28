@@ -20,7 +20,7 @@ public class TextRuntime : MeadowGumComponent
         set => _renderable.Text = value;
     }
 
-    public MeadowFont Font
+    public MeadowFont MeadowFont
     {
         get => _renderable.Font;
         set => _renderable.Font = value;
@@ -61,4 +61,10 @@ public class TextRuntime : MeadowGumComponent
         get => _renderable.Wrap;
         set => _renderable.Wrap = value;
     }
+   
+    // Unsupported properties
+    public int Alpha { get; set; }
+    public float FontScale { get; set; }
+    public float LineHeightMultiplier { get; set; }
+    public TextOverflowHorizontalMode TextOverflowHorizontalMode { get; set; }
 }

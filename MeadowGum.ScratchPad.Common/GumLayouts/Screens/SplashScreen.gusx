@@ -43,7 +43,7 @@
     <Variable>
       <Type>float</Type>
       <Name>Description.Width</Name>
-      <Value xsi:type="xsd:float">70</Value>
+      <Value xsi:type="xsd:float">65</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

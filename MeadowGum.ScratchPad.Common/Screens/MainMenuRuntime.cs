@@ -66,6 +66,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             NextScreen = () => new Screen1Runtime(),
                         };
                     }
+
+                    if (_buttons[_selectedIndex] == ControlsDemoScreenButton)
+                    {
+                        return new SplashScreenRuntime
+                        {
+                            TitleText = "Controls Demo Screen",
+                            DescriptionText = "Demonstrates the various controls created in MeadowGum",
+                            NextScreen = () => new ControlsDemoScreenRuntime(),
+                        };
+                    }
                 }
             }
 

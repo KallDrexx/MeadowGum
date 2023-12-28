@@ -89,7 +89,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Description.Red = 81;
             this.Description.Text = "Description";
             this.Description.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
-            this.Description.Width = 70f;
+            this.Description.Width = 65f;
             this.Description.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
             this.Description.X = -10f;
             this.Description.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;

@@ -105,6 +105,517 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2023-12-28T18:57:09.7063068Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-28T19:03:22.5139559Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:03:34.3916931Z"
+      },
+      {
+        "NewName": "ScreenLabel",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-28T19:04:44.7008334Z"
+      },
+      {
+        "NewName": "MainMenu.Label1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:05:03.4446446Z"
+      },
+      {
+        "NewName": "MainMenu.Label1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:05:27.9669674Z"
+      },
+      {
+        "NewName": "MainMenu.Label1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:05:54.52299Z"
+      },
+      {
+        "NewName": "MainMenu.Label1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:09:13.5306087Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.Text Label in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:17:37.8501758Z"
+      },
+      {
+        "NewName": "MainMenu.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:19:04.509289Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:19:40.6653534Z"
+      },
+      {
+        "NewName": "Panel",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-28T19:20:24.0343476Z"
+      },
+      {
+        "NewName": "Panel (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:20:45.0929864Z"
+      },
+      {
+        "NewName": "Panel (Container).Background",
+        "OldName": "Panel (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T19:20:52.9530376Z"
+      },
+      {
+        "NewName": "Panel (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:21:21.949097Z"
+      },
+      {
+        "NewName": "Panel (Container).Left",
+        "OldName": "Panel (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T19:21:26.6604369Z"
+      },
+      {
+        "NewName": "Panel (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:22:08.9115968Z"
+      },
+      {
+        "NewName": "Panel (Container).Right",
+        "OldName": "Panel (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T19:22:12.3239136Z"
+      },
+      {
+        "NewName": "Panel (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:22:37.3595729Z"
+      },
+      {
+        "NewName": "Panel (Container).Top",
+        "OldName": "Panel (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T19:22:43.0584367Z"
+      },
+      {
+        "NewName": "Panel (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:23:00.01118Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:23:22.8402574Z"
+      },
+      {
+        "NewName": "VerticalProgressBar",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-28T19:25:36.3888952Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:25:56.7019039Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).Background",
+        "OldName": "VerticalProgressBar (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T19:26:07.1699251Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:28:13.0373868Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).Indicators",
+        "OldName": "VerticalProgressBar (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T19:28:30.0642518Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:29:14.3440775Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).SpriteInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:31:00.6699609Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).SpriteInstance2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:31:01.3818545Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).Sprite SpriteInstance in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:31:53.5285582Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).Sprite SpriteInstance1 in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:31:55.1564507Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).Sprite SpriteInstance2 in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:31:56.8142644Z"
+      },
+      {
+        "NewName": "ProgressIndicator",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-28T19:32:15.1304802Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:35:45.7208326Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ControlsDemoScreen.Sprite SpriteInstance in ControlsDemoScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:40:07.0799795Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:49:26.861804Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).ProgressIndicator ProgressIndicatorInstance in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:50:22.8313644Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:51:04.0965601Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:51:45.7062536Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:51:46.3957759Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance3",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T19:51:46.7061805Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).ProgressIndicator ProgressIndicatorInstance1 in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T19:51:54.6763193Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).ProgressIndicator ProgressIndicatorInstance in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-28T20:01:18.7826576Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:08:28.750606Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ProgressBars",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:08:33.4585241Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ProgressBars",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:08:33.4596798Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:08:57.3352547Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Icon",
+        "OldName": "ControlsDemoScreen.SpriteInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:09:07.0382004Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Icon",
+        "OldName": "ControlsDemoScreen.SpriteInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:09:07.0392041Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.VerticalProgressBarInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:10:32.407187Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:11:47.1598073Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryProgress",
+        "OldName": "ControlsDemoScreen.VerticalProgressBarInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:13:32.452312Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryProgress",
+        "OldName": "ControlsDemoScreen.VerticalProgressBarInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:13:32.4533085Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryProgressBar",
+        "OldName": "ControlsDemoScreen.BatteryProgress",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:13:37.8369354Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryProgressBar",
+        "OldName": "ControlsDemoScreen.BatteryProgress",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:13:37.8369354Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Icon1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:13:40.248882Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryProgressBar1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:13:40.2573946Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-28T20:13:40.2653952Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryIcon",
+        "OldName": "ControlsDemoScreen.Icon",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:13:46.2354035Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryIcon",
+        "OldName": "ControlsDemoScreen.Icon",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:13:46.2359979Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryContainer",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:14:11.9954093Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BatteryContainer",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:14:11.9963969Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.GearContainer",
+        "OldName": "ControlsDemoScreen.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:14:59.2030123Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.GearContainer",
+        "OldName": "ControlsDemoScreen.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:14:59.2037749Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.GearIcon",
+        "OldName": "ControlsDemoScreen.Icon1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:15:04.9248723Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.GearIcon",
+        "OldName": "ControlsDemoScreen.Icon1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:15:04.9258714Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeContainer",
+        "OldName": "ControlsDemoScreen.GearContainer",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:15:46.7306363Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeContainer",
+        "OldName": "ControlsDemoScreen.GearContainer",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:15:46.7306363Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeIcon",
+        "OldName": "ControlsDemoScreen.GearIcon",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:15:49.4029644Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeIcon",
+        "OldName": "ControlsDemoScreen.GearIcon",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:15:49.4039669Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeProgressBar",
+        "OldName": "ControlsDemoScreen.BatteryProgressBar1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:16:04.7828351Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeProgressBar",
+        "OldName": "ControlsDemoScreen.BatteryProgressBar1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:16:04.7828351Z"
+      },
+      {
+        "NewName": "MainMenu.ControlsDemoScreenButton",
+        "OldName": "MainMenu.SpriteButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-28T20:20:19.6087762Z"
       }
     ]
   }
