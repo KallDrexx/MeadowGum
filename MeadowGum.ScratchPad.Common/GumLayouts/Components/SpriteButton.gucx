@@ -133,13 +133,13 @@
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Top</Name>
-      <Value xsi:type="xsd:int">48</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Width</Name>
-      <Value xsi:type="xsd:int">9</Value>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -205,19 +205,19 @@
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Left</Name>
-      <Value xsi:type="xsd:int">54</Value>
+      <Value xsi:type="xsd:int">8</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Top</Name>
-      <Value xsi:type="xsd:int">48</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Width</Name>
-      <Value xsi:type="xsd:int">10</Value>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -387,19 +387,19 @@
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Left</Name>
-        <Value xsi:type="xsd:int">64</Value>
+        <Value xsi:type="xsd:int">16</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Top</Name>
-        <Value xsi:type="xsd:int">48</Value>
+        <Value xsi:type="xsd:int">0</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Width</Name>
-        <Value xsi:type="xsd:int">9</Value>
+        <Value xsi:type="xsd:int">7</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
@@ -411,19 +411,19 @@
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Left</Name>
-        <Value xsi:type="xsd:int">118</Value>
+        <Value xsi:type="xsd:int">24</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Top</Name>
-        <Value xsi:type="xsd:int">48</Value>
+        <Value xsi:type="xsd:int">0</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Width</Name>
-        <Value xsi:type="xsd:int">10</Value>
+        <Value xsi:type="xsd:int">7</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -462,13 +462,13 @@
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Top</Name>
-        <Value xsi:type="xsd:int">48</Value>
+        <Value xsi:type="xsd:int">0</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Width</Name>
-        <Value xsi:type="xsd:int">9</Value>
+        <Value xsi:type="xsd:int">7</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
@@ -480,19 +480,19 @@
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Left</Name>
-        <Value xsi:type="xsd:int">54</Value>
+        <Value xsi:type="xsd:int">8</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Top</Name>
-        <Value xsi:type="xsd:int">48</Value>
+        <Value xsi:type="xsd:int">0</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Width</Name>
-        <Value xsi:type="xsd:int">10</Value>
+        <Value xsi:type="xsd:int">7</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>

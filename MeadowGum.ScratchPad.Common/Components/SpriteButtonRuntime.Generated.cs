@@ -38,13 +38,13 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.ColoredRectangleInstance.Green = 61;
                             this.ColoredRectangleInstance.Red = 228;
                             this.Left.TextureHeight = 32;
-                            this.Left.TextureLeft = 64;
-                            this.Left.TextureTop = 48;
-                            this.Left.TextureWidth = 9;
+                            this.Left.TextureLeft = 16;
+                            this.Left.TextureTop = 0;
+                            this.Left.TextureWidth = 7;
                             this.Right.TextureHeight = 32;
-                            this.Right.TextureLeft = 118;
-                            this.Right.TextureTop = 48;
-                            this.Right.TextureWidth = 10;
+                            this.Right.TextureLeft = 24;
+                            this.Right.TextureTop = 0;
+                            this.Right.TextureWidth = 7;
                             break;
                         case Selection.Deselected:
                             this.ColoredRectangleInstance.Blue = 106;
@@ -52,12 +52,12 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.ColoredRectangleInstance.Red = 81;
                             this.Left.TextureHeight = 32;
                             this.Left.TextureLeft = 0;
-                            this.Left.TextureTop = 48;
-                            this.Left.TextureWidth = 9;
+                            this.Left.TextureTop = 0;
+                            this.Left.TextureWidth = 7;
                             this.Right.TextureHeight = 32;
-                            this.Right.TextureLeft = 54;
-                            this.Right.TextureTop = 48;
-                            this.Right.TextureWidth = 10;
+                            this.Right.TextureLeft = 8;
+                            this.Right.TextureTop = 0;
+                            this.Right.TextureWidth = 7;
                             break;
                     }
                 }
@@ -124,8 +124,8 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Left.TextureHeight = 32;
             this.Left.TextureHeightScale = 1f;
             this.Left.TextureLeft = 0;
-            this.Left.TextureTop = 48;
-            this.Left.TextureWidth = 9;
+            this.Left.TextureTop = 0;
+            this.Left.TextureWidth = 7;
             this.Left.TextureWidthScale = 1f;
             this.Left.Width = 100f;
             this.Left.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
@@ -144,9 +144,9 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Right.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.Right.TextureHeight = 32;
             this.Right.TextureHeightScale = 1f;
-            this.Right.TextureLeft = 54;
-            this.Right.TextureTop = 48;
-            this.Right.TextureWidth = 10;
+            this.Right.TextureLeft = 8;
+            this.Right.TextureTop = 0;
+            this.Right.TextureWidth = 7;
             this.Right.TextureWidthScale = 1f;
             this.Right.Width = 100f;
             this.Right.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
