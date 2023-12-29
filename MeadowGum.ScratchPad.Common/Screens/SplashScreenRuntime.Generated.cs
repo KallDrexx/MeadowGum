@@ -104,9 +104,9 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Instruction.Red = 86;
             this.Instruction.Text = "Press 'up' to continue...";
             this.Instruction.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
-            this.Instruction.Width = 70f;
+            this.Instruction.Width = 65f;
             this.Instruction.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
-            this.Instruction.X = 0f;
+            this.Instruction.X = -10f;
             this.Instruction.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.Instruction.XUnits = GeneralUnitType.PixelsFromLarge;
             this.Instruction.Y = -10f;

@@ -127,7 +127,7 @@
     <Variable>
       <Type>float</Type>
       <Name>Instruction.Width</Name>
-      <Value xsi:type="xsd:float">70</Value>
+      <Value xsi:type="xsd:float">65</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -139,7 +139,7 @@
     <Variable>
       <Type>float</Type>
       <Name>Instruction.X</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">-10</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

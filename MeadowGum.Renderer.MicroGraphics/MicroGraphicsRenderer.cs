@@ -228,13 +228,14 @@ public class MicroGraphicsRenderer : IComponentRenderer
                 case '\n':
                     lines.Add(text.Substring(currentLineStartIndex, x - currentLineStartIndex));
                     currentLineStartIndex = x + 1;
+                    lastSpaceIndex = x + 1;
                     continue;
             }
             
             var lineWidth = (x - currentLineStartIndex) * widthPerCharacter;
             if (lineWidth > areaWidth)
             {
-                if (lastSpaceIndex == 0)
+                if (lastSpaceIndex == 0 || lastSpaceIndex <= currentLineStartIndex)
                 {
                     // no spaces in the line, so we need to split the word
                     lines.Add(text.Substring(currentLineStartIndex, x - currentLineStartIndex));
