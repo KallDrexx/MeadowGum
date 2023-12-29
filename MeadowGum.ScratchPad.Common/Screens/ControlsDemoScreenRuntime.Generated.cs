@@ -54,7 +54,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteButtonRuntime HomeButton { get; protected set; }
         public SpriteButtonRuntime TempButton { get; protected set; }
         public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
-        public TextRuntime TextInstance { get; protected set; }
 
         public ControlsDemoScreenRuntime(bool fullInstantiation = true)
         {
@@ -107,8 +106,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             TempButton.Name = "TempButton";
             ToggleButtonInstance = new ToggleButtonRuntime();
             ToggleButtonInstance.Name = "ToggleButtonInstance";
-            TextInstance = new TextRuntime();
-            TextInstance.Name = "TextInstance";
         }
         protected virtual void AssignParents()
         {
@@ -128,7 +125,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             Buttons.Children.Add(HomeButton);
             Buttons.Children.Add(TempButton);
             OtherControls.Children.Add(ToggleButtonInstance);
-            this.Children.Add(TextInstance);
         }
         private void ApplyDefaultVariables()
         {
@@ -142,20 +138,24 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.PanelInstance.XUnits = GeneralUnitType.PixelsFromMiddle;
             this.PanelInstance.Y = 50f;
 
+            this.BatteryIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.BatteryIcon.SourceFile = "retro-meadow-ui.bmp";
             this.BatteryIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.BatteryIcon.TextureHeight = 13;
             this.BatteryIcon.TextureLeft = 76;
             this.BatteryIcon.TextureTop = 0;
             this.BatteryIcon.TextureWidth = 14;
+            this.BatteryIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.BatteryIcon.X = 1f;
 
+            this.HomeIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.HomeIcon.SourceFile = "retro-meadow-ui.bmp";
             this.HomeIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.HomeIcon.TextureHeight = 13;
             this.HomeIcon.TextureLeft = 44;
             this.HomeIcon.TextureTop = 0;
             this.HomeIcon.TextureWidth = 14;
+            this.HomeIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.HomeIcon.X = 1f;
 
 
@@ -179,6 +179,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.BatteryContainer.YUnits = GeneralUnitType.PixelsFromLarge;
 
             this.OtherControls.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
+            this.OtherControls.Visible = true;
             this.OtherControls.Width = 100f;
             this.OtherControls.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
 
@@ -186,6 +187,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Buttons.Height = 0f;
             this.Buttons.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.Buttons.StackSpacing = 5f;
+            this.Buttons.Visible = true;
             this.Buttons.Width = 0f;
             this.Buttons.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.Buttons.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Left;
@@ -218,7 +220,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TempButton.ButtonText = "Main Menu";
             this.TempButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.TempButton.XUnits = GeneralUnitType.PixelsFromLarge;
-
 
 
         }

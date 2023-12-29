@@ -257,12 +257,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>float</Type>
-      <Name>Sun.Height</Name>
-      <Value xsi:type="xsd:float">14</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>Sun.SourceFile</Name>
@@ -272,13 +266,13 @@
     <Variable>
       <Type>TextureAddress</Type>
       <Name>Sun.Texture Address</Name>
-      <Value xsi:type="xsd:int">2</Value>
+      <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Sun.Texture Height</Name>
-      <Value xsi:type="xsd:int">128</Value>
+      <Value xsi:type="xsd:int">14</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -290,31 +284,25 @@
     <Variable>
       <Type>int</Type>
       <Name>Sun.Texture Left</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Sun.Texture Top</Name>
-      <Value xsi:type="xsd:int">48</Value>
+      <Value xsi:type="xsd:int">49</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Sun.Texture Width</Name>
-      <Value xsi:type="xsd:int">128</Value>
+      <Value xsi:type="xsd:int">14</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>float</Type>
       <Name>Sun.Texture Width Scale</Name>
       <Value xsi:type="xsd:float">1</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>float</Type>
-      <Name>Sun.Width</Name>
-      <Value xsi:type="xsd:float">14</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

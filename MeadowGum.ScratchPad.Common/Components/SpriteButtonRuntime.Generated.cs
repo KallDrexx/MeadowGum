@@ -127,7 +127,6 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Left.TextureTop = 0;
             this.Left.TextureWidth = 7;
             this.Left.TextureWidthScale = 1f;
-            this.Left.Width = 100f;
             this.Left.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
 
             this.ColoredRectangleInstance.Blue = 106;

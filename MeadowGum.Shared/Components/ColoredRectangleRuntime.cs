@@ -1,32 +1,38 @@
-﻿namespace MeadowGum.Shared.Components;
+﻿using System;
+using RenderingLibrary;
+using RenderingLibrary.Graphics;
+
+namespace MeadowGum.Shared.Components;
 
 public class ColoredRectangleRuntime : MeadowGumComponent
 {
-    private readonly ColoredRectangleRenderable _renderable = new();
-
     public ColoredRectangleRuntime()
     {
-        _renderable = new ColoredRectangleRenderable();
-        SetContainedObject(_renderable);
+        SetContainedObject(new InvisibleRenderable{Visible = true});
         Width = 50;
         Height = 50;
     }
 
-    public int Red
-    {
-        get => _renderable.Red;
-        set => _renderable.Red = (byte)value;
-    }
+    public int Red { get; set; } = 255;
+    public int Green { get; set; } = 255;
+    public int Blue { get; set; } = 255;
 
-    public int Green
+    public override void Render(ISystemManagers managers)
     {
-        get => _renderable.Green;
-        set => _renderable.Green = (byte)value;
-    }
+        if (DefaultRenderer == null)
+        {
+            const string message = "No default renderer set yet";
+            throw new InvalidOperationException(message);
+        }
 
-    public int Blue
-    {
-        get => _renderable.Blue;
-        set => _renderable.Blue = (byte)value;
+        var area = new Rectangle(
+            (int)this.GetAbsoluteLeft(),
+            (int)this.GetAbsoluteTop(),
+            (int)GetAbsoluteWidth(),
+            (int)GetAbsoluteHeight());
+
+        var color = new RgbColor((byte) Red, (byte) Green, (byte) Blue);
+
+        DefaultRenderer.RenderRectangle(area, color);
     }
 }

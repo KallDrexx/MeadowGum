@@ -58,6 +58,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>BatteryIcon.Height Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>string</Type>
       <Name>BatteryIcon.Parent</Name>
       <Value xsi:type="xsd:string">BatteryContainer</Value>
@@ -101,6 +107,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>BatteryIcon.Width Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>float</Type>
       <Name>BatteryIcon.X</Name>
       <Value xsi:type="xsd:float">1</Value>
@@ -140,6 +152,12 @@
       <Type>float</Type>
       <Name>Buttons.StackSpacing</Name>
       <Value xsi:type="xsd:float">5</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>bool</Type>
+      <Name>Buttons.Visible</Name>
+      <Value xsi:type="xsd:boolean">true</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -311,6 +329,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>HomeIcon.Height Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>string</Type>
       <Name>HomeIcon.Parent</Name>
       <Value xsi:type="xsd:string">HomeContainer</Value>
@@ -354,6 +378,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>HomeIcon.Width Units</Name>
+      <Value xsi:type="xsd:int">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>float</Type>
       <Name>HomeIcon.X</Name>
       <Value xsi:type="xsd:float">1</Value>
@@ -388,6 +418,12 @@
       <Type>string</Type>
       <Name>OtherControls.Parent</Name>
       <Value xsi:type="xsd:string">Container</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>bool</Type>
+      <Name>OtherControls.Visible</Name>
+      <Value xsi:type="xsd:boolean">true</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -529,12 +565,6 @@
     </Variable>
     <Variable>
       <Type>string</Type>
-      <Name>TextInstance.Parent</Name>
-      <Value xsi:type="xsd:string">ContainerInstance</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
       <Name>ToggleButtonInstance.Parent</Name>
       <Value xsi:type="xsd:string">OtherControls</Value>
       <SetsValue>true</SetsValue>
@@ -639,11 +669,6 @@
   <Instance>
     <Name>ToggleButtonInstance</Name>
     <BaseType>ToggleButton</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>TextInstance</Name>
-    <BaseType>Text</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

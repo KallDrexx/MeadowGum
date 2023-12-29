@@ -1,20 +1,22 @@
-﻿namespace MeadowGum.Shared.Components;
+﻿using System;
+using Gum.DataTypes;
+using RenderingLibrary;
+using RenderingLibrary.Graphics;
+
+namespace MeadowGum.Shared.Components;
 
 public class SpriteRuntime : MeadowGumComponent
 {
-    private readonly SpriteRenderable _renderable;
-
     public SpriteRuntime()
     {
-        _renderable = new SpriteRenderable();
-        SetContainedObject(_renderable);
+        SetContainedObject(new InvisibleRenderable{Visible = true});
+        Height = 100;
+        Width = 100;
+        WidthUnits = DimensionUnitType.PercentageOfSourceFile;
+        HeightUnits = DimensionUnitType.PercentageOfSourceFile;
     }
 
-    public string? SourceFile
-    {
-        get => _renderable.SourceFile;
-        set => _renderable.SourceFile = value;
-    }
+    public string? SourceFile { get; set; }
 
     // Unsupported
     public int Red { get; set; }
@@ -23,4 +25,26 @@ public class SpriteRuntime : MeadowGumComponent
     public int Alpha { get; set; }
     public bool Animate { get; set; }
     public bool FlipVertical { get; set; }
+
+    public override void Render(ISystemManagers managers)
+    {
+        if (DefaultRenderer == null)
+        {
+            const string message = "No default renderer set yet";
+            throw new InvalidOperationException(message);
+        }
+
+        if (string.IsNullOrWhiteSpace(SourceFile))
+            // nothing to render
+            return;
+
+        var textureArea = new Rectangle(TextureLeft,
+            TextureTop,
+            TextureWidth,
+            TextureHeight);
+
+        var renderLocation = new Point((int)this.GetAbsoluteLeft(), (int)this.GetAbsoluteTop());
+
+        DefaultRenderer.RenderSprite(SourceFile, textureArea, renderLocation, new RgbColor(255, 0, 255));
+    }
 }

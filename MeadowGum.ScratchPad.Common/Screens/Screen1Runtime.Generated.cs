@@ -8,6 +8,8 @@ using RenderingLibrary.Graphics;
 
 using MeadowGum.Shared;
 using MeadowGum.Shared.Components;
+using MeadowGum.ScratchPad.Common.Components;
+
 
 namespace MeadowGum.ScratchPad.Common.Screens
 {
@@ -150,16 +152,14 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TextInstance.YUnits = GeneralUnitType.PixelsFromSmall;
 
             this.Sun.FlipHorizontal = false;
-            this.Sun.Height = 14f;
             this.Sun.SourceFile = "spritesheet.bmp";
-            this.Sun.TextureAddress = global::Gum.Managers.TextureAddress.DimensionsBased;
-            this.Sun.TextureHeight = 128;
+            this.Sun.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
+            this.Sun.TextureHeight = 14;
             this.Sun.TextureHeightScale = 1f;
-            this.Sun.TextureLeft = 0;
-            this.Sun.TextureTop = 48;
-            this.Sun.TextureWidth = 128;
+            this.Sun.TextureLeft = 1;
+            this.Sun.TextureTop = 49;
+            this.Sun.TextureWidth = 14;
             this.Sun.TextureWidthScale = 1f;
-            this.Sun.Width = 14f;
             this.Sun.X = 0f;
             this.Sun.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.Sun.XUnits = GeneralUnitType.PixelsFromLarge;

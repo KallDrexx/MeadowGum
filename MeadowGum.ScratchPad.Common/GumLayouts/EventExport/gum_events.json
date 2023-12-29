@@ -952,6 +952,27 @@
         "ElementType": "Screens",
         "EventType": 6,
         "TimestampUtc": "2023-12-29T02:58:26.2741381Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ControlsDemoScreen.Text TextInstance in ControlsDemoScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T19:33:19.5112861Z"
+      },
+      {
+        "NewName": "SplashScreen.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T20:07:59.0369472Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "SplashScreen.Sprite SpriteInstance in SplashScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T20:09:05.5365492Z"
       }
     ]
   }

@@ -149,12 +149,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>float</Type>
-      <Name>Left.Width</Name>
-      <Value xsi:type="xsd:float">100</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>DimensionUnitType</Type>
       <Name>Left.Width Units</Name>
       <Value xsi:type="xsd:int">3</Value>
