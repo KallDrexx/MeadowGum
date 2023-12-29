@@ -41,13 +41,20 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public BackgroundRuntime BackgroundInstance { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
         public PanelRuntime PanelInstance { get; protected set; }
-        public ContainerRuntime ProgressBars { get; protected set; }
         public SpriteRuntime BatteryIcon { get; protected set; }
         public SpriteRuntime HomeIcon { get; protected set; }
         public VerticalProgressBarRuntime BatteryProgressBar { get; protected set; }
         public VerticalProgressBarRuntime HomeProgressBar { get; protected set; }
         public ContainerRuntime HomeContainer { get; protected set; }
         public ContainerRuntime BatteryContainer { get; protected set; }
+        public ContainerRuntime OtherControls { get; protected set; }
+        public ContainerRuntime Buttons { get; protected set; }
+        public ContainerRuntime ProgressBars { get; protected set; }
+        public ContainerRuntime Container { get; protected set; }
+        public SpriteButtonRuntime HomeButton { get; protected set; }
+        public SpriteButtonRuntime TempButton { get; protected set; }
+        public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
+        public TextRuntime TextInstance { get; protected set; }
 
         public ControlsDemoScreenRuntime(bool fullInstantiation = true)
         {
@@ -74,8 +81,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             ScreenLabelInstance.Name = "ScreenLabelInstance";
             PanelInstance = new PanelRuntime();
             PanelInstance.Name = "PanelInstance";
-            ProgressBars = new ContainerRuntime();
-            ProgressBars.Name = "ProgressBars";
             BatteryIcon = new SpriteRuntime();
             BatteryIcon.Name = "BatteryIcon";
             HomeIcon = new SpriteRuntime();
@@ -88,19 +93,42 @@ namespace MeadowGum.ScratchPad.Common.Screens
             HomeContainer.Name = "HomeContainer";
             BatteryContainer = new ContainerRuntime();
             BatteryContainer.Name = "BatteryContainer";
+            OtherControls = new ContainerRuntime();
+            OtherControls.Name = "OtherControls";
+            Buttons = new ContainerRuntime();
+            Buttons.Name = "Buttons";
+            ProgressBars = new ContainerRuntime();
+            ProgressBars.Name = "ProgressBars";
+            Container = new ContainerRuntime();
+            Container.Name = "Container";
+            HomeButton = new SpriteButtonRuntime();
+            HomeButton.Name = "HomeButton";
+            TempButton = new SpriteButtonRuntime();
+            TempButton.Name = "TempButton";
+            ToggleButtonInstance = new ToggleButtonRuntime();
+            ToggleButtonInstance.Name = "ToggleButtonInstance";
+            TextInstance = new TextRuntime();
+            TextInstance.Name = "TextInstance";
         }
         protected virtual void AssignParents()
         {
             this.Children.Add(BackgroundInstance);
             this.Children.Add(ScreenLabelInstance);
             this.Children.Add(PanelInstance);
-            PanelInstance.Children.Add(ProgressBars);
             BatteryContainer.Children.Add(BatteryIcon);
             HomeContainer.Children.Add(HomeIcon);
             BatteryContainer.Children.Add(BatteryProgressBar);
             HomeContainer.Children.Add(HomeProgressBar);
             ProgressBars.Children.Add(HomeContainer);
             ProgressBars.Children.Add(BatteryContainer);
+            Container.Children.Add(OtherControls);
+            Container.Children.Add(Buttons);
+            Container.Children.Add(ProgressBars);
+            PanelInstance.Children.Add(Container);
+            Buttons.Children.Add(HomeButton);
+            Buttons.Children.Add(TempButton);
+            OtherControls.Children.Add(ToggleButtonInstance);
+            this.Children.Add(TextInstance);
         }
         private void ApplyDefaultVariables()
         {
@@ -113,19 +141,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.PanelInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.PanelInstance.XUnits = GeneralUnitType.PixelsFromMiddle;
             this.PanelInstance.Y = 50f;
-
-            this.ProgressBars.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
-            this.ProgressBars.Height = 0f;
-            this.ProgressBars.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.ProgressBars.StackSpacing = 7f;
-            this.ProgressBars.Width = 0f;
-            this.ProgressBars.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.ProgressBars.X = -10f;
-            this.ProgressBars.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.ProgressBars.XUnits = GeneralUnitType.PixelsFromLarge;
-            this.ProgressBars.Y = -16f;
-            this.ProgressBars.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
-            this.ProgressBars.YUnits = GeneralUnitType.PixelsFromLarge;
 
             this.BatteryIcon.SourceFile = "retro-meadow-ui.bmp";
             this.BatteryIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
@@ -162,6 +177,49 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.BatteryContainer.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.BatteryContainer.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
             this.BatteryContainer.YUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.OtherControls.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
+            this.OtherControls.Width = 100f;
+            this.OtherControls.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
+
+            this.Buttons.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
+            this.Buttons.Height = 0f;
+            this.Buttons.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.Buttons.StackSpacing = 5f;
+            this.Buttons.Width = 0f;
+            this.Buttons.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.Buttons.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Left;
+            this.Buttons.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
+            this.Buttons.YUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.ProgressBars.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
+            this.ProgressBars.Height = 0f;
+            this.ProgressBars.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.ProgressBars.StackSpacing = 7f;
+            this.ProgressBars.Width = 0f;
+            this.ProgressBars.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.ProgressBars.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
+            this.ProgressBars.YUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.Container.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
+            this.Container.Height = 90f;
+            this.Container.HeightUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
+            this.Container.StackSpacing = 5f;
+            this.Container.Width = 0f;
+            this.Container.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.Container.X = -15f;
+            this.Container.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.Container.XUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.HomeButton.ButtonText = "Home";
+            this.HomeButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.HomeButton.XUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.TempButton.ButtonText = "Main Menu";
+            this.TempButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.TempButton.XUnits = GeneralUnitType.PixelsFromLarge;
+
+
 
         }
         partial void CustomInitialize();

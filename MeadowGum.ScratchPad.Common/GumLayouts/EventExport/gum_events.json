@@ -616,6 +616,342 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2023-12-28T20:20:19.6087762Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T01:59:33.3607364Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Buttons",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T01:59:38.6590883Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Buttons",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T01:59:38.6600876Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:02:59.5544648Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Container",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:03:11.7025306Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.Container",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:03:11.7035065Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:10:43.6811874Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeButton",
+        "OldName": "ControlsDemoScreen.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:14:31.6487167Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeButton",
+        "OldName": "ControlsDemoScreen.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:14:31.6497095Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:14:40.450793Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.TempButton",
+        "OldName": "ControlsDemoScreen.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:14:50.1070594Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.TempButton",
+        "OldName": "ControlsDemoScreen.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:14:50.1081028Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:19:48.6401354Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ControlsDemoScreen.SpriteButton SpriteButtonInstance in ControlsDemoScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:21:32.8213818Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:21:53.4770664Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ControlsDemoScreen.SpriteButton SpriteButtonInstance in ControlsDemoScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:22:02.4993504Z"
+      },
+      {
+        "NewName": "ToggleButton",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-29T02:25:17.1703031Z"
+      },
+      {
+        "NewName": "SpriteButton (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:25:38.581037Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:25:40.9569967Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "SpriteButton (Container).Container ContainerInstance in SpriteButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:25:43.4811875Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ToggleSection",
+        "OldName": "ToggleButton (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:25:51.1764464Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).Container ToggleSection in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:26:20.1752733Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:26:27.6429625Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Left",
+        "OldName": "ToggleButton (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:26:32.0447164Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:28:28.2098422Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Left1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:31:46.8646669Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Right",
+        "OldName": "ToggleButton (Container).Left1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:31:53.0900878Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:36:54.9585787Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:39:34.6329983Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Label",
+        "OldName": "ToggleButton (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:39:40.8021171Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:43:05.9044621Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Indicator",
+        "OldName": "ToggleButton (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:43:13.4302897Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:50:28.1757322Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.OtherControls",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:50:33.9003889Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.OtherControls",
+        "OldName": "ControlsDemoScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-29T02:50:33.9013894Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ToggleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:51:43.2427269Z"
+      },
+      {
+        "NewName": "OnA",
+        "OldName": "On",
+        "ElementType": "Components",
+        "EventType": 3,
+        "TimestampUtc": "2023-12-29T02:52:31.7154818Z"
+      },
+      {
+        "NewName": "Off",
+        "OldName": "Off",
+        "ElementType": "Components",
+        "EventType": 3,
+        "TimestampUtc": "2023-12-29T02:52:38.2592488Z"
+      },
+      {
+        "NewName": "On",
+        "OldName": "OnA",
+        "ElementType": "Components",
+        "EventType": 3,
+        "TimestampUtc": "2023-12-29T02:52:43.3294126Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:56:41.5827989Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).Text TextInstance in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:57:18.9398589Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:57:29.5478904Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ControlsDemoScreen.Text TextInstance in ControlsDemoScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:57:38.6136484Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:57:57.3491963Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).Text TextInstance in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:58:02.8877443Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:58:17.3947076Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-29T02:58:20.7980673Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ControlsDemoScreen.Container ContainerInstance in ControlsDemoScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-29T02:58:26.2741381Z"
       }
     ]
   }
