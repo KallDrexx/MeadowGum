@@ -29,7 +29,6 @@ public class TextRuntime : MeadowGumComponent
     public byte Red { get; set; } = 255;
     public byte Green { get; set; } = 255;
     public byte Blue { get; set; } = 255;
-    public bool Wrap { get; set; }
    
     // Unsupported properties
     public int Alpha { get; set; }
@@ -60,7 +59,7 @@ public class TextRuntime : MeadowGumComponent
         public float FontScale => 1;
         public float WrappedTextWidth => Font.WidthPerCharacter() * RawText.Length;
         public float WrappedTextHeight => Font.HeightPerCharacter(); // TODO: Add wrapping support
-        public string RawText { get; set; }
+        public string RawText { get; set; } = "Hello";
         public TextOverflowVerticalMode TextOverflowVerticalMode { get; set; }
         
         public void SetNeedsRefreshToTrue()

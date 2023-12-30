@@ -55,6 +55,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteButtonRuntime TempButton { get; protected set; }
         public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
 
+        public string LabelText
+        {
+            get => ToggleButtonInstance.LabelText;
+            set => ToggleButtonInstance.LabelText = value;
+        }
+
         public ControlsDemoScreenRuntime(bool fullInstantiation = true)
         {
             if(fullInstantiation)
@@ -179,9 +185,13 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.BatteryContainer.YUnits = GeneralUnitType.PixelsFromLarge;
 
             this.OtherControls.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
+            this.OtherControls.Height = 0f;
+            this.OtherControls.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.OtherControls.Visible = true;
-            this.OtherControls.Width = 100f;
+            this.OtherControls.Width = 110f;
             this.OtherControls.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
+            this.OtherControls.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
+            this.OtherControls.YUnits = GeneralUnitType.PixelsFromLarge;
 
             this.Buttons.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.Buttons.Height = 0f;
@@ -221,6 +231,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TempButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.TempButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
+            this.ToggleButtonInstance.LabelText = "Boost";
 
         }
         partial void CustomInitialize();

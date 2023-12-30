@@ -973,6 +973,13 @@
         "ElementType": "Screens",
         "EventType": 6,
         "TimestampUtc": "2023-12-29T20:09:05.5365492Z"
+      },
+      {
+        "NewName": "Screen1.ToggleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:33:28.6384597Z"
       }
     ]
   }

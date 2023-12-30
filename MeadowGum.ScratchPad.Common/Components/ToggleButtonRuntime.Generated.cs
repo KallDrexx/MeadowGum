@@ -34,10 +34,6 @@ namespace MeadowGum.ScratchPad.Common.Components
                     switch (value)
                     {
                         case Toggle.On:
-                            this.ContainerInstance.Height = 0f;
-                            this.ContainerInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-                            this.ContainerInstance.Width = 0f;
-                            this.ContainerInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
                             this.Indicator.TextureHeight = 10;
                             this.Indicator.TextureLeft = 59;
                             this.Indicator.TextureTop = 14;
@@ -48,10 +44,6 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.Indicator.YUnits = GeneralUnitType.PixelsFromSmall;
                             break;
                         case Toggle.Off:
-                            this.ContainerInstance.Height = 150f;
-                            this.ContainerInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
-                            this.ContainerInstance.Width = 150f;
-                            this.ContainerInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
                             this.Indicator.TextureHeight = 10;
                             this.Indicator.TextureLeft = 70;
                             this.Indicator.TextureTop = 14;
@@ -71,6 +63,12 @@ namespace MeadowGum.ScratchPad.Common.Components
         public ContainerRuntime ContainerInstance { get; protected set; }
         public TextRuntime Label { get; protected set; }
         public SpriteRuntime Indicator { get; protected set; }
+
+        public string LabelText
+        {
+            get => Label.Text;
+            set => Label.Text = value;
+        }
 
         public ToggleButtonRuntime(bool fullInstantiation = true)
         {
@@ -143,6 +141,10 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Right.TextureWidth = 6;
 
             this.ContainerInstance.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
+            this.ContainerInstance.Height = 0f;
+            this.ContainerInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.ContainerInstance.Width = 0f;
+            this.ContainerInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
 
             this.Label.Blue = 144;
             this.Label.Green = 186;
@@ -154,6 +156,9 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Label.Width = 0f;
             this.Label.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.Label.X = 5f;
+            this.Label.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Left;
+            this.Label.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
+            this.Label.YUnits = GeneralUnitType.PixelsFromMiddle;
 
             this.Indicator.SourceFile = "retro-meadow-ui.bmp";
             this.Indicator.TextureAddress = global::Gum.Managers.TextureAddress.Custom;

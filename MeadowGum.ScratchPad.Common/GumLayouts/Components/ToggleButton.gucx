@@ -60,6 +60,30 @@
     </Variable>
     <Variable>
       <Type>float</Type>
+      <Name>ContainerInstance.Height</Name>
+      <Value xsi:type="xsd:float">0</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>ContainerInstance.Height Units</Name>
+      <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>ContainerInstance.Width</Name>
+      <Value xsi:type="xsd:float">0</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>ContainerInstance.Width Units</Name>
+      <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
       <Name>Height</Name>
       <Value xsi:type="xsd:float">0</Value>
       <SetsValue>true</SetsValue>
@@ -160,6 +184,7 @@
       <Type>string</Type>
       <Name>Label.Text</Name>
       <Value xsi:type="xsd:string">Label</Value>
+      <ExposedAsName>LabelText</ExposedAsName>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -184,6 +209,24 @@
       <Type>float</Type>
       <Name>Label.X</Name>
       <Value xsi:type="xsd:float">5</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>Label.X Origin</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>Label.Y Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>Label.Y Units</Name>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -323,30 +366,6 @@
     <State>
       <Name>On</Name>
       <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Height</Name>
-        <Value xsi:type="xsd:float">0</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>Gum.DataTypes.DimensionUnitType</Type>
-        <Name>ContainerInstance.Height Units</Name>
-        <Value xsi:type="xsd:int">4</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Width</Name>
-        <Value xsi:type="xsd:float">0</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>Gum.DataTypes.DimensionUnitType</Type>
-        <Name>ContainerInstance.Width Units</Name>
-        <Value xsi:type="xsd:int">4</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
         <Type>int</Type>
         <Name>Indicator.Texture Height</Name>
         <Value xsi:type="xsd:int">10</Value>
@@ -397,34 +416,6 @@
     </State>
     <State>
       <Name>Off</Name>
-      <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Height</Name>
-        <Value xsi:type="xsd:float">150</Value>
-        <Category>Dimensions</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>DimensionUnitType</Type>
-        <Name>ContainerInstance.Height Units</Name>
-        <Value xsi:type="xsd:int">0</Value>
-        <Category>Dimensions</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>ContainerInstance.Width</Name>
-        <Value xsi:type="xsd:float">150</Value>
-        <Category>Dimensions</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>DimensionUnitType</Type>
-        <Name>ContainerInstance.Width Units</Name>
-        <Value xsi:type="xsd:int">0</Value>
-        <Category>Dimensions</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Indicator.Texture Height</Name>
