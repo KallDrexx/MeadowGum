@@ -980,6 +980,146 @@
         "ElementType": "Screens",
         "EventType": 5,
         "TimestampUtc": "2023-12-30T02:33:28.6384597Z"
+      },
+      {
+        "NewName": "Slider",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2023-12-30T02:36:43.6961647Z"
+      },
+      {
+        "NewName": "Slider (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:38:55.0411532Z"
+      },
+      {
+        "NewName": "Slider (Container).TextArea",
+        "OldName": "Slider (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:39:02.574488Z"
+      },
+      {
+        "NewName": "Slider (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:40:51.1428648Z"
+      },
+      {
+        "NewName": "Slider (Container).Label",
+        "OldName": "Slider (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:41:17.5444336Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Slider (Container).Text Label in Slider (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2023-12-30T02:43:09.5587607Z"
+      },
+      {
+        "NewName": "Slider (Container).Label",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:43:15.5090513Z"
+      },
+      {
+        "NewName": "Slider (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:43:35.8466904Z"
+      },
+      {
+        "NewName": "Slider (Container).SliderArea",
+        "OldName": "Slider (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:43:40.7549173Z"
+      },
+      {
+        "NewName": "Slider (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:43:55.3744659Z"
+      },
+      {
+        "NewName": "Slider (Container).Left",
+        "OldName": "Slider (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:45:39.7764903Z"
+      },
+      {
+        "NewName": "Slider (Container).Left1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:45:42.3303249Z"
+      },
+      {
+        "NewName": "Slider (Container).Right",
+        "OldName": "Slider (Container).Left1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:45:47.2230729Z"
+      },
+      {
+        "NewName": "Slider (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:46:07.0056968Z"
+      },
+      {
+        "NewName": "ScreenLabel (Text).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:49:25.6650148Z"
+      },
+      {
+        "NewName": "Slider (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:49:30.0907603Z"
+      },
+      {
+        "NewName": "Slider (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:50:00.9871026Z"
+      },
+      {
+        "NewName": "Slider (Container).SliderComponents",
+        "OldName": "Slider (Container).ContainerInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:50:06.4286899Z"
+      },
+      {
+        "NewName": "Slider (Container).Indicator",
+        "OldName": "Slider (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2023-12-30T02:50:34.9556271Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.SliderInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2023-12-30T02:54:01.9591649Z"
       }
     ]
   }

@@ -433,6 +433,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>float</Type>
+      <Name>OtherControls.StackSpacing</Name>
+      <Value xsi:type="xsd:float">5</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>bool</Type>
       <Name>OtherControls.Visible</Name>
       <Value xsi:type="xsd:boolean">true</Value>
@@ -556,6 +562,18 @@
       <Type>string</Type>
       <Name>ScreenLabelInstance.Text</Name>
       <Value xsi:type="xsd:string">Controls Demo</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>SliderInstance.Parent</Name>
+      <Value xsi:type="xsd:string">OtherControls</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>SliderInstance.Width</Name>
+      <Value xsi:type="xsd:float">100</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -701,6 +719,11 @@
   <Instance>
     <Name>TempButton</Name>
     <BaseType>SpriteButton</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>SliderInstance</Name>
+    <BaseType>Slider</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>

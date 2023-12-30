@@ -53,6 +53,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public ContainerRuntime Container { get; protected set; }
         public SpriteButtonRuntime HomeButton { get; protected set; }
         public SpriteButtonRuntime TempButton { get; protected set; }
+        public SliderRuntime SliderInstance { get; protected set; }
         public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
 
         public string LabelText
@@ -110,6 +111,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             HomeButton.Name = "HomeButton";
             TempButton = new SpriteButtonRuntime();
             TempButton.Name = "TempButton";
+            SliderInstance = new SliderRuntime();
+            SliderInstance.Name = "SliderInstance";
             ToggleButtonInstance = new ToggleButtonRuntime();
             ToggleButtonInstance.Name = "ToggleButtonInstance";
         }
@@ -130,6 +133,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             PanelInstance.Children.Add(Container);
             Buttons.Children.Add(HomeButton);
             Buttons.Children.Add(TempButton);
+            OtherControls.Children.Add(SliderInstance);
             OtherControls.Children.Add(ToggleButtonInstance);
         }
         private void ApplyDefaultVariables()
@@ -187,6 +191,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.OtherControls.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.OtherControls.Height = 0f;
             this.OtherControls.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.OtherControls.StackSpacing = 5f;
             this.OtherControls.Visible = true;
             this.OtherControls.Width = 110f;
             this.OtherControls.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
@@ -230,6 +235,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TempButton.ButtonText = "Main Menu";
             this.TempButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.TempButton.XUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.SliderInstance.Width = 100f;
 
             this.ToggleButtonInstance.LabelText = "Boost";
 
