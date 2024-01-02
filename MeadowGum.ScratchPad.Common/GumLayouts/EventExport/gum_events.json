@@ -1337,6 +1337,111 @@
         "ElementType": "Components",
         "EventType": 3,
         "TimestampUtc": "2024-01-02T20:04:53.2286349Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:43.4388689Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:56.143214Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance2",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:56.812906Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance3",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:57.2203716Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance4",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:57.549511Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance5",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:57.8535455Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance6",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:58.0781443Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance7",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:58.3173753Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance8",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:58.5576399Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance9",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:58.8060276Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance10",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:59.1266262Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).ProgressIndicatorInstance11",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T20:06:59.5826731Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BoostToggle",
+        "OldName": "ControlsDemoScreen.ToggleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T20:16:11.6600365Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.BoostToggle",
+        "OldName": "ControlsDemoScreen.ToggleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T20:16:11.6623027Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Screen1.ToggleButton ToggleButtonInstance in Screen1",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-02T20:21:35.856627Z"
       }
     ]
   }

@@ -54,13 +54,13 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteButtonRuntime HomeButton { get; protected set; }
         public SpriteButtonRuntime MainMenuButton { get; protected set; }
         public SliderRuntime SliderInstance { get; protected set; }
-        public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
+        public ToggleButtonRuntime BoostToggle { get; protected set; }
         public HoverRuntime HoverInstance { get; protected set; }
 
         public string LabelText
         {
-            get => ToggleButtonInstance.LabelText;
-            set => ToggleButtonInstance.LabelText = value;
+            get => BoostToggle.LabelText;
+            set => BoostToggle.LabelText = value;
         }
 
         public ControlsDemoScreenRuntime(bool fullInstantiation = true)
@@ -114,8 +114,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             MainMenuButton.Name = "MainMenuButton";
             SliderInstance = new SliderRuntime();
             SliderInstance.Name = "SliderInstance";
-            ToggleButtonInstance = new ToggleButtonRuntime();
-            ToggleButtonInstance.Name = "ToggleButtonInstance";
+            BoostToggle = new ToggleButtonRuntime();
+            BoostToggle.Name = "BoostToggle";
             HoverInstance = new HoverRuntime();
             HoverInstance.Name = "HoverInstance";
         }
@@ -137,7 +137,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             Buttons.Children.Add(HomeButton);
             Buttons.Children.Add(MainMenuButton);
             OtherControls.Children.Add(SliderInstance);
-            OtherControls.Children.Add(ToggleButtonInstance);
+            OtherControls.Children.Add(BoostToggle);
             this.Children.Add(HoverInstance);
         }
         private void ApplyDefaultVariables()
@@ -242,7 +242,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
 
             this.SliderInstance.Width = 100f;
 
-            this.ToggleButtonInstance.LabelText = "Boost";
+            this.BoostToggle.LabelText = "Boost";
 
             this.HoverInstance.Visible = true;
 

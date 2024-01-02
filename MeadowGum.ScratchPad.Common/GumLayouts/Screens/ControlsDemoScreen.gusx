@@ -125,6 +125,25 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>bool</Type>
+      <Name>BoostToggle.IsOverrideInCodeGen</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>BoostToggle.LabelText</Name>
+      <Value xsi:type="xsd:string">Boost</Value>
+      <ExposedAsName>LabelText</ExposedAsName>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>BoostToggle.Parent</Name>
+      <Value xsi:type="xsd:string">OtherControls</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>ChildrenLayout</Type>
       <Name>Buttons.Children Layout</Name>
       <Value xsi:type="xsd:int">1</Value>
@@ -611,25 +630,6 @@
       <Name>SomethingState</Name>
       <SetsValue>false</SetsValue>
     </Variable>
-    <Variable>
-      <Type>bool</Type>
-      <Name>ToggleButtonInstance.IsOverrideInCodeGen</Name>
-      <Value xsi:type="xsd:boolean">false</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ToggleButtonInstance.LabelText</Name>
-      <Value xsi:type="xsd:string">Boost</Value>
-      <ExposedAsName>LabelText</ExposedAsName>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ToggleButtonInstance.Parent</Name>
-      <Value xsi:type="xsd:string">OtherControls</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
     <VariableList xsi:type="VariableListSaveOfString">
       <Type>string</Type>
       <Name>BatteryIcon.AnimationFrames</Name>
@@ -733,7 +733,7 @@
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>ToggleButtonInstance</Name>
+    <Name>BoostToggle</Name>
     <BaseType>ToggleButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>

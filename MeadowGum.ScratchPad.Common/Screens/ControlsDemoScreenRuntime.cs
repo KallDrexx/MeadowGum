@@ -17,13 +17,36 @@ namespace MeadowGum.ScratchPad.Common.Screens
         partial void CustomInitialize()
         {
             MainMenuButton.OnSelected = () => _continueRunning = false;
+            BoostToggle.OnToggleChanged = isOn =>
+            {
+                if (isOn)
+                {
+                    BatteryProgressBar.Percent += 40;
+                }
+                else
+                {
+                    BatteryProgressBar.Percent -= 40;
+                }
+
+                if (BatteryProgressBar.Percent > 50)
+                {
+                    BatteryProgressBar.SetColor(VerticalProgressBarRuntime.Color.Green);
+                }
+                else
+                {
+                    BatteryProgressBar.SetColor(VerticalProgressBarRuntime.Color.Red);
+                }
+            };
 
             _selectableElements.Add(HomeButton);
             _selectableElements.Add(MainMenuButton);
             _selectableElements.Add(SliderInstance);
-            _selectableElements.Add(ToggleButtonInstance);
+            _selectableElements.Add(BoostToggle);
 
             HoverInstance.AttachTo(HomeButton);
+            BatteryProgressBar.Percent = 20;
+            BatteryProgressBar.SetColor(VerticalProgressBarRuntime.Color.Red);
+            HomeProgressBar.Percent = 0;
         }
 
         public override async Task<MeadowGumScreen?> RunAsync(CancellationToken cancellationToken)

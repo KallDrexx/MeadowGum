@@ -23,7 +23,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public ColoredRectangleRuntime Center { get; protected set; }
         public TextRuntime TextInstance { get; protected set; }
         public SpriteRuntime Sun { get; protected set; }
-        public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
 
         public Screen1Runtime(bool fullInstantiation = true)
         {
@@ -60,8 +59,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             TextInstance.Name = "TextInstance";
             Sun = new SpriteRuntime();
             Sun.Name = "Sun";
-            ToggleButtonInstance = new ToggleButtonRuntime();
-            ToggleButtonInstance.Name = "ToggleButtonInstance";
         }
         protected virtual void AssignParents()
         {
@@ -73,7 +70,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             OuterRectangle.Children.Add(Center);
             this.Children.Add(TextInstance);
             this.Children.Add(Sun);
-            this.Children.Add(ToggleButtonInstance);
         }
         private void ApplyDefaultVariables()
         {
@@ -170,7 +166,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Sun.Y = 0f;
             this.Sun.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
             this.Sun.YUnits = GeneralUnitType.PixelsFromLarge;
-
 
         }
         partial void CustomInitialize();
