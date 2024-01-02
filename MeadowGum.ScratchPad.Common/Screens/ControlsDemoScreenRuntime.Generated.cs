@@ -52,9 +52,10 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public ContainerRuntime ProgressBars { get; protected set; }
         public ContainerRuntime Container { get; protected set; }
         public SpriteButtonRuntime HomeButton { get; protected set; }
-        public SpriteButtonRuntime TempButton { get; protected set; }
+        public SpriteButtonRuntime MainMenuButton { get; protected set; }
         public SliderRuntime SliderInstance { get; protected set; }
         public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
+        public HoverRuntime HoverInstance { get; protected set; }
 
         public string LabelText
         {
@@ -109,12 +110,14 @@ namespace MeadowGum.ScratchPad.Common.Screens
             Container.Name = "Container";
             HomeButton = new SpriteButtonRuntime();
             HomeButton.Name = "HomeButton";
-            TempButton = new SpriteButtonRuntime();
-            TempButton.Name = "TempButton";
+            MainMenuButton = new SpriteButtonRuntime();
+            MainMenuButton.Name = "MainMenuButton";
             SliderInstance = new SliderRuntime();
             SliderInstance.Name = "SliderInstance";
             ToggleButtonInstance = new ToggleButtonRuntime();
             ToggleButtonInstance.Name = "ToggleButtonInstance";
+            HoverInstance = new HoverRuntime();
+            HoverInstance.Name = "HoverInstance";
         }
         protected virtual void AssignParents()
         {
@@ -132,9 +135,10 @@ namespace MeadowGum.ScratchPad.Common.Screens
             Container.Children.Add(ProgressBars);
             PanelInstance.Children.Add(Container);
             Buttons.Children.Add(HomeButton);
-            Buttons.Children.Add(TempButton);
+            Buttons.Children.Add(MainMenuButton);
             OtherControls.Children.Add(SliderInstance);
             OtherControls.Children.Add(ToggleButtonInstance);
+            this.Children.Add(HoverInstance);
         }
         private void ApplyDefaultVariables()
         {
@@ -232,13 +236,15 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.HomeButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.HomeButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
-            this.TempButton.ButtonText = "Main Menu";
-            this.TempButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.TempButton.XUnits = GeneralUnitType.PixelsFromLarge;
+            this.MainMenuButton.ButtonText = "Main Menu";
+            this.MainMenuButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.MainMenuButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
             this.SliderInstance.Width = 100f;
 
             this.ToggleButtonInstance.LabelText = "Boost";
+
+            this.HoverInstance.Visible = true;
 
         }
         partial void CustomInitialize();

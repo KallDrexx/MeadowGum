@@ -3,7 +3,7 @@ using MeadowGum.Shared.Components;
 
 namespace MeadowGum.ScratchPad.Common.Components
 {
-    partial class ToggleButtonRuntime : ContainerRuntime
+    partial class ToggleButtonRuntime : GraphicalUiElement
     {
         partial void CustomInitialize()
         {

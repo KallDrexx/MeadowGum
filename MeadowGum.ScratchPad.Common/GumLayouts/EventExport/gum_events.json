@@ -1120,6 +1120,202 @@
         "ElementType": "Screens",
         "EventType": 5,
         "TimestampUtc": "2023-12-30T02:54:01.9591649Z"
+      },
+      {
+        "NewName": "Hover",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-02T19:04:29.2765034Z"
+      },
+      {
+        "NewName": "Hover (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:05:31.4949992Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftVertical",
+        "OldName": "Hover (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:05:38.4160826Z"
+      },
+      {
+        "NewName": "Hover (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:06:08.3320903Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftHorizontl",
+        "OldName": "Hover (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:06:14.6154276Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftHorizontal",
+        "OldName": "Hover (Container).TopLeftHorizontl",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:06:19.5443762Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftVertical1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:07:24.9666816Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftHorizontal1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:07:24.9726811Z"
+      },
+      {
+        "NewName": "Hover (Container).ToprIGHTVertical",
+        "OldName": "Hover (Container).TopLeftVertical1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:07:44.1344697Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRightVertical",
+        "OldName": "Hover (Container).ToprIGHTVertical",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:07:51.9670665Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRightHorizontal",
+        "OldName": "Hover (Container).TopLeftHorizontal1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:08:02.0869612Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRightHorizontal1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:10:39.7885549Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRightVertical1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:10:39.8138725Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomRightHorizontal1",
+        "OldName": "Hover (Container).TopRightHorizontal1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:10:48.0409485Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomRightHorizontal",
+        "OldName": "Hover (Container).BottomRightHorizontal1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:10:51.2794107Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle BottomRightHorizontal in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-02T19:10:54.154128Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle TopRightVertical1 in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-02T19:10:57.2783397Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftHorizontal1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:10:58.6600616Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeftVertical1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:10:58.6969008Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRightHorizontal1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:10:58.7174091Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRightVertical1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:10:58.7375209Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomLeftHorizontal",
+        "OldName": "Hover (Container).TopLeftHorizontal1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:11:15.801732Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomLeftVertical",
+        "OldName": "Hover (Container).TopLeftVertical1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:11:21.9526806Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomRightHorizontal",
+        "OldName": "Hover (Container).TopRightHorizontal1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:11:30.9165783Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomRightVertical",
+        "OldName": "Hover (Container).TopRightVertical1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:11:36.0726426Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HoverInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-02T19:15:23.4824526Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.MainMenuButton",
+        "OldName": "ControlsDemoScreen.TempButton",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:23:19.0863773Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.MainMenuButton",
+        "OldName": "ControlsDemoScreen.TempButton",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T19:23:19.0872923Z"
       }
     ]
   }

@@ -1,9 +1,13 @@
+using System;
 using Gum.Wireframe;
 
 namespace MeadowGum.ScratchPad.Common.Components
 {
     partial class SpriteButtonRuntime : GraphicalUiElement
     {
+        public Action? OnSelected { get; set; }
+        public Action? OnDeselected { get; set; }
+        
         partial void CustomInitialize()
         {
             SelectionState = Selection.Deselected;
@@ -11,17 +15,19 @@ namespace MeadowGum.ScratchPad.Common.Components
 
         public void Select()
         {
-            if (this.SelectionState == Selection.Deselected)
+            if (SelectionState == Selection.Deselected)
             {
-                this.SelectionState = Selection.Selected;
+                SelectionState = Selection.Selected;
+                OnSelected?.Invoke();
             }
         }
         
         public void Deselect()
         {
-            if (this.SelectionState == Selection.Selected)
+            if (SelectionState == Selection.Selected)
             {
-                this.SelectionState = Selection.Deselected;
+                SelectionState = Selection.Deselected;
+                OnDeselected?.Invoke();
             }
         }
     }

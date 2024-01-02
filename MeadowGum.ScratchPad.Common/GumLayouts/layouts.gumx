@@ -41,6 +41,11 @@
     <LinkType>ReferenceOriginal</LinkType>
   </ComponentReference>
   <ComponentReference>
+    <Name>Hover</Name>
+    <ElementType>Component</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
+  </ComponentReference>
+  <ComponentReference>
     <Name>Panel</Name>
     <ElementType>Component</ElementType>
     <LinkType>ReferenceOriginal</LinkType>

@@ -397,6 +397,12 @@
     </Variable>
     <Variable>
       <Type>bool</Type>
+      <Name>HoverInstance.Visible</Name>
+      <Value xsi:type="xsd:boolean">true</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>bool</Type>
       <Name>IsOverrideInCodeGen</Name>
       <Value xsi:type="xsd:boolean">false</Value>
       <Category>Xamarin Forms</Category>
@@ -406,6 +412,30 @@
       <Type>bool</Type>
       <Name>IsXamarinFormsControl</Name>
       <Category>Xamarin Forms</Category>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>MainMenuButton.ButtonText</Name>
+      <Value xsi:type="xsd:string">Main Menu</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>MainMenuButton.Parent</Name>
+      <Value xsi:type="xsd:string">Buttons</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>MainMenuButton.X Origin</Name>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>MainMenuButton.X Units</Name>
+      <Value xsi:type="xsd:int">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -582,30 +612,6 @@
       <SetsValue>false</SetsValue>
     </Variable>
     <Variable>
-      <Type>string</Type>
-      <Name>TempButton.ButtonText</Name>
-      <Value xsi:type="xsd:string">Main Menu</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>TempButton.Parent</Name>
-      <Value xsi:type="xsd:string">Buttons</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>HorizontalAlignment</Type>
-      <Name>TempButton.X Origin</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>PositionUnitType</Type>
-      <Name>TempButton.X Units</Name>
-      <Value xsi:type="xsd:int">4</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>bool</Type>
       <Name>ToggleButtonInstance.IsOverrideInCodeGen</Name>
       <Value xsi:type="xsd:boolean">false</Value>
@@ -717,7 +723,7 @@
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>TempButton</Name>
+    <Name>MainMenuButton</Name>
     <BaseType>SpriteButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
@@ -729,6 +735,11 @@
   <Instance>
     <Name>ToggleButtonInstance</Name>
     <BaseType>ToggleButton</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>HoverInstance</Name>
+    <BaseType>Hover</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />
