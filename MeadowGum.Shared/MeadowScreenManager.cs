@@ -25,9 +25,6 @@ public class MeadowScreenManager
             {
                 var nextScreen = await task;
                 
-                // Clear the screen to make sure the previous screen isn't visible
-                MeadowGumComponent.DefaultRenderer?.Show();
-                
                 task = nextScreen?.RunAsync(token);
             }
         }, _cancellationTokenSource.Token);
