@@ -1442,6 +1442,20 @@
         "ElementType": "Screens",
         "EventType": 6,
         "TimestampUtc": "2024-01-02T20:21:35.856627Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeSlider",
+        "OldName": "ControlsDemoScreen.SliderInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T20:24:52.8060259Z"
+      },
+      {
+        "NewName": "ControlsDemoScreen.HomeSlider",
+        "OldName": "ControlsDemoScreen.SliderInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-02T20:24:52.8066775Z"
       }
     ]
   }

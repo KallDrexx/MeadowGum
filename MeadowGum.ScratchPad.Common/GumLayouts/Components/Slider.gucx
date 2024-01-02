@@ -166,6 +166,7 @@
       <Type>string</Type>
       <Name>Label.Text</Name>
       <Value xsi:type="xsd:string">Label</Value>
+      <ExposedAsName>LabelText</ExposedAsName>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

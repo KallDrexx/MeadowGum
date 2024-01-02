@@ -24,6 +24,12 @@ namespace MeadowGum.ScratchPad.Common.Components
         public SpriteRuntime Indicator { get; protected set; }
         public ContainerRuntime SliderComponents { get; protected set; }
 
+        public string LabelText
+        {
+            get => Label.Text;
+            set => Label.Text = value;
+        }
+
         public SliderRuntime(bool fullInstantiation = true)
         {
             if(fullInstantiation)

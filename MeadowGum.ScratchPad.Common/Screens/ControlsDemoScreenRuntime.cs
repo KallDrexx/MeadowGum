@@ -5,7 +5,6 @@ using Gum.Wireframe;
 using MeadowGum.ScratchPad.Common.Components;
 using MeadowGum.Shared;
 
-
 namespace MeadowGum.ScratchPad.Common.Screens
 {
     partial class ControlsDemoScreenRuntime : MeadowGumScreen
@@ -40,13 +39,19 @@ namespace MeadowGum.ScratchPad.Common.Screens
 
             _selectableElements.Add(HomeButton);
             _selectableElements.Add(MainMenuButton);
-            _selectableElements.Add(SliderInstance);
+            _selectableElements.Add(HomeSlider);
             _selectableElements.Add(BoostToggle);
 
             HoverInstance.AttachTo(HomeButton);
             BatteryProgressBar.Percent = 20;
             BatteryProgressBar.SetColor(VerticalProgressBarRuntime.Color.Red);
             HomeProgressBar.Percent = 0;
+            
+            HomeSlider.OnValueChanged = value => HomeProgressBar.Percent = value;
+            HomeSlider.Minimum = 0;
+            HomeSlider.Maximum = 100;
+            HomeSlider.Increment = 5;
+            HomeSlider.Value = 0;
         }
 
         public override async Task<MeadowGumScreen?> RunAsync(CancellationToken cancellationToken)
@@ -124,6 +129,20 @@ namespace MeadowGum.ScratchPad.Common.Screens
                 case ToggleButtonRuntime toggle:
                     toggle.SetToggle();
                     break;
+
+                case SliderRuntime slider:
+                {
+                    if (isPositiveActivation)
+                    {
+                        slider.IncrementValue();
+                    }
+                    else
+                    {
+                        slider.DecrementValue();
+                    }
+
+                    break;
+                }
             }
         }
     }

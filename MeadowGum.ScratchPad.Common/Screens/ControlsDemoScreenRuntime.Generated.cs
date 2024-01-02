@@ -53,7 +53,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public ContainerRuntime Container { get; protected set; }
         public SpriteButtonRuntime HomeButton { get; protected set; }
         public SpriteButtonRuntime MainMenuButton { get; protected set; }
-        public SliderRuntime SliderInstance { get; protected set; }
+        public SliderRuntime HomeSlider { get; protected set; }
         public ToggleButtonRuntime BoostToggle { get; protected set; }
         public HoverRuntime HoverInstance { get; protected set; }
 
@@ -112,8 +112,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             HomeButton.Name = "HomeButton";
             MainMenuButton = new SpriteButtonRuntime();
             MainMenuButton.Name = "MainMenuButton";
-            SliderInstance = new SliderRuntime();
-            SliderInstance.Name = "SliderInstance";
+            HomeSlider = new SliderRuntime();
+            HomeSlider.Name = "HomeSlider";
             BoostToggle = new ToggleButtonRuntime();
             BoostToggle.Name = "BoostToggle";
             HoverInstance = new HoverRuntime();
@@ -136,7 +136,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             PanelInstance.Children.Add(Container);
             Buttons.Children.Add(HomeButton);
             Buttons.Children.Add(MainMenuButton);
-            OtherControls.Children.Add(SliderInstance);
+            OtherControls.Children.Add(HomeSlider);
             OtherControls.Children.Add(BoostToggle);
             this.Children.Add(HoverInstance);
         }
@@ -240,11 +240,11 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.MainMenuButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.MainMenuButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
-            this.SliderInstance.Width = 100f;
+            this.HomeSlider.Width = 100f;
 
             this.BoostToggle.LabelText = "Boost";
 
-            this.HoverInstance.Visible = true;
+            this.HoverInstance.Visible = false;
 
         }
         partial void CustomInitialize();
