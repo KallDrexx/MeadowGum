@@ -364,7 +364,7 @@
     <Name>Toggle</Name>
     <IsSetRecursively>false</IsSetRecursively>
     <State>
-      <Name>On</Name>
+      <Name>Off</Name>
       <Variable>
         <Type>int</Type>
         <Name>Indicator.Texture Height</Name>
@@ -415,7 +415,7 @@
       </Variable>
     </State>
     <State>
-      <Name>Off</Name>
+      <Name>On</Name>
       <Variable>
         <Type>int</Type>
         <Name>Indicator.Texture Height</Name>

@@ -1316,6 +1316,27 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-02T19:23:19.0872923Z"
+      },
+      {
+        "NewName": "Off1",
+        "OldName": "Off",
+        "ElementType": "Components",
+        "EventType": 3,
+        "TimestampUtc": "2024-01-02T20:04:41.6857729Z"
+      },
+      {
+        "NewName": "Off",
+        "OldName": "On",
+        "ElementType": "Components",
+        "EventType": 3,
+        "TimestampUtc": "2024-01-02T20:04:47.7196029Z"
+      },
+      {
+        "NewName": "On",
+        "OldName": "Off1",
+        "ElementType": "Components",
+        "EventType": 3,
+        "TimestampUtc": "2024-01-02T20:04:53.2286349Z"
       }
     ]
   }

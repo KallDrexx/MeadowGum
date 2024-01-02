@@ -85,6 +85,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             switch (_selectableElements[_selectedIndex])
             {
                 case SpriteButtonRuntime button:
+                {
                     if (isPositiveActivation)
                     {
                         button.Select();
@@ -94,6 +95,11 @@ namespace MeadowGum.ScratchPad.Common.Screens
                         button.Deselect();
                     }
 
+                    break;
+                }
+
+                case ToggleButtonRuntime toggle:
+                    toggle.SetToggle();
                     break;
             }
         }

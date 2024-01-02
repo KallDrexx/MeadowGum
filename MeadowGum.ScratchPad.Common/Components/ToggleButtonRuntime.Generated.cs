@@ -17,8 +17,8 @@ namespace MeadowGum.ScratchPad.Common.Components
     {
         public enum Toggle
         {
-            On,
             Off,
+            On,
         }
 
         Toggle mToggleState;
@@ -33,7 +33,7 @@ namespace MeadowGum.ScratchPad.Common.Components
                 {
                     switch (value)
                     {
-                        case Toggle.On:
+                        case Toggle.Off:
                             this.Indicator.TextureHeight = 10;
                             this.Indicator.TextureLeft = 59;
                             this.Indicator.TextureTop = 14;
@@ -43,7 +43,7 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.Indicator.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
                             this.Indicator.YUnits = GeneralUnitType.PixelsFromSmall;
                             break;
-                        case Toggle.Off:
+                        case Toggle.On:
                             this.Indicator.TextureHeight = 10;
                             this.Indicator.TextureLeft = 70;
                             this.Indicator.TextureTop = 14;
