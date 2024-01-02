@@ -166,7 +166,7 @@
       <Type>string</Type>
       <Name>Label.Text</Name>
       <Value xsi:type="xsd:string">Label</Value>
-      <ExposedAsName>LabelText</ExposedAsName>
+      <ExposedAsName>SliderLabelText</ExposedAsName>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

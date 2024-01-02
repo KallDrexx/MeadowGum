@@ -24,7 +24,7 @@ namespace MeadowGum.ScratchPad.Common.Components
         public SpriteRuntime Indicator { get; protected set; }
         public ContainerRuntime SliderComponents { get; protected set; }
 
-        public string LabelText
+        public string SliderLabelText
         {
             get => Label.Text;
             set => Label.Text = value;

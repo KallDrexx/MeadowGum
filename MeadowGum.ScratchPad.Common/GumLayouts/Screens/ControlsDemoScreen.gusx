@@ -445,6 +445,13 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>string</Type>
+      <Name>HomeSlider.SliderLabelText</Name>
+      <Value xsi:type="xsd:string">Home Amount</Value>
+      <ExposedAsName>SliderLabelText</ExposedAsName>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>float</Type>
       <Name>HomeSlider.Width</Name>
       <Value xsi:type="xsd:float">100</Value>

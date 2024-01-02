@@ -63,6 +63,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
             set => BoostToggle.LabelText = value;
         }
 
+        public string SliderLabelText
+        {
+            get => HomeSlider.SliderLabelText;
+            set => HomeSlider.SliderLabelText = value;
+        }
+
         public ControlsDemoScreenRuntime(bool fullInstantiation = true)
         {
             if(fullInstantiation)
@@ -240,6 +246,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.MainMenuButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.MainMenuButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
+            this.HomeSlider.SliderLabelText = "Home Amount";
             this.HomeSlider.Width = 100f;
 
             this.BoostToggle.LabelText = "Boost";
