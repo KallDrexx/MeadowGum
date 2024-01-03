@@ -1456,6 +1456,370 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-02T20:24:52.8066775Z"
+      },
+      {
+        "NewName": "Text1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-03T02:03:15.3244511Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Text1",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-03T02:03:38.6735005Z"
+      },
+      {
+        "NewName": "First",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-03T02:03:44.3495608Z"
+      },
+      {
+        "NewName": "First (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:04:04.2116359Z"
+      },
+      {
+        "NewName": "Second",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-03T02:04:39.2995008Z"
+      },
+      {
+        "NewName": "Second (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:04:42.7684827Z"
+      },
+      {
+        "NewName": "TestScreen",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-03T02:04:56.8038903Z"
+      },
+      {
+        "NewName": "TestScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:04:59.169411Z"
+      },
+      {
+        "NewName": "TestScreen.SecondInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:05:04.6549876Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "TestScreen.Second SecondInstance in TestScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-03T02:05:27.5693083Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "TestScreen.Text TextInstance in TestScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-03T02:05:31.5283834Z"
+      },
+      {
+        "NewName": "TestScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:05:46.7845518Z"
+      },
+      {
+        "NewName": "TestScreen.FirstInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:05:52.880481Z"
+      },
+      {
+        "NewName": "TestScreen.SecondInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:05:56.7184095Z"
+      },
+      {
+        "NewName": "TestScreen.FirstInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:10:51.8414654Z"
+      },
+      {
+        "NewName": "Sensors",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-03T02:32:01.9445285Z"
+      },
+      {
+        "NewName": "Sensors.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:32:07.5509858Z"
+      },
+      {
+        "NewName": "Sensors.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:32:35.4807221Z"
+      },
+      {
+        "NewName": "Sensors.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:33:54.817472Z"
+      },
+      {
+        "NewName": "Sensors.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:39:20.5465178Z"
+      },
+      {
+        "NewName": "Sensors.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:39:48.0403614Z"
+      },
+      {
+        "NewName": "Sensors.TextInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:40:33.8329943Z"
+      },
+      {
+        "NewName": "Sensors.TempLabel",
+        "OldName": "Sensors.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:40:41.18722Z"
+      },
+      {
+        "NewName": "Sensors.TempValue",
+        "OldName": "Sensors.TextInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:40:46.0141574Z"
+      },
+      {
+        "NewName": "Sensors.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:41:49.1120615Z"
+      },
+      {
+        "NewName": "Sensors.Lumens",
+        "OldName": "Sensors.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:42:29.6500032Z"
+      },
+      {
+        "NewName": "Sensors.LightLabel",
+        "OldName": "Sensors.Lumens",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:43:14.7175626Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Sensors.Text LightLabel in Sensors",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-03T02:43:22.2994242Z"
+      },
+      {
+        "NewName": "Sensors.TempLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:43:27.3657743Z"
+      },
+      {
+        "NewName": "Sensors.TempValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:43:27.3766813Z"
+      },
+      {
+        "NewName": "Sensors.LuxLabel",
+        "OldName": "Sensors.TempLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:43:36.0185085Z"
+      },
+      {
+        "NewName": "Sensors.LuxValue",
+        "OldName": "Sensors.TempValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:43:40.4692562Z"
+      },
+      {
+        "NewName": "Sensors.TextContainer",
+        "OldName": "Sensors.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:44:46.4756522Z"
+      },
+      {
+        "NewName": "Sensors.LuxLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:44:51.3397132Z"
+      },
+      {
+        "NewName": "Sensors.LuxValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:44:51.3509962Z"
+      },
+      {
+        "NewName": "Sensors.PressureLabel",
+        "OldName": "Sensors.LuxLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:45:24.9934818Z"
+      },
+      {
+        "NewName": "Sensors.PressureValue",
+        "OldName": "Sensors.LuxValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:47:51.6617191Z"
+      },
+      {
+        "NewName": "Sensors.PressureLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:47:57.9422112Z"
+      },
+      {
+        "NewName": "Sensors.PressureValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:47:57.959053Z"
+      },
+      {
+        "NewName": "Sensors.AccelerationLabel",
+        "OldName": "Sensors.PressureLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:48:07.1624202Z"
+      },
+      {
+        "NewName": "Sensors.AccelerationValue",
+        "OldName": "Sensors.PressureValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:48:23.2176811Z"
+      },
+      {
+        "NewName": "Sensors.AccelerationLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:48:26.4012515Z"
+      },
+      {
+        "NewName": "Sensors.AccelerationValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:48:26.4152538Z"
+      },
+      {
+        "NewName": "Sensors.AccelerationLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:48:36.8859998Z"
+      },
+      {
+        "NewName": "Sensors.AccelerationValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:48:36.9324405Z"
+      },
+      {
+        "NewName": "Sensors.AnglularVelocityLabel",
+        "OldName": "Sensors.AccelerationLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:49:02.4672403Z"
+      },
+      {
+        "NewName": "Sensors.AngularVelocityValue",
+        "OldName": "Sensors.AccelerationValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:49:22.5226241Z"
+      },
+      {
+        "NewName": "Sensors.AnglularVelocityLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:49:43.4213614Z"
+      },
+      {
+        "NewName": "Sensors.AngularVelocityValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-03T02:49:43.439361Z"
+      },
+      {
+        "NewName": "Sensors.HumidityLabel",
+        "OldName": "Sensors.AnglularVelocityLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:49:51.3845468Z"
+      },
+      {
+        "NewName": "Sensors.HumidityValue",
+        "OldName": "Sensors.AngularVelocityValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:50:21.1413437Z"
+      },
+      {
+        "NewName": "MainMenu.SensorsScreenButton",
+        "OldName": "MainMenu.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-03T02:51:22.6723778Z"
       }
     ]
   }

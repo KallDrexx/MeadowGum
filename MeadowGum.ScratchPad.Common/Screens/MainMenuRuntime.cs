@@ -76,6 +76,17 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             NextScreen = () => new ControlsDemoScreenRuntime(),
                         };
                     }
+
+                    if (_buttons[_selectedIndex] == SensorsScreenButton)
+                    {
+                        return new SplashScreenRuntime
+                        {
+                            TitleText = "Sensors Demo Screen",
+                            DescriptionText =
+                                "Demonstrates updating UI based on sensors. Press Left to go back to the main menu",
+                            NextScreen = () => new SensorsRuntime(),
+                        };
+                    }
                 }
             }
 

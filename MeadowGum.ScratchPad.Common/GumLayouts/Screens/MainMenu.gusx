@@ -133,25 +133,25 @@
     </Variable>
     <Variable>
       <Type>string</Type>
-      <Name>SpriteButtonInstance.ButtonText</Name>
-      <Value xsi:type="xsd:string">SomeOtherButton</Value>
+      <Name>SensorsScreenButton.ButtonText</Name>
+      <Value xsi:type="xsd:string">Sensors Demo Screen</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>string</Type>
-      <Name>SpriteButtonInstance.Parent</Name>
+      <Name>SensorsScreenButton.Parent</Name>
       <Value xsi:type="xsd:string">ButtonContainer</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>HorizontalAlignment</Type>
-      <Name>SpriteButtonInstance.X Origin</Name>
+      <Name>SensorsScreenButton.X Origin</Name>
       <Value xsi:type="xsd:int">2</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>PositionUnitType</Type>
-      <Name>SpriteButtonInstance.X Units</Name>
+      <Name>SensorsScreenButton.X Units</Name>
       <Value xsi:type="xsd:int">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
@@ -213,7 +213,7 @@
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>SpriteButtonInstance</Name>
+    <Name>SensorsScreenButton</Name>
     <BaseType>SpriteButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>

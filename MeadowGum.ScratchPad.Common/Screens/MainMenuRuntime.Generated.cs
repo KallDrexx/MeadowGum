@@ -19,7 +19,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public BackgroundRuntime BackgroundInstance { get; protected set; }
         public ContainerRuntime ButtonContainer { get; protected set; }
         public SpriteButtonRuntime ControlsDemoScreenButton { get; protected set; }
-        public SpriteButtonRuntime SpriteButtonInstance { get; protected set; }
+        public SpriteButtonRuntime SensorsScreenButton { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
 
         public string ButtonText
@@ -55,8 +55,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             ButtonContainer.Name = "ButtonContainer";
             ControlsDemoScreenButton = new SpriteButtonRuntime();
             ControlsDemoScreenButton.Name = "ControlsDemoScreenButton";
-            SpriteButtonInstance = new SpriteButtonRuntime();
-            SpriteButtonInstance.Name = "SpriteButtonInstance";
+            SensorsScreenButton = new SpriteButtonRuntime();
+            SensorsScreenButton.Name = "SensorsScreenButton";
             ScreenLabelInstance = new ScreenLabelRuntime();
             ScreenLabelInstance.Name = "ScreenLabelInstance";
         }
@@ -66,7 +66,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Children.Add(BackgroundInstance);
             this.Children.Add(ButtonContainer);
             ButtonContainer.Children.Add(ControlsDemoScreenButton);
-            ButtonContainer.Children.Add(SpriteButtonInstance);
+            ButtonContainer.Children.Add(SensorsScreenButton);
             this.Children.Add(ScreenLabelInstance);
         }
         private void ApplyDefaultVariables()
@@ -97,9 +97,9 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.ControlsDemoScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
             this.ControlsDemoScreenButton.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
 
-            this.SpriteButtonInstance.ButtonText = "SomeOtherButton";
-            this.SpriteButtonInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.SpriteButtonInstance.XUnits = GeneralUnitType.PixelsFromLarge;
+            this.SensorsScreenButton.ButtonText = "Sensors Demo Screen";
+            this.SensorsScreenButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.SensorsScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
             this.ScreenLabelInstance.Text = "Main Menu";
 
