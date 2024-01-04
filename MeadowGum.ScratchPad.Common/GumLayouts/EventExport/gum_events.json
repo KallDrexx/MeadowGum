@@ -1820,6 +1820,678 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-03T02:51:22.6723778Z"
+      },
+      {
+        "NewName": "EbikeUi",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-04T20:58:47.8299828Z"
+      },
+      {
+        "NewName": "EbikeUi.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T20:58:55.2354698Z"
+      },
+      {
+        "NewName": "EbikeUi.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T20:58:59.7264646Z"
+      },
+      {
+        "NewName": "EbikeUi.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T20:59:24.4897835Z"
+      },
+      {
+        "NewName": "MainMenu.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:02:08.7392973Z"
+      },
+      {
+        "NewName": "MainMenu.EbikeButton",
+        "OldName": "MainMenu.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:02:21.1876183Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:05:43.855606Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:06:17.1716351Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryInfoContainer",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:06:38.9304807Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:07:06.1245105Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryTextContainer",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:07:22.9746665Z"
+      },
+      {
+        "NewName": "EbikeUi.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:07:29.3391459Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryValue",
+        "OldName": "EbikeUi.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:08:14.5967905Z"
+      },
+      {
+        "NewName": "EbikeUi.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:08:30.152114Z"
+      },
+      {
+        "NewName": "EbikeUi.VerticalProgressBarInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:10:55.2466385Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryProgressBar",
+        "OldName": "EbikeUi.VerticalProgressBarInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:13:51.9302384Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryIcon",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:14:34.4762222Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryInfoContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:16:12.4159611Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryIcon1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:16:12.432958Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryProgressBar1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:16:12.4469579Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryTextContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:16:12.488514Z"
+      },
+      {
+        "NewName": "EbikeUi.BatteryValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:16:12.5045154Z"
+      },
+      {
+        "NewName": "EbikeUi.TextInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:16:12.52002Z"
+      },
+      {
+        "NewName": "EbikeUi.SpeedContainer",
+        "OldName": "EbikeUi.BatteryInfoContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:16:23.3299411Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.Sprite BatteryIcon1 in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:17:28.7333809Z"
+      },
+      {
+        "NewName": "EbikeUi.SpeedProgressBar",
+        "OldName": "EbikeUi.BatteryProgressBar1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:17:35.6402748Z"
+      },
+      {
+        "NewName": "EbikeUi.SpeedTextContainer",
+        "OldName": "EbikeUi.BatteryTextContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:17:51.4401572Z"
+      },
+      {
+        "NewName": "EbikeUi.SpeedValue",
+        "OldName": "EbikeUi.BatteryValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:17:58.2680426Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:21:03.8895872Z"
+      },
+      {
+        "NewName": "EbikeUi.MiscInfoContainer",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:21:11.787111Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:22:16.4455169Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.Container ContainerInstance1 in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:22:31.1348965Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:23:29.5833765Z"
+      },
+      {
+        "NewName": "EbikeUi.LeftInfoContainer",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:23:48.8825728Z"
+      },
+      {
+        "NewName": "LabelValueItem",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-04T21:25:01.6234091Z"
+      },
+      {
+        "NewName": "LabelValueItem (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:25:16.5893845Z"
+      },
+      {
+        "NewName": "LabelValueItem (Container).LabelInstance",
+        "OldName": "LabelValueItem (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:25:21.6745696Z"
+      },
+      {
+        "NewName": "LabelValueItem (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:25:51.7323708Z"
+      },
+      {
+        "NewName": "LabelValueItem (Container).ValueInstance",
+        "OldName": "LabelValueItem (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:25:56.4398822Z"
+      },
+      {
+        "NewName": "EbikeUi.LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:27:34.6903676Z"
+      },
+      {
+        "NewName": "Hover (Container).LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:28:15.7696299Z"
+      },
+      {
+        "NewName": "EbikeUi.TripDisplay",
+        "OldName": "EbikeUi.LabelValueItemInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:28:25.5813446Z"
+      },
+      {
+        "NewName": "EbikeUi.LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:28:29.3929474Z"
+      },
+      {
+        "NewName": "EbikeUi.AverageSpeedDisplay",
+        "OldName": "EbikeUi.LabelValueItemInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:28:35.9465851Z"
+      },
+      {
+        "NewName": "EbikeUi.LeftInfoContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:30:47.4519107Z"
+      },
+      {
+        "NewName": "EbikeUi.TripDisplay1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:30:47.4764179Z"
+      },
+      {
+        "NewName": "EbikeUi.AverageSpeedDisplay1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:30:47.518991Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.LabelValueItem TripDisplay1 in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:30:50.2904085Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.LabelValueItem AverageSpeedDisplay1 in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:30:52.3631034Z"
+      },
+      {
+        "NewName": "EbikeUi.RightInfoContainer",
+        "OldName": "EbikeUi.LeftInfoContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:30:58.3535619Z"
+      },
+      {
+        "NewName": "EbikeUi.LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:31:08.1773218Z"
+      },
+      {
+        "NewName": "EbikeUi.OdometerDisplay",
+        "OldName": "EbikeUi.LabelValueItemInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:31:19.3165048Z"
+      },
+      {
+        "NewName": "EbikeUi.LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:34:32.9112603Z"
+      },
+      {
+        "NewName": "EbikeUi.TimeDisplay",
+        "OldName": "EbikeUi.LabelValueItemInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:35:08.9475143Z"
+      },
+      {
+        "NewName": "EbikeUi.LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:35:32.1003113Z"
+      },
+      {
+        "NewName": "EbikeUi.Max Speed",
+        "OldName": "EbikeUi.LabelValueItemInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:36:10.8160363Z"
+      },
+      {
+        "NewName": "EbikeUi.MaxSpeedDisplay",
+        "OldName": "EbikeUi.Max Speed",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:36:35.5783172Z"
+      },
+      {
+        "NewName": "EbikeUi.LabelValueItemInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:36:51.6626363Z"
+      },
+      {
+        "NewName": "EbikeUi.EtaDisplay",
+        "OldName": "EbikeUi.LabelValueItemInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:37:01.2037653Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:39:47.6249275Z"
+      },
+      {
+        "NewName": "EbikeUi.StatusBar",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:39:55.4972546Z"
+      },
+      {
+        "NewName": "EbikeUi.TextInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:40:44.8569523Z"
+      },
+      {
+        "NewName": "EbikeUi.Temp",
+        "OldName": "EbikeUi.TextInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:41:56.3078935Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.Text Temp in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:41:58.6188215Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.Container StatusBar in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:42:15.2576277Z"
+      },
+      {
+        "NewName": "EbikeUi.ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:42:22.3538846Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:42:55.3617108Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:44:28.4280548Z"
+      },
+      {
+        "NewName": "EbikeUi.TemperatureContainer",
+        "OldName": "EbikeUi.ContainerInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:44:42.6267441Z"
+      },
+      {
+        "NewName": "EbikeUi.TextInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:44:45.9704571Z"
+      },
+      {
+        "NewName": "EbikeUi.TemperatureValue",
+        "OldName": "EbikeUi.TextInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:45:10.4663459Z"
+      },
+      {
+        "NewName": "EbikeUi.TextInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:49:29.786858Z"
+      },
+      {
+        "NewName": "EbikeUi.TemperatureUnits",
+        "OldName": "EbikeUi.TextInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:49:58.8261596Z"
+      },
+      {
+        "NewName": "EbikeUi.TemperatureContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:51:39.9576422Z"
+      },
+      {
+        "NewName": "EbikeUi.TemperatureValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:51:40.0172644Z"
+      },
+      {
+        "NewName": "EbikeUi.TemperatureUnits1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:51:40.0497727Z"
+      },
+      {
+        "NewName": "EbikeUi.TimeContainer",
+        "OldName": "EbikeUi.TemperatureContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:51:45.5674991Z"
+      },
+      {
+        "NewName": "EbikeUi.TimeValue",
+        "OldName": "EbikeUi.TemperatureValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:51:50.7638611Z"
+      },
+      {
+        "NewName": "EbikeUi.CurrentTimeValue",
+        "OldName": "EbikeUi.TimeValue",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:52:09.9327079Z"
+      },
+      {
+        "NewName": "EbikeUi.RideTimeDisplay",
+        "OldName": "EbikeUi.TimeDisplay",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:52:20.9818414Z"
+      },
+      {
+        "NewName": "EbikeUi.CurrentTimeUnits",
+        "OldName": "EbikeUi.TemperatureUnits1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:52:43.9113356Z"
+      },
+      {
+        "NewName": "EbikeUi.StatusContainer",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:57:22.4432305Z"
+      },
+      {
+        "NewName": "EbikeUi.StatusBarContainer",
+        "OldName": "EbikeUi.StatusContainer",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:57:26.5653524Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.ColoredRectangle ColoredRectangleInstance in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:57:29.9699548Z"
+      },
+      {
+        "NewName": "EbikeUi.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:58:20.5929561Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.SpriteButton SpriteButtonInstance in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:58:33.6940584Z"
+      },
+      {
+        "NewName": "EbikeUi.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:58:39.1560409Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.Sprite SpriteInstance in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T21:58:50.6718424Z"
+      },
+      {
+        "NewName": "EbikeUi.HomeIcon",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:59:08.9433669Z"
+      },
+      {
+        "NewName": "EbikeUi.ContainerInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T21:59:18.814706Z"
+      },
+      {
+        "NewName": "EbikeUi.ButtonsContainer",
+        "OldName": "EbikeUi.ContainerInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T21:59:27.1021566Z"
+      },
+      {
+        "NewName": "EbikeUi.HomeIcon1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T22:00:07.6104865Z"
+      },
+      {
+        "NewName": "EbikeUi.HomeIcon2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T22:00:09.7152562Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "EbikeUi.Sprite HomeIcon2 in EbikeUi",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-04T22:00:41.0976054Z"
+      },
+      {
+        "NewName": "EbikeUi.HoverInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-04T22:00:46.328387Z"
+      },
+      {
+        "NewName": "EbikeUi.MainDataContainer",
+        "OldName": "EbikeUi.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-04T22:02:36.381873Z"
       }
     ]
   }

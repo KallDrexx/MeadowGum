@@ -21,6 +21,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteButtonRuntime ControlsDemoScreenButton { get; protected set; }
         public SpriteButtonRuntime SensorsScreenButton { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
+        public SpriteButtonRuntime EbikeButton { get; protected set; }
 
         public string ButtonText
         {
@@ -59,6 +60,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             SensorsScreenButton.Name = "SensorsScreenButton";
             ScreenLabelInstance = new ScreenLabelRuntime();
             ScreenLabelInstance.Name = "ScreenLabelInstance";
+            EbikeButton = new SpriteButtonRuntime();
+            EbikeButton.Name = "EbikeButton";
         }
         protected virtual void AssignParents()
         {
@@ -68,10 +71,11 @@ namespace MeadowGum.ScratchPad.Common.Screens
             ButtonContainer.Children.Add(ControlsDemoScreenButton);
             ButtonContainer.Children.Add(SensorsScreenButton);
             this.Children.Add(ScreenLabelInstance);
+            ButtonContainer.Children.Add(EbikeButton);
         }
         private void ApplyDefaultVariables()
         {
-            this.TestScreen1Button.ButtonText = "Test Screen #1";
+            this.TestScreen1Button.ButtonText = "QA Screen";
             this.TestScreen1Button.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.TestScreen1Button.XUnits = GeneralUnitType.PixelsFromLarge;
             this.TestScreen1Button.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
@@ -102,6 +106,11 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.SensorsScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
             this.ScreenLabelInstance.Text = "Main Menu";
+
+            this.EbikeButton.ButtonText = "Ebike UI Demo";
+            this.EbikeButton.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
+            this.EbikeButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.EbikeButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
         }
         partial void CustomInitialize();

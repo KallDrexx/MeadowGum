@@ -87,6 +87,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             NextScreen = () => new SensorsRuntime(),
                         };
                     }
+
+                    if (_buttons[_selectedIndex] == EbikeButton)
+                    {
+                        return new SplashScreenRuntime
+                        {
+                            TitleText = "Ebike UI Demo",
+                            DescriptionText = "Example Ebike user interface",
+                            NextScreen = () => new EbikeUiRuntime(),
+                        };
+                    }
                 }
             }
 
