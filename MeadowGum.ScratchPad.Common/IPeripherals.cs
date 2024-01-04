@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Numerics;
+using System.Threading;
+using System.Threading.Tasks;
 using Meadow.Units;
 
 namespace MeadowGum.ScratchPad.Common;
@@ -6,11 +8,11 @@ namespace MeadowGum.ScratchPad.Common;
 public interface IPeripherals
 {
     Temperature Temperature { get; }
-    Acceleration3D Acceleration3D { get; }
-    AngularVelocity3D AngularVelocity3D { get; }
+    Vector3 Acceleration { get; }
+    Vector3 AngularVelocity { get; }
     RelativeHumidity Humidity { get; }
     Pressure Pressure { get; }
     Illuminance Illuminance { get; }
 
-    Task WaitForNextUpdateAsync();
+    Task WaitForNextUpdateAsync(CancellationToken cancellationToken);
 }

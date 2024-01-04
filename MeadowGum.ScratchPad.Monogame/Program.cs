@@ -1,6 +1,7 @@
 ﻿using Meadow.Foundation.Sensors.Buttons;
 using MeadowGum.Renderer.MicroGraphics;
 using MeadowGum.ScratchPad.Common;
+using MeadowGum.ScratchPad.Monogame;
 using MeadowGum.Shared.Components;
 using MeadowMgTestEnvironment;
 using Microsoft.Xna.Framework.Input;
@@ -24,5 +25,6 @@ InputManager.Instance.RegisterButton(leftButton, ButtonNames.Left);
 
 var renderer = new MicroGraphicsRenderer(environment.Display, Path.Combine(Environment.CurrentDirectory, "GumLayouts"));
 MeadowGumComponent.DefaultRenderer = renderer;
+PeripheralManager.Peripherals = new MgPeripherals();
 
 await AppRunner.RunAsync();
