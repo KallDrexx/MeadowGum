@@ -9,7 +9,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
     {
         partial void CustomInitialize()
         {
-        
+            PeripheralManager.Peripherals.StartUpdating();
         }
 
         public override async Task<MeadowGumScreen?> RunAsync(CancellationToken cancellationToken)
@@ -21,6 +21,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
                 {
                     if (buttonEvent.Name == ButtonNames.Left && buttonEvent.State == InputManager.ButtonState.Clicked)
                     {
+                        PeripheralManager.Peripherals.StopUpdating();
                         return new MainMenuRuntime();
                     }
                 }

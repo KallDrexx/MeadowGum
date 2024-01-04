@@ -15,4 +15,6 @@ public interface IPeripherals
     Illuminance Illuminance { get; }
 
     Task WaitForNextUpdateAsync(CancellationToken cancellationToken);
+    void StartUpdating();
+    void StopUpdating();
 }

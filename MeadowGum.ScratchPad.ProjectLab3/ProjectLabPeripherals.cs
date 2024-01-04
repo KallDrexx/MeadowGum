@@ -12,19 +12,17 @@ namespace MeadowGum.ScratchPad.ProjectLab3;
 public class ProjectLabPeripherals : IPeripherals
 {
     private readonly IProjectLabHardware _projectLab;
-    private bool _hasBeenUpdated;
+    private readonly TimeSpan _pollInterval;
+    private bool _hasBeenUpdated, _isPolling;
     
     public ProjectLabPeripherals(IProjectLabHardware projectLab, TimeSpan pollInterval)
     {
         _projectLab = projectLab;
+        _pollInterval = pollInterval;
 
         _projectLab.EnvironmentalSensor!.Updated += OnEnvironmentalSensorUpdated;
         _projectLab.MotionSensor!.Updated += OnMotionSensorUpdated;
         _projectLab.LightSensor!.Updated += OnLightSensorUpdated;
-        
-        _projectLab.EnvironmentalSensor.StartUpdating(pollInterval);
-        _projectLab.MotionSensor.StartUpdating(pollInterval);
-        _projectLab.LightSensor.StartUpdating(pollInterval);
     }
 
     public Temperature Temperature { get; set; }
@@ -36,6 +34,8 @@ public class ProjectLabPeripherals : IPeripherals
     
     public async Task WaitForNextUpdateAsync(CancellationToken cancellationToken)
     {
+        StartUpdating();
+        
         var startedAt = DateTime.Now;
         while (!_hasBeenUpdated && (DateTime.Now - startedAt) < TimeSpan.FromSeconds(1))
         {
@@ -43,6 +43,26 @@ public class ProjectLabPeripherals : IPeripherals
         }
 
         _hasBeenUpdated = false;
+    }
+
+    public void StartUpdating()
+    {
+        if (!_isPolling)
+        {
+            _projectLab.EnvironmentalSensor?.StartUpdating(_pollInterval);
+            _projectLab.MotionSensor?.StartUpdating(_pollInterval);
+            _projectLab.LightSensor?.StartUpdating(_pollInterval);
+        }
+    }
+
+    public void StopUpdating()
+    {
+        if (_isPolling)
+        {
+            _projectLab.EnvironmentalSensor?.StopUpdating();
+            _projectLab.MotionSensor?.StopUpdating();
+            _projectLab.LightSensor?.StartUpdating();
+        }
     }
 
     private void OnLightSensorUpdated(object sender, IChangeResult<Illuminance> e)

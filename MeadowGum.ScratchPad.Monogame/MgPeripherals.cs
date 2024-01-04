@@ -26,6 +26,14 @@ public class MgPeripherals : IPeripherals
         RandomizeData();
     }
 
+    public void StartUpdating()
+    {
+    }
+
+    public void StopUpdating()
+    {
+    }
+
     private void RandomizeData()
     {
         Temperature = new Temperature(_random.NextInt64(0, 100), Temperature.UnitType.Fahrenheit);
