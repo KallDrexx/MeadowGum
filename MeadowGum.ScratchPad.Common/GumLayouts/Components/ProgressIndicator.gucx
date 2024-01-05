@@ -135,7 +135,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -168,21 +168,21 @@
     <Variable>
       <Type>int</Type>
       <Name>Texture Left</Name>
-      <Value xsi:type="xsd:int">32</Value>
+      <Value xsi:type="xsd:int">193</Value>
       <Category>Source</Category>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Texture Top</Name>
-      <Value xsi:type="xsd:int">19</Value>
+      <Value xsi:type="xsd:int">113</Value>
       <Category>Source</Category>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Texture Width</Name>
-      <Value xsi:type="xsd:int">12</Value>
+      <Value xsi:type="xsd:int">14</Value>
       <Category>Source</Category>
       <SetsValue>true</SetsValue>
     </Variable>
@@ -299,19 +299,19 @@
       <Variable>
         <Type>int</Type>
         <Name>Texture Left</Name>
-        <Value xsi:type="xsd:int">32</Value>
+        <Value xsi:type="xsd:int">193</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Texture Top</Name>
-        <Value xsi:type="xsd:int">19</Value>
+        <Value xsi:type="xsd:int">113</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Texture Width</Name>
-        <Value xsi:type="xsd:int">12</Value>
+        <Value xsi:type="xsd:int">14</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
@@ -340,21 +340,111 @@
       <Variable>
         <Type>int</Type>
         <Name>Texture Left</Name>
-        <Value xsi:type="xsd:int">32</Value>
+        <Value xsi:type="xsd:int">145</Value>
         <Category>Source</Category>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Texture Top</Name>
-        <Value xsi:type="xsd:int">11</Value>
+        <Value xsi:type="xsd:int">113</Value>
         <Category>Source</Category>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Texture Width</Name>
-        <Value xsi:type="xsd:int">12</Value>
+        <Value xsi:type="xsd:int">14</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>Wrap</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+    <State>
+      <Name>Yellow</Name>
+      <Variable>
+        <Type>TextureAddress</Type>
+        <Name>Texture Address</Name>
+        <Value xsi:type="xsd:int">1</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Height</Name>
+        <Value xsi:type="xsd:int">6</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Left</Name>
+        <Value xsi:type="xsd:int">161</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Top</Name>
+        <Value xsi:type="xsd:int">113</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Width</Name>
+        <Value xsi:type="xsd:int">14</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>bool</Type>
+        <Name>Wrap</Name>
+        <Value xsi:type="xsd:boolean">false</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+    <State>
+      <Name>LightGreen</Name>
+      <Variable>
+        <Type>TextureAddress</Type>
+        <Name>Texture Address</Name>
+        <Value xsi:type="xsd:int">1</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Height</Name>
+        <Value xsi:type="xsd:int">6</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Left</Name>
+        <Value xsi:type="xsd:int">177</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Top</Name>
+        <Value xsi:type="xsd:int">113</Value>
+        <Category>Source</Category>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>Texture Width</Name>
+        <Value xsi:type="xsd:int">14</Value>
         <Category>Source</Category>
         <SetsValue>true</SetsValue>
       </Variable>

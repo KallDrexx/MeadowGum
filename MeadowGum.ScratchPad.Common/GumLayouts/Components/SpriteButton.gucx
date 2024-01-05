@@ -103,7 +103,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>Left.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -133,7 +133,7 @@
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Top</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">112</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -175,7 +175,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>Right.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -199,13 +199,13 @@
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Left</Name>
-      <Value xsi:type="xsd:int">8</Value>
+      <Value xsi:type="xsd:int">57</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Top</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">112</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -381,13 +381,13 @@
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Left</Name>
-        <Value xsi:type="xsd:int">16</Value>
+        <Value xsi:type="xsd:int">64</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Top</Name>
-        <Value xsi:type="xsd:int">0</Value>
+        <Value xsi:type="xsd:int">112</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
@@ -405,13 +405,13 @@
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Left</Name>
-        <Value xsi:type="xsd:int">24</Value>
+        <Value xsi:type="xsd:int">121</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Top</Name>
-        <Value xsi:type="xsd:int">0</Value>
+        <Value xsi:type="xsd:int">112</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
@@ -456,7 +456,7 @@
       <Variable>
         <Type>int</Type>
         <Name>Left.Texture Top</Name>
-        <Value xsi:type="xsd:int">0</Value>
+        <Value xsi:type="xsd:int">112</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
@@ -474,13 +474,13 @@
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Left</Name>
-        <Value xsi:type="xsd:int">8</Value>
+        <Value xsi:type="xsd:int">57</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
         <Name>Right.Texture Top</Name>
-        <Value xsi:type="xsd:int">0</Value>
+        <Value xsi:type="xsd:int">112</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>

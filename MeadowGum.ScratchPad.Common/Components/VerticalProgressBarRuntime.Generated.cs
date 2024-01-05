@@ -41,7 +41,7 @@ namespace MeadowGum.ScratchPad.Common.Components
                 }
             }
         }
-        public ColoredRectangleRuntime Background { get; protected set; }
+        public SpriteRuntime Background { get; protected set; }
         public ContainerRuntime Indicators { get; protected set; }
         public ProgressIndicatorRuntime ProgressIndicatorInstance { get; protected set; }
         public ProgressIndicatorRuntime ProgressIndicatorInstance1 { get; protected set; }
@@ -80,7 +80,7 @@ namespace MeadowGum.ScratchPad.Common.Components
         }
         protected virtual void InitializeInstances()
         {
-            Background = new ColoredRectangleRuntime();
+            Background = new SpriteRuntime();
             Background.Name = "Background";
             Indicators = new ContainerRuntime();
             Indicators.Name = "Indicators";
@@ -128,13 +128,12 @@ namespace MeadowGum.ScratchPad.Common.Components
         }
         private void ApplyDefaultVariables()
         {
-            this.Background.Blue = 144;
-            this.Background.Green = 186;
-            this.Background.Height = 96f;
-            this.Background.HeightUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
-            this.Background.Red = 206;
-            this.Background.Width = 16f;
-            this.Background.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
+            this.Background.SourceFile = "retro-70s-UI.bmp";
+            this.Background.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
+            this.Background.TextureHeight = 96;
+            this.Background.TextureLeft = 128;
+            this.Background.TextureTop = 112;
+            this.Background.TextureWidth = 16;
 
             this.Indicators.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.Indicators.ContainedType = "ProgressIndicator";

@@ -20,6 +20,7 @@
     <ItemGroup>
         <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\spritesheet.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" Link="spritesheet.bmp"/>
         <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\retro-meadow-ui.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" Link="retro-meadow-ui.bmp"/>
+        <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\retro-70s-UI.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" Link="retro-70s-UI.bmp"/>
     </ItemGroup>
 
 </Project>

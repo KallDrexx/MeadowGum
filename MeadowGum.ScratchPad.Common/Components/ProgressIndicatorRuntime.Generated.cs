@@ -19,6 +19,8 @@ namespace MeadowGum.ScratchPad.Common.Components
         {
             Green,
             Red,
+            Yellow,
+            LightGreen,
         }
 
         Color mColorState;
@@ -36,17 +38,33 @@ namespace MeadowGum.ScratchPad.Common.Components
                         case Color.Green:
                             this.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
                             this.TextureHeight = 6;
-                            this.TextureLeft = 32;
-                            this.TextureTop = 19;
-                            this.TextureWidth = 12;
+                            this.TextureLeft = 193;
+                            this.TextureTop = 113;
+                            this.TextureWidth = 14;
                             this.Wrap = false;
                             break;
                         case Color.Red:
                             this.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
                             this.TextureHeight = 6;
-                            this.TextureLeft = 32;
-                            this.TextureTop = 11;
-                            this.TextureWidth = 12;
+                            this.TextureLeft = 145;
+                            this.TextureTop = 113;
+                            this.TextureWidth = 14;
+                            this.Wrap = false;
+                            break;
+                        case Color.Yellow:
+                            this.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
+                            this.TextureHeight = 6;
+                            this.TextureLeft = 161;
+                            this.TextureTop = 113;
+                            this.TextureWidth = 14;
+                            this.Wrap = false;
+                            break;
+                        case Color.LightGreen:
+                            this.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
+                            this.TextureHeight = 6;
+                            this.TextureLeft = 177;
+                            this.TextureTop = 113;
+                            this.TextureWidth = 14;
                             this.Wrap = false;
                             break;
                     }
@@ -72,13 +90,13 @@ namespace MeadowGum.ScratchPad.Common.Components
                 this.IgnoredByParentSize = false;
                  
                 this.Red = 255;
-                this.SourceFile = "retro-meadow-ui.bmp";
+                this.SourceFile = "retro-70s-UI.bmp";
                 this.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
                 this.TextureHeight = 6;
                 this.TextureHeightScale = 0f;
-                this.TextureLeft = 32;
-                this.TextureTop = 19;
-                this.TextureWidth = 12;
+                this.TextureLeft = 193;
+                this.TextureTop = 113;
+                this.TextureWidth = 14;
                 this.TextureWidthScale = 0f;
                 this.Visible = true;
                 this.Width = 100f;

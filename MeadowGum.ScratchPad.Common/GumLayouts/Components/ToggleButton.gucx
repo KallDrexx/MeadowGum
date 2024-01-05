@@ -11,48 +11,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>int</Type>
-      <Name>ColoredRectangleInstance.Blue</Name>
-      <Value xsi:type="xsd:int">144</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>ColoredRectangleInstance.Green</Name>
-      <Value xsi:type="xsd:int">186</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>float</Type>
-      <Name>ColoredRectangleInstance.Height</Name>
-      <Value xsi:type="xsd:float">16</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ColoredRectangleInstance.Parent</Name>
-      <Value xsi:type="xsd:string">ContainerInstance</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>ColoredRectangleInstance.Red</Name>
-      <Value xsi:type="xsd:int">206</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>float</Type>
-      <Name>ColoredRectangleInstance.Width</Name>
-      <Value xsi:type="xsd:float">20</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>DimensionUnitType</Type>
-      <Name>ColoredRectangleInstance.Width Units</Name>
-      <Value xsi:type="xsd:int">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>ChildrenLayout</Type>
       <Name>ContainerInstance.Children Layout</Name>
       <Value xsi:type="xsd:int">2</Value>
@@ -95,43 +53,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <IsFile>true</IsFile>
-      <Type>string</Type>
-      <Name>Indicator.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>TextureAddress</Type>
-      <Name>Indicator.Texture Address</Name>
-      <Value xsi:type="xsd:int">1</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Indicator.Texture Height</Name>
-      <Value xsi:type="xsd:int">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Indicator.Texture Left</Name>
-      <Value xsi:type="xsd:int">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Indicator.Texture Top</Name>
-      <Value xsi:type="xsd:int">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Indicator.Texture Width</Name>
-      <Value xsi:type="xsd:int">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>bool</Type>
       <Name>IsOverrideInCodeGen</Name>
       <Value xsi:type="xsd:boolean">false</Value>
@@ -147,13 +68,13 @@
     <Variable>
       <Type>int</Type>
       <Name>Label.Blue</Name>
-      <Value xsi:type="xsd:int">144</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Label.Green</Name>
-      <Value xsi:type="xsd:int">186</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -177,7 +98,7 @@
     <Variable>
       <Type>int</Type>
       <Name>Label.Red</Name>
-      <Value xsi:type="xsd:int">206</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -231,88 +152,45 @@
     </Variable>
     <Variable>
       <Type>string</Type>
-      <Name>Left.Parent</Name>
+      <Name>Sprite.Parent</Name>
       <Value xsi:type="xsd:string">ContainerInstance</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <IsFile>true</IsFile>
       <Type>string</Type>
-      <Name>Left.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Name>Sprite.SourceFile</Name>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>TextureAddress</Type>
-      <Name>Left.Texture Address</Name>
+      <Name>Sprite.Texture Address</Name>
       <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
-      <Name>Left.Texture Height</Name>
+      <Name>Sprite.Texture Height</Name>
       <Value xsi:type="xsd:int">16</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
-      <Name>Left.Texture Left</Name>
-      <Value xsi:type="xsd:int">45</Value>
+      <Name>Sprite.Texture Left</Name>
+      <Value xsi:type="xsd:int">64</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
-      <Name>Left.Texture Top</Name>
-      <Value xsi:type="xsd:int">13</Value>
+      <Name>Sprite.Texture Top</Name>
+      <Value xsi:type="xsd:int">64</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
-      <Name>Left.Texture Width</Name>
-      <Value xsi:type="xsd:int">6</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>Right.Parent</Name>
-      <Value xsi:type="xsd:string">ContainerInstance</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <IsFile>true</IsFile>
-      <Type>string</Type>
-      <Name>Right.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>TextureAddress</Type>
-      <Name>Right.Texture Address</Name>
-      <Value xsi:type="xsd:int">1</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Right.Texture Height</Name>
-      <Value xsi:type="xsd:int">16</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Right.Texture Left</Name>
-      <Value xsi:type="xsd:int">52</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Right.Texture Top</Name>
-      <Value xsi:type="xsd:int">13</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>int</Type>
-      <Name>Right.Texture Width</Name>
-      <Value xsi:type="xsd:int">6</Value>
+      <Name>Sprite.Texture Width</Name>
+      <Value xsi:type="xsd:int">32</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -340,21 +218,7 @@
     </Variable>
     <VariableList xsi:type="VariableListSaveOfString">
       <Type>string</Type>
-      <Name>Left.AnimationFrames</Name>
-      <IsFile>false</IsFile>
-      <IsHiddenInPropertyGrid>false</IsHiddenInPropertyGrid>
-      <Value />
-    </VariableList>
-    <VariableList xsi:type="VariableListSaveOfString">
-      <Type>string</Type>
-      <Name>Right.AnimationFrames</Name>
-      <IsFile>false</IsFile>
-      <IsHiddenInPropertyGrid>false</IsHiddenInPropertyGrid>
-      <Value />
-    </VariableList>
-    <VariableList xsi:type="VariableListSaveOfString">
-      <Type>string</Type>
-      <Name>Indicator.AnimationFrames</Name>
+      <Name>Sprite.AnimationFrames</Name>
       <IsFile>false</IsFile>
       <IsHiddenInPropertyGrid>false</IsHiddenInPropertyGrid>
       <Value />
@@ -367,50 +231,26 @@
       <Name>Off</Name>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Height</Name>
-        <Value xsi:type="xsd:int">10</Value>
+        <Name>Sprite.Texture Height</Name>
+        <Value xsi:type="xsd:int">16</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Left</Name>
-        <Value xsi:type="xsd:int">59</Value>
+        <Name>Sprite.Texture Left</Name>
+        <Value xsi:type="xsd:int">64</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Top</Name>
-        <Value xsi:type="xsd:int">14</Value>
+        <Name>Sprite.Texture Top</Name>
+        <Value xsi:type="xsd:int">64</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Width</Name>
-        <Value xsi:type="xsd:int">10</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>Indicator.X</Name>
-        <Value xsi:type="xsd:float">3</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>Indicator.Y</Name>
-        <Value xsi:type="xsd:float">3</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>RenderingLibrary.Graphics.VerticalAlignment</Type>
-        <Name>Indicator.Y Origin</Name>
-        <Value xsi:type="xsd:int">0</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>Gum.Managers.PositionUnitType</Type>
-        <Name>Indicator.Y Units</Name>
-        <Value xsi:type="xsd:int">1</Value>
+        <Name>Sprite.Texture Width</Name>
+        <Value xsi:type="xsd:int">32</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -418,70 +258,32 @@
       <Name>On</Name>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Height</Name>
-        <Value xsi:type="xsd:int">10</Value>
+        <Name>Sprite.Texture Height</Name>
+        <Value xsi:type="xsd:int">16</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Left</Name>
-        <Value xsi:type="xsd:int">70</Value>
+        <Name>Sprite.Texture Left</Name>
+        <Value xsi:type="xsd:int">64</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Top</Name>
-        <Value xsi:type="xsd:int">14</Value>
+        <Name>Sprite.Texture Top</Name>
+        <Value xsi:type="xsd:int">80</Value>
         <SetsValue>true</SetsValue>
       </Variable>
       <Variable>
         <Type>int</Type>
-        <Name>Indicator.Texture Width</Name>
-        <Value xsi:type="xsd:int">10</Value>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>Indicator.X</Name>
-        <Value xsi:type="xsd:float">19</Value>
-        <Category>Position</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>float</Type>
-        <Name>Indicator.Y</Name>
-        <Value xsi:type="xsd:float">3</Value>
-        <Category>Position</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>VerticalAlignment</Type>
-        <Name>Indicator.Y Origin</Name>
-        <Value xsi:type="xsd:int">0</Value>
-        <Category>Position</Category>
-        <SetsValue>true</SetsValue>
-      </Variable>
-      <Variable>
-        <Type>PositionUnitType</Type>
-        <Name>Indicator.Y Units</Name>
-        <Value xsi:type="xsd:int">1</Value>
-        <Category>Position</Category>
+        <Name>Sprite.Texture Width</Name>
+        <Value xsi:type="xsd:int">32</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
   </Category>
   <Instance>
-    <Name>Left</Name>
-    <BaseType>Sprite</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>ColoredRectangleInstance</Name>
-    <BaseType>ColoredRectangle</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>Right</Name>
+    <Name>Sprite</Name>
     <BaseType>Sprite</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
@@ -493,11 +295,6 @@
   <Instance>
     <Name>Label</Name>
     <BaseType>Text</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>Indicator</Name>
-    <BaseType>Sprite</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

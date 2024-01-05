@@ -76,11 +76,11 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Background.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Background.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.Left.Blue = 144;
-            this.Left.Green = 186;
+            this.Left.Blue = 0;
+            this.Left.Green = 0;
             this.Left.Height = 0f;
             this.Left.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
-            this.Left.Red = 206;
+            this.Left.Red = 0;
             this.Left.Width = 2f;
             this.Left.X = 0f;
             this.Left.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Left;
@@ -89,11 +89,11 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Left.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Left.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.Right.Blue = 144;
-            this.Right.Green = 186;
+            this.Right.Blue = 0;
+            this.Right.Green = 0;
             this.Right.Height = 0f;
             this.Right.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
-            this.Right.Red = 206;
+            this.Right.Red = 0;
             this.Right.Width = 2f;
             this.Right.X = 0f;
             this.Right.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
@@ -102,10 +102,10 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Right.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.Right.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.Top.Blue = 144;
-            this.Top.Green = 186;
+            this.Top.Blue = 0;
+            this.Top.Green = 0;
             this.Top.Height = 2f;
-            this.Top.Red = 206;
+            this.Top.Red = 0;
             this.Top.Width = 0f;
             this.Top.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
             this.Top.X = 0f;
@@ -115,10 +115,10 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Top.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.Top.YUnits = GeneralUnitType.PixelsFromSmall;
 
-            this.ColoredRectangleInstance.Blue = 144;
-            this.ColoredRectangleInstance.Green = 186;
+            this.ColoredRectangleInstance.Blue = 0;
+            this.ColoredRectangleInstance.Green = 0;
             this.ColoredRectangleInstance.Height = 2f;
-            this.ColoredRectangleInstance.Red = 206;
+            this.ColoredRectangleInstance.Red = 0;
             this.ColoredRectangleInstance.Width = 0f;
             this.ColoredRectangleInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
             this.ColoredRectangleInstance.X = 0f;

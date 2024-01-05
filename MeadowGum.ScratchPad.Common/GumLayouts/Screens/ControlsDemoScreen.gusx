@@ -73,7 +73,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>BatteryIcon.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -91,13 +91,13 @@
     <Variable>
       <Type>int</Type>
       <Name>BatteryIcon.Texture Left</Name>
-      <Value xsi:type="xsd:int">76</Value>
+      <Value xsi:type="xsd:int">177</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>BatteryIcon.Texture Top</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">97</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -363,7 +363,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>HomeIcon.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -381,13 +381,13 @@
     <Variable>
       <Type>int</Type>
       <Name>HomeIcon.Texture Left</Name>
-      <Value xsi:type="xsd:int">44</Value>
+      <Value xsi:type="xsd:int">145</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>HomeIcon.Texture Top</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">98</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

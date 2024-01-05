@@ -47,7 +47,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public TextRuntime TemperatureUnits { get; protected set; }
         public TextRuntime CurrentTimeUnits { get; protected set; }
         public SpriteRuntime HomeIcon { get; protected set; }
-        public SpriteRuntime HomeIcon1 { get; protected set; }
+        public SpriteRuntime SettingsIcon { get; protected set; }
         public ContainerRuntime ButtonsContainer { get; protected set; }
         public HoverRuntime HoverInstance { get; protected set; }
 
@@ -134,8 +134,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             CurrentTimeUnits.Name = "CurrentTimeUnits";
             HomeIcon = new SpriteRuntime();
             HomeIcon.Name = "HomeIcon";
-            HomeIcon1 = new SpriteRuntime();
-            HomeIcon1.Name = "HomeIcon1";
+            SettingsIcon = new SpriteRuntime();
+            SettingsIcon.Name = "SettingsIcon";
             ButtonsContainer = new ContainerRuntime();
             ButtonsContainer.Name = "ButtonsContainer";
             HoverInstance = new HoverRuntime();
@@ -175,7 +175,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             TemperatureContainer.Children.Add(TemperatureUnits);
             TimeContainer.Children.Add(CurrentTimeUnits);
             ButtonsContainer.Children.Add(HomeIcon);
-            ButtonsContainer.Children.Add(HomeIcon1);
+            ButtonsContainer.Children.Add(SettingsIcon);
             PanelInstance.Children.Add(ButtonsContainer);
             this.Children.Add(HoverInstance);
         }
@@ -275,11 +275,11 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.TextInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
 
             this.BatteryIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.BatteryIcon.SourceFile = "retro-meadow-ui.bmp";
+            this.BatteryIcon.SourceFile = "retro-70s-UI.bmp";
             this.BatteryIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.BatteryIcon.TextureHeight = 13;
-            this.BatteryIcon.TextureLeft = 76;
-            this.BatteryIcon.TextureTop = 0;
+            this.BatteryIcon.TextureLeft = 177;
+            this.BatteryIcon.TextureTop = 97;
             this.BatteryIcon.TextureWidth = 14;
             this.BatteryIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.BatteryIcon.X = 0f;
@@ -397,24 +397,24 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.CurrentTimeUnits.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
 
             this.HomeIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.HomeIcon.SourceFile = "retro-meadow-ui.bmp";
+            this.HomeIcon.SourceFile = "retro-70s-UI.bmp";
             this.HomeIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
-            this.HomeIcon.TextureHeight = 13;
-            this.HomeIcon.TextureLeft = 44;
-            this.HomeIcon.TextureTop = 0;
+            this.HomeIcon.TextureHeight = 14;
+            this.HomeIcon.TextureLeft = 145;
+            this.HomeIcon.TextureTop = 97;
             this.HomeIcon.TextureWidth = 14;
             this.HomeIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.HomeIcon.X = 1f;
 
-            this.HomeIcon1.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.HomeIcon1.SourceFile = "retro-meadow-ui.bmp";
-            this.HomeIcon1.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
-            this.HomeIcon1.TextureHeight = 13;
-            this.HomeIcon1.TextureLeft = 60;
-            this.HomeIcon1.TextureTop = 0;
-            this.HomeIcon1.TextureWidth = 14;
-            this.HomeIcon1.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.HomeIcon1.X = 1f;
+            this.SettingsIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
+            this.SettingsIcon.SourceFile = "retro-70s-UI.bmp";
+            this.SettingsIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
+            this.SettingsIcon.TextureHeight = 14;
+            this.SettingsIcon.TextureLeft = 161;
+            this.SettingsIcon.TextureTop = 97;
+            this.SettingsIcon.TextureWidth = 14;
+            this.SettingsIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
+            this.SettingsIcon.X = 1f;
 
             this.ButtonsContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
             this.ButtonsContainer.StackSpacing = 5f;

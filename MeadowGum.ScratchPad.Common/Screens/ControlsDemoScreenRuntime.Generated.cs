@@ -159,21 +159,21 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.PanelInstance.Y = 50f;
 
             this.BatteryIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.BatteryIcon.SourceFile = "retro-meadow-ui.bmp";
+            this.BatteryIcon.SourceFile = "retro-70s-UI.bmp";
             this.BatteryIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.BatteryIcon.TextureHeight = 13;
-            this.BatteryIcon.TextureLeft = 76;
-            this.BatteryIcon.TextureTop = 0;
+            this.BatteryIcon.TextureLeft = 177;
+            this.BatteryIcon.TextureTop = 97;
             this.BatteryIcon.TextureWidth = 14;
             this.BatteryIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.BatteryIcon.X = 1f;
 
             this.HomeIcon.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.HomeIcon.SourceFile = "retro-meadow-ui.bmp";
+            this.HomeIcon.SourceFile = "retro-70s-UI.bmp";
             this.HomeIcon.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.HomeIcon.TextureHeight = 13;
-            this.HomeIcon.TextureLeft = 44;
-            this.HomeIcon.TextureTop = 0;
+            this.HomeIcon.TextureLeft = 145;
+            this.HomeIcon.TextureTop = 98;
             this.HomeIcon.TextureWidth = 14;
             this.HomeIcon.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
             this.HomeIcon.X = 1f;

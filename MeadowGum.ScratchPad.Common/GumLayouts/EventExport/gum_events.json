@@ -2492,6 +2492,237 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-04T22:02:36.381873Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle TopLeftHorizontal in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7590409Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle TopLeftVertical in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7600801Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle TopRightHorizontal in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7620755Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle TopRightVertical in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7630755Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle BottomLeftHorizontal in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7650763Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle BottomLeftVertical in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7660823Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle BottomRightHorizontal in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7680409Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Hover (Container).ColoredRectangle BottomRightVertical in Hover (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T01:56:14.7690746Z"
+      },
+      {
+        "NewName": "Hover (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T01:56:28.4488827Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeft",
+        "OldName": "Hover (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T01:57:10.5973713Z"
+      },
+      {
+        "NewName": "Hover (Container).TopLeft1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T01:58:09.4930741Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRight",
+        "OldName": "Hover (Container).TopLeft1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T01:58:16.4486041Z"
+      },
+      {
+        "NewName": "Hover (Container).TopRight1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T01:58:55.465522Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomRight",
+        "OldName": "Hover (Container).TopRight1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T01:59:00.3152255Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomRight1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T01:59:18.4929315Z"
+      },
+      {
+        "NewName": "Hover (Container).BottomLeft",
+        "OldName": "Hover (Container).BottomRight1",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T01:59:22.9850049Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:17:34.9073568Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).Sprite Left in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:18:31.4943594Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).ColoredRectangle ColoredRectangleInstance in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:18:33.6404836Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).Sprite Right in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:18:36.1644878Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ToggleSprite",
+        "OldName": "ToggleButton (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:18:55.529873Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ToggleSprite",
+        "OldName": "ToggleButton (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:18:55.5319106Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ToggleSprite",
+        "OldName": "ToggleButton (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:18:55.5358829Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Sprite",
+        "OldName": "ToggleButton (Container).ToggleSprite",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:19:02.3403774Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Sprite",
+        "OldName": "ToggleButton (Container).ToggleSprite",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:19:02.3413873Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).Sprite",
+        "OldName": "ToggleButton (Container).ToggleSprite",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:19:02.3433779Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).Sprite Indicator in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:19:19.2673799Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).SpriteInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:20:12.9702149Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "VerticalProgressBar (Container).ColoredRectangle Background in VerticalProgressBar (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:21:06.8922711Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).Background",
+        "OldName": "VerticalProgressBar (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:21:15.6395866Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).Background",
+        "OldName": "VerticalProgressBar (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:21:15.6425908Z"
+      },
+      {
+        "NewName": "VerticalProgressBar (Container).Background",
+        "OldName": "VerticalProgressBar (Container).SpriteInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:21:15.6465834Z"
+      },
+      {
+        "NewName": "EbikeUi.SettingsIcon",
+        "OldName": "EbikeUi.HomeIcon1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:28:03.4715393Z"
       }
     ]
   }

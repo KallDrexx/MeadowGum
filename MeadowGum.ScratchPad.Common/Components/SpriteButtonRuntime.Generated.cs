@@ -38,12 +38,12 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.ColoredRectangleInstance.Green = 61;
                             this.ColoredRectangleInstance.Red = 228;
                             this.Left.TextureHeight = 32;
-                            this.Left.TextureLeft = 16;
-                            this.Left.TextureTop = 0;
+                            this.Left.TextureLeft = 64;
+                            this.Left.TextureTop = 112;
                             this.Left.TextureWidth = 7;
                             this.Right.TextureHeight = 32;
-                            this.Right.TextureLeft = 24;
-                            this.Right.TextureTop = 0;
+                            this.Right.TextureLeft = 121;
+                            this.Right.TextureTop = 112;
                             this.Right.TextureWidth = 7;
                             break;
                         case Selection.Deselected:
@@ -52,11 +52,11 @@ namespace MeadowGum.ScratchPad.Common.Components
                             this.ColoredRectangleInstance.Red = 81;
                             this.Left.TextureHeight = 32;
                             this.Left.TextureLeft = 0;
-                            this.Left.TextureTop = 0;
+                            this.Left.TextureTop = 112;
                             this.Left.TextureWidth = 7;
                             this.Right.TextureHeight = 32;
-                            this.Right.TextureLeft = 8;
-                            this.Right.TextureTop = 0;
+                            this.Right.TextureLeft = 57;
+                            this.Right.TextureTop = 112;
                             this.Right.TextureWidth = 7;
                             break;
                     }
@@ -119,12 +119,12 @@ namespace MeadowGum.ScratchPad.Common.Components
         {
             this.Left.Height = 100f;
             this.Left.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.Left.SourceFile = "retro-meadow-ui.bmp";
+            this.Left.SourceFile = "retro-70s-UI.bmp";
             this.Left.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.Left.TextureHeight = 32;
             this.Left.TextureHeightScale = 1f;
             this.Left.TextureLeft = 0;
-            this.Left.TextureTop = 0;
+            this.Left.TextureTop = 112;
             this.Left.TextureWidth = 7;
             this.Left.TextureWidthScale = 1f;
             this.Left.WidthUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
@@ -139,12 +139,12 @@ namespace MeadowGum.ScratchPad.Common.Components
 
             this.Right.Height = 100f;
             this.Right.HeightUnits = global::Gum.DataTypes.DimensionUnitType.PercentageOfSourceFile;
-            this.Right.SourceFile = "retro-meadow-ui.bmp";
+            this.Right.SourceFile = "retro-70s-UI.bmp";
             this.Right.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.Right.TextureHeight = 32;
             this.Right.TextureHeightScale = 1f;
-            this.Right.TextureLeft = 8;
-            this.Right.TextureTop = 0;
+            this.Right.TextureLeft = 57;
+            this.Right.TextureTop = 112;
             this.Right.TextureWidth = 7;
             this.Right.TextureWidthScale = 1f;
             this.Right.Width = 100f;

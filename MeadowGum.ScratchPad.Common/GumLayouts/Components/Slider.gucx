@@ -13,19 +13,19 @@
     <Variable>
       <Type>int</Type>
       <Name>ColoredRectangleInstance.Blue</Name>
-      <Value xsi:type="xsd:int">144</Value>
+      <Value xsi:type="xsd:int">56</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>ColoredRectangleInstance.Green</Name>
-      <Value xsi:type="xsd:int">186</Value>
+      <Value xsi:type="xsd:int">59</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>float</Type>
       <Name>ColoredRectangleInstance.Height</Name>
-      <Value xsi:type="xsd:float">16</Value>
+      <Value xsi:type="xsd:float">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -37,19 +37,31 @@
     <Variable>
       <Type>int</Type>
       <Name>ColoredRectangleInstance.Red</Name>
-      <Value xsi:type="xsd:int">206</Value>
+      <Value xsi:type="xsd:int">60</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>float</Type>
       <Name>ColoredRectangleInstance.Width</Name>
-      <Value xsi:type="xsd:float">-12</Value>
+      <Value xsi:type="xsd:float">-5</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>DimensionUnitType</Type>
       <Name>ColoredRectangleInstance.Width Units</Name>
       <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>ColoredRectangleInstance.Y Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>ColoredRectangleInstance.Y Units</Name>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -68,7 +80,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>Indicator.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -86,13 +98,13 @@
     <Variable>
       <Type>int</Type>
       <Name>Indicator.Texture Left</Name>
-      <Value xsi:type="xsd:int">32</Value>
+      <Value xsi:type="xsd:int">115</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Indicator.Texture Top</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">99</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -129,13 +141,13 @@
     <Variable>
       <Type>int</Type>
       <Name>Label.Blue</Name>
-      <Value xsi:type="xsd:int">144</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Label.Green</Name>
-      <Value xsi:type="xsd:int">186</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -159,7 +171,7 @@
     <Variable>
       <Type>int</Type>
       <Name>Label.Red</Name>
-      <Value xsi:type="xsd:int">206</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -221,7 +233,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>Left.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -233,25 +245,37 @@
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Height</Name>
-      <Value xsi:type="xsd:int">16</Value>
+      <Value xsi:type="xsd:int">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Left</Name>
-      <Value xsi:type="xsd:int">45</Value>
+      <Value xsi:type="xsd:int">64</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Top</Name>
-      <Value xsi:type="xsd:int">13</Value>
+      <Value xsi:type="xsd:int">102</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Left.Texture Width</Name>
-      <Value xsi:type="xsd:int">6</Value>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>Left.Y Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>Left.Y Units</Name>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -264,7 +288,7 @@
       <IsFile>true</IsFile>
       <Type>string</Type>
       <Name>Right.SourceFile</Name>
-      <Value xsi:type="xsd:string">retro-meadow-ui.bmp</Value>
+      <Value xsi:type="xsd:string">retro-70s-UI.bmp</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -276,25 +300,37 @@
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Height</Name>
-      <Value xsi:type="xsd:int">16</Value>
+      <Value xsi:type="xsd:int">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Left</Name>
-      <Value xsi:type="xsd:int">52</Value>
+      <Value xsi:type="xsd:int">110</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Top</Name>
-      <Value xsi:type="xsd:int">13</Value>
+      <Value xsi:type="xsd:int">102</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>int</Type>
       <Name>Right.Texture Width</Name>
-      <Value xsi:type="xsd:int">6</Value>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>Right.Y Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>Right.Y Units</Name>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>

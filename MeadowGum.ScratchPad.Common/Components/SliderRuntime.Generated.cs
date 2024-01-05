@@ -90,11 +90,11 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.TextArea.Width = 0f;
             this.TextArea.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
 
-            this.Label.Blue = 144;
-            this.Label.Green = 186;
+            this.Label.Blue = 0;
+            this.Label.Green = 0;
             this.Label.Height = 0f;
             this.Label.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.Label.Red = 206;
+            this.Label.Red = 0;
             this.Label.Text = "Label";
             this.Label.VerticalAlignment = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.Label.Width = 0f;
@@ -109,32 +109,38 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.SliderArea.Width = 100f;
             this.SliderArea.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
 
-            this.Left.SourceFile = "retro-meadow-ui.bmp";
+            this.Left.SourceFile = "retro-70s-UI.bmp";
             this.Left.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
-            this.Left.TextureHeight = 16;
-            this.Left.TextureLeft = 45;
-            this.Left.TextureTop = 13;
-            this.Left.TextureWidth = 6;
+            this.Left.TextureHeight = 4;
+            this.Left.TextureLeft = 64;
+            this.Left.TextureTop = 102;
+            this.Left.TextureWidth = 2;
+            this.Left.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
+            this.Left.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.ColoredRectangleInstance.Blue = 144;
-            this.ColoredRectangleInstance.Green = 186;
-            this.ColoredRectangleInstance.Height = 16f;
-            this.ColoredRectangleInstance.Red = 206;
-            this.ColoredRectangleInstance.Width = -12f;
+            this.ColoredRectangleInstance.Blue = 56;
+            this.ColoredRectangleInstance.Green = 59;
+            this.ColoredRectangleInstance.Height = 4f;
+            this.ColoredRectangleInstance.Red = 60;
+            this.ColoredRectangleInstance.Width = -5f;
             this.ColoredRectangleInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
+            this.ColoredRectangleInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
+            this.ColoredRectangleInstance.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.Right.SourceFile = "retro-meadow-ui.bmp";
+            this.Right.SourceFile = "retro-70s-UI.bmp";
             this.Right.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
-            this.Right.TextureHeight = 16;
-            this.Right.TextureLeft = 52;
-            this.Right.TextureTop = 13;
-            this.Right.TextureWidth = 6;
+            this.Right.TextureHeight = 4;
+            this.Right.TextureLeft = 110;
+            this.Right.TextureTop = 102;
+            this.Right.TextureWidth = 2;
+            this.Right.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
+            this.Right.YUnits = GeneralUnitType.PixelsFromMiddle;
 
-            this.Indicator.SourceFile = "retro-meadow-ui.bmp";
+            this.Indicator.SourceFile = "retro-70s-UI.bmp";
             this.Indicator.TextureAddress = global::Gum.Managers.TextureAddress.Custom;
             this.Indicator.TextureHeight = 10;
-            this.Indicator.TextureLeft = 32;
-            this.Indicator.TextureTop = 0;
+            this.Indicator.TextureLeft = 115;
+            this.Indicator.TextureTop = 99;
             this.Indicator.TextureWidth = 10;
             this.Indicator.X = 3f;
             this.Indicator.Y = -13f;
