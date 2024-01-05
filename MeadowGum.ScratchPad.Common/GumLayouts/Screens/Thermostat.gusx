@@ -4,6 +4,11 @@
   <State>
     <Name>Default</Name>
     <Variable>
+      <Type>Activity</Type>
+      <Name>ActivityState</Name>
+      <SetsValue>false</SetsValue>
+    </Variable>
+    <Variable>
       <Type>float</Type>
       <Name>ActualDisplayContainer.Height</Name>
       <Value xsi:type="xsd:float">0</Value>
@@ -1511,6 +1516,91 @@
       <Value />
     </VariableList>
   </State>
+  <Category>
+    <Name>Activity</Name>
+    <IsSetRecursively>false</IsSetRecursively>
+    <State>
+      <Name>Idle</Name>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Blue</Name>
+        <Value xsi:type="xsd:int">56</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Green</Name>
+        <Value xsi:type="xsd:int">59</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Red</Name>
+        <Value xsi:type="xsd:int">60</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>string</Type>
+        <Name>StatusValue.Text</Name>
+        <Value xsi:type="xsd:string">Idle</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+    <State>
+      <Name>Heating</Name>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Blue</Name>
+        <Value xsi:type="xsd:int">49</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Green</Name>
+        <Value xsi:type="xsd:int">61</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Red</Name>
+        <Value xsi:type="xsd:int">228</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>string</Type>
+        <Name>StatusValue.Text</Name>
+        <Value xsi:type="xsd:string">Heating</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+    <State>
+      <Name>Cooling</Name>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Blue</Name>
+        <Value xsi:type="xsd:int">150</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Green</Name>
+        <Value xsi:type="xsd:int">116</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>int</Type>
+        <Name>StatusBackground.Red</Name>
+        <Value xsi:type="xsd:int">81</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+      <Variable>
+        <Type>string</Type>
+        <Name>StatusValue.Text</Name>
+        <Value xsi:type="xsd:string">Cooling</Value>
+        <SetsValue>true</SetsValue>
+      </Variable>
+    </State>
+  </Category>
   <Instance>
     <Name>BackgroundInstance</Name>
     <BaseType>Background</BaseType>

@@ -15,6 +15,47 @@ namespace MeadowGum.ScratchPad.Common.Screens
 {
     public partial class ThermostatRuntime
     {
+        public enum Activity
+        {
+            Idle,
+            Heating,
+            Cooling,
+        }
+
+        Activity mActivityState;
+        public Activity ActivityState
+        {
+            get => mActivityState;
+            set
+            {
+                mActivityState = value;
+                var appliedDynamically = false;
+                if(!appliedDynamically)
+                {
+                    switch (value)
+                    {
+                        case Activity.Idle:
+                            this.StatusBackground.Blue = 56;
+                            this.StatusBackground.Green = 59;
+                            this.StatusBackground.Red = 60;
+                            this.StatusValue.Text = "Idle";
+                            break;
+                        case Activity.Heating:
+                            this.StatusBackground.Blue = 49;
+                            this.StatusBackground.Green = 61;
+                            this.StatusBackground.Red = 228;
+                            this.StatusValue.Text = "Heating";
+                            break;
+                        case Activity.Cooling:
+                            this.StatusBackground.Blue = 150;
+                            this.StatusBackground.Green = 116;
+                            this.StatusBackground.Red = 81;
+                            this.StatusValue.Text = "Cooling";
+                            break;
+                    }
+                }
+            }
+        }
         public BackgroundRuntime BackgroundInstance { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
         public PanelRuntime PanelInstance { get; protected set; }
