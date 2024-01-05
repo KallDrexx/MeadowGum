@@ -2989,6 +2989,328 @@
         "ElementType": "Components",
         "EventType": 5,
         "TimestampUtc": "2024-01-05T02:57:31.384505Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:16:40.2013946Z"
+      },
+      {
+        "NewName": "Thermostat.TopMiddleContainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:16:48.6615319Z"
+      },
+      {
+        "NewName": "Thermostat.ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:17:06.786404Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:17:40.5682163Z"
+      },
+      {
+        "NewName": "Thermostat.MiddleDisplay",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:17:45.8713098Z"
+      },
+      {
+        "NewName": "Thermostat.StatusDisplay",
+        "OldName": "Thermostat.MiddleDisplay",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:18:28.5126272Z"
+      },
+      {
+        "NewName": "Thermostat.StatusBackground",
+        "OldName": "Thermostat.ColoredRectangleInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:18:35.3264689Z"
+      },
+      {
+        "NewName": "Thermostat.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:21:26.6182396Z"
+      },
+      {
+        "NewName": "Thermostat.StatusLabel",
+        "OldName": "Thermostat.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:22:57.6530843Z"
+      },
+      {
+        "NewName": "Thermostat.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:23:02.0490134Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Thermostat.Text TextInstance in Thermostat",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T21:23:04.6548664Z"
+      },
+      {
+        "NewName": "Thermostat.StatusLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:23:08.6882907Z"
+      },
+      {
+        "NewName": "Thermostat.StatusValue",
+        "OldName": "Thermostat.StatusLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:23:14.2894158Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:25:57.1302385Z"
+      },
+      {
+        "NewName": "Thermostat.BottomLeftContainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:26:04.7102147Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:26:31.5086364Z"
+      },
+      {
+        "NewName": "Thermostat.TargetDisplayContainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:26:38.4076716Z"
+      },
+      {
+        "NewName": "Thermostat.ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:26:43.6753478Z"
+      },
+      {
+        "NewName": "Thermostat.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:28:32.9044262Z"
+      },
+      {
+        "NewName": "Thermostat.TargetLabel",
+        "OldName": "Thermostat.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:30:28.9514832Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTextBackground",
+        "OldName": "Thermostat.ColoredRectangleInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:30:38.3984096Z"
+      },
+      {
+        "NewName": "Thermostat.TargetLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:30:41.1926906Z"
+      },
+      {
+        "NewName": "Thermostat.TargetValue",
+        "OldName": "Thermostat.TargetLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:30:50.1337094Z"
+      },
+      {
+        "NewName": "Thermostat.TargetValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:15.2301072Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTextBackground1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:15.2773674Z"
+      },
+      {
+        "NewName": "Thermostat.TargetLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:15.3091221Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Thermostat.ColoredRectangle TargetTextBackground1 in Thermostat",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T21:32:31.86928Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Thermostat.Text TargetLabel1 in Thermostat",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T21:32:32.0623029Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Thermostat.Text TargetValue1 in Thermostat",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T21:32:32.1084744Z"
+      },
+      {
+        "NewName": "Thermostat.TargetValue1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:44.7058207Z"
+      },
+      {
+        "NewName": "Thermostat.TargetDisplayContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:44.753381Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTextBackground1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:44.7773611Z"
+      },
+      {
+        "NewName": "Thermostat.TargetLabel1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:32:44.832818Z"
+      },
+      {
+        "NewName": "Thermostat.ActualDisplayContainer",
+        "OldName": "Thermostat.TargetDisplayContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:32:52.1904325Z"
+      },
+      {
+        "NewName": "Thermostat.ActualTextBackground",
+        "OldName": "Thermostat.TargetTextBackground1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:33:03.1576626Z"
+      },
+      {
+        "NewName": "Thermostat.ActualValue",
+        "OldName": "Thermostat.TargetValue1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:33:11.5242135Z"
+      },
+      {
+        "NewName": "Thermostat.ActualLabel",
+        "OldName": "Thermostat.TargetLabel1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:33:22.1277154Z"
+      },
+      {
+        "NewName": "Thermostat.ActualTempDisplayValue",
+        "OldName": "Thermostat.ActualValue",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:33:28.6001591Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:36:06.4063063Z"
+      },
+      {
+        "NewName": "Thermostat.BottomRightContainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:36:14.3049541Z"
+      },
+      {
+        "NewName": "Thermostat.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:37:05.2925701Z"
+      },
+      {
+        "NewName": "Thermostat.SpriteButtonInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:37:26.083278Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Thermostat.SpriteButton SpriteButtonInstance in Thermostat",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T21:38:56.139846Z"
+      },
+      {
+        "NewName": "Thermostat.SpriteButtonInstance2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T21:40:12.5542003Z"
+      },
+      {
+        "NewName": "Thermostat.ExitButton",
+        "OldName": "Thermostat.SpriteButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:41:03.6036794Z"
+      },
+      {
+        "NewName": "Thermostat.ResetButton",
+        "OldName": "Thermostat.SpriteButtonInstance2",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T21:41:09.1935648Z"
       }
     ]
   }

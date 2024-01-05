@@ -123,14 +123,14 @@ namespace MeadowGum.ScratchPad.Common.Components
             this.Sprite.TextureWidth = 32;
 
             this.ContainerInstance.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
-            this.ContainerInstance.Height = 3f;
+            this.ContainerInstance.Height = 0f;
             this.ContainerInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.ContainerInstance.Width = 3f;
+            this.ContainerInstance.Width = 0f;
             this.ContainerInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
-            this.ContainerInstance.X = 3f;
+            this.ContainerInstance.X = 0f;
             this.ContainerInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.ContainerInstance.XUnits = GeneralUnitType.PixelsFromMiddle;
-            this.ContainerInstance.Y = 3f;
+            this.ContainerInstance.Y = 0f;
             this.ContainerInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.ContainerInstance.YUnits = GeneralUnitType.PixelsFromMiddle;
 
