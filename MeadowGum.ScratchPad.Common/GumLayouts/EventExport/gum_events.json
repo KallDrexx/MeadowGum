@@ -2723,6 +2723,272 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-05T02:28:03.4715393Z"
+      },
+      {
+        "NewName": "Thermostat",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-05T02:30:23.0505682Z"
+      },
+      {
+        "NewName": "Thermostat.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:30:31.1395255Z"
+      },
+      {
+        "NewName": "Thermostat.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:30:35.180858Z"
+      },
+      {
+        "NewName": "Thermostat.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:31:12.5554321Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:33:50.4706509Z"
+      },
+      {
+        "NewName": "Thermostat.InnerContainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:34:06.8488489Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:36:49.8414881Z"
+      },
+      {
+        "NewName": "Thermostat.TopControls",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:37:01.5981226Z"
+      },
+      {
+        "NewName": "Thermostat.VerticalProgressBarInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:37:52.6079758Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempProgressBar",
+        "OldName": "Thermostat.VerticalProgressBarInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:38:12.6038681Z"
+      },
+      {
+        "NewName": "MainMenu.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:38:38.6117457Z"
+      },
+      {
+        "NewName": "MainMenu.ThermostatButton",
+        "OldName": "MainMenu.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:38:48.7067809Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:41:47.4358727Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempcontainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:41:52.7629412Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempContainer",
+        "OldName": "Thermostat.TargetTempcontainer",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:41:57.6688279Z"
+      },
+      {
+        "NewName": "Thermostat.SpriteInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:42:26.2757756Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempIcon",
+        "OldName": "Thermostat.SpriteInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:42:33.601791Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempProgressBar1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:45:13.1879807Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:45:13.2069809Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempIcon1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:45:13.2349305Z"
+      },
+      {
+        "NewName": "Thermostat.EcoContainer",
+        "OldName": "Thermostat.TargetTempContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:45:33.0431681Z"
+      },
+      {
+        "NewName": "Thermostat.EcoProgressBar",
+        "OldName": "Thermostat.TargetTempProgressBar1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:45:41.4106203Z"
+      },
+      {
+        "NewName": "Thermostat.EcoIcon",
+        "OldName": "Thermostat.TargetTempIcon1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:45:49.0343806Z"
+      },
+      {
+        "NewName": "Thermostat.EcoProgressBar1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:46:31.1199911Z"
+      },
+      {
+        "NewName": "Thermostat.EcoContainer1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:46:31.1442936Z"
+      },
+      {
+        "NewName": "Thermostat.EcoIcon1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:46:31.1658827Z"
+      },
+      {
+        "NewName": "Thermostat.EnergyContainer",
+        "OldName": "Thermostat.EcoContainer1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:46:45.0965333Z"
+      },
+      {
+        "NewName": "Thermostat.EnergyProgressBar",
+        "OldName": "Thermostat.EcoProgressBar1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:46:50.0309866Z"
+      },
+      {
+        "NewName": "Thermostat.TopLeft",
+        "OldName": "Thermostat.TopControls",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:48:38.9037698Z"
+      },
+      {
+        "NewName": "Thermostat.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:49:06.7498763Z"
+      },
+      {
+        "NewName": "Thermostat.TopLeftContainer",
+        "OldName": "Thermostat.TopLeft",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:49:10.5695313Z"
+      },
+      {
+        "NewName": "Thermostat.TopRightContainer",
+        "OldName": "Thermostat.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-05T02:49:22.3060394Z"
+      },
+      {
+        "NewName": "Thermostat.SliderInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:49:57.9209568Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "Thermostat.Container InnerContainer in Thermostat",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:51:51.7614371Z"
+      },
+      {
+        "NewName": "Thermostat.ToggleButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:52:43.325466Z"
+      },
+      {
+        "NewName": "Thermostat.ToggleButtonInstance1",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:53:01.654067Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "ToggleButton (Container).Container ContainerInstance in ToggleButton (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-05T02:55:38.9746865Z"
+      },
+      {
+        "NewName": "ToggleButton (Container).ContainerInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-05T02:57:31.384505Z"
       }
     ]
   }

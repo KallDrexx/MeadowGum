@@ -97,6 +97,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             NextScreen = () => new EbikeUiRuntime(),
                         };
                     }
+
+                    if (_buttons[_selectedIndex] == ThermostatButton)
+                    {
+                        return new SplashScreenRuntime
+                        {
+                            TitleText = "Thermostat UI Demo",
+                            DescriptionText = "Example thermostat user interface",
+                            NextScreen = () => new ThermostatRuntime(),
+                        };
+                    }
                 }
             }
 

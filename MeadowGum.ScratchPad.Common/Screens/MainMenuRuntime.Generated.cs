@@ -19,6 +19,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public BackgroundRuntime BackgroundInstance { get; protected set; }
         public ContainerRuntime ButtonContainer { get; protected set; }
         public SpriteButtonRuntime ControlsDemoScreenButton { get; protected set; }
+        public SpriteButtonRuntime ThermostatButton { get; protected set; }
         public SpriteButtonRuntime SensorsScreenButton { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
         public SpriteButtonRuntime EbikeButton { get; protected set; }
@@ -56,6 +57,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             ButtonContainer.Name = "ButtonContainer";
             ControlsDemoScreenButton = new SpriteButtonRuntime();
             ControlsDemoScreenButton.Name = "ControlsDemoScreenButton";
+            ThermostatButton = new SpriteButtonRuntime();
+            ThermostatButton.Name = "ThermostatButton";
             SensorsScreenButton = new SpriteButtonRuntime();
             SensorsScreenButton.Name = "SensorsScreenButton";
             ScreenLabelInstance = new ScreenLabelRuntime();
@@ -69,6 +72,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.Children.Add(BackgroundInstance);
             this.Children.Add(ButtonContainer);
             ButtonContainer.Children.Add(ControlsDemoScreenButton);
+            ButtonContainer.Children.Add(ThermostatButton);
             ButtonContainer.Children.Add(SensorsScreenButton);
             this.Children.Add(ScreenLabelInstance);
             ButtonContainer.Children.Add(EbikeButton);
@@ -100,6 +104,10 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.ControlsDemoScreenButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.ControlsDemoScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
             this.ControlsDemoScreenButton.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
+
+            this.ThermostatButton.ButtonText = "Thermostat";
+            this.ThermostatButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.ThermostatButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
             this.SensorsScreenButton.ButtonText = "Sensors Demo Screen";
             this.SensorsScreenButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;

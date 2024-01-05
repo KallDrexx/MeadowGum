@@ -45,6 +45,11 @@
     <ElementType>Screen</ElementType>
     <LinkType>ReferenceOriginal</LinkType>
   </ScreenReference>
+  <ScreenReference>
+    <Name>Thermostat</Name>
+    <ElementType>Screen</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
+  </ScreenReference>
   <ComponentReference>
     <Name>Background</Name>
     <ElementType>Component</ElementType>

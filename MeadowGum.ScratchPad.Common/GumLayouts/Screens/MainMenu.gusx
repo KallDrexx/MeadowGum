@@ -221,6 +221,30 @@
       <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>ThermostatButton.ButtonText</Name>
+      <Value xsi:type="xsd:string">Thermostat</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>ThermostatButton.Parent</Name>
+      <Value xsi:type="xsd:string">ButtonContainer</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>ThermostatButton.X Origin</Name>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>ThermostatButton.X Units</Name>
+      <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
   </State>
   <Instance>
     <Name>TestScreen1Button</Name>
@@ -239,6 +263,11 @@
   </Instance>
   <Instance>
     <Name>ControlsDemoScreenButton</Name>
+    <BaseType>SpriteButton</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>ThermostatButton</Name>
     <BaseType>SpriteButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>

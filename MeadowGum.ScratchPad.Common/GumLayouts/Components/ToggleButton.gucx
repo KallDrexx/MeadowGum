@@ -7,19 +7,19 @@
     <Variable>
       <Type>ChildrenLayout</Type>
       <Name>Children Layout</Name>
-      <Value xsi:type="xsd:int">0</Value>
+      <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>ChildrenLayout</Type>
       <Name>ContainerInstance.Children Layout</Name>
-      <Value xsi:type="xsd:int">2</Value>
+      <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>float</Type>
       <Name>ContainerInstance.Height</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">3</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -31,13 +31,49 @@
     <Variable>
       <Type>float</Type>
       <Name>ContainerInstance.Width</Name>
-      <Value xsi:type="xsd:float">0</Value>
+      <Value xsi:type="xsd:float">3</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>DimensionUnitType</Type>
       <Name>ContainerInstance.Width Units</Name>
       <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>ContainerInstance.X</Name>
+      <Value xsi:type="xsd:float">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>ContainerInstance.X Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>ContainerInstance.X Units</Name>
+      <Value xsi:type="xsd:int">6</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>ContainerInstance.Y</Name>
+      <Value xsi:type="xsd:float">3</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>VerticalAlignment</Type>
+      <Name>ContainerInstance.Y Origin</Name>
+      <Value xsi:type="xsd:int">1</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>PositionUnitType</Type>
+      <Name>ContainerInstance.Y Units</Name>
+      <Value xsi:type="xsd:int">7</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -87,6 +123,12 @@
       <Type>DimensionUnitType</Type>
       <Name>Label.Height Units</Name>
       <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>Label.HorizontalAlignment</Name>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -141,13 +183,13 @@
     <Variable>
       <Type>VerticalAlignment</Type>
       <Name>Label.Y Origin</Name>
-      <Value xsi:type="xsd:int">1</Value>
+      <Value xsi:type="xsd:int">0</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
       <Type>PositionUnitType</Type>
       <Name>Label.Y Units</Name>
-      <Value xsi:type="xsd:int">7</Value>
+      <Value xsi:type="xsd:int">1</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -191,6 +233,12 @@
       <Type>int</Type>
       <Name>Sprite.Texture Width</Name>
       <Value xsi:type="xsd:int">32</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>StackSpacing</Name>
+      <Value xsi:type="xsd:float">2</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -283,6 +331,11 @@
     </State>
   </Category>
   <Instance>
+    <Name>Label</Name>
+    <BaseType>Text</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
     <Name>Sprite</Name>
     <BaseType>Sprite</BaseType>
     <DefinedByBase>false</DefinedByBase>
@@ -290,11 +343,6 @@
   <Instance>
     <Name>ContainerInstance</Name>
     <BaseType>Container</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>Label</Name>
-    <BaseType>Text</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />
