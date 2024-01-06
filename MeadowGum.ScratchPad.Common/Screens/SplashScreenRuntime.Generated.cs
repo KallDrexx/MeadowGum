@@ -62,10 +62,10 @@ namespace MeadowGum.ScratchPad.Common.Screens
         }
         protected virtual void AssignParents()
         {
-            this.Children.Add(BackgroundInstance);
-            this.Children.Add(Title);
-            this.Children.Add(Description);
-            this.Children.Add(Instruction);
+            this.WhatThisContains.Add(BackgroundInstance);
+            this.WhatThisContains.Add(Title);
+            this.WhatThisContains.Add(Description);
+            this.WhatThisContains.Add(Instruction);
         }
         private void ApplyDefaultVariables()
         {

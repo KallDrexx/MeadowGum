@@ -86,9 +86,9 @@ namespace MeadowGum.ScratchPad.Common.Screens
         }
         protected virtual void AssignParents()
         {
-            this.Children.Add(BackgroundInstance);
-            this.Children.Add(ScreenLabelInstance);
-            this.Children.Add(PanelInstance);
+            this.WhatThisContains.Add(BackgroundInstance);
+            this.WhatThisContains.Add(ScreenLabelInstance);
+            this.WhatThisContains.Add(PanelInstance);
             PanelInstance.Children.Add(TextContainer);
             TextContainer.Children.Add(TempLabel);
             TextContainer.Children.Add(TempValue);

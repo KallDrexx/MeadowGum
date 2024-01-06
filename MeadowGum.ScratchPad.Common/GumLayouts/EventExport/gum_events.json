@@ -3430,6 +3430,20 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-06T03:01:27.9552419Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.SpriteButton TestScreen1Button in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T18:29:01.6357385Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "MainMenu.SpriteButton EbikeButton in MainMenu",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T18:29:10.0475169Z"
       }
     ]
   }

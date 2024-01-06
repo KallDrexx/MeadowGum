@@ -32,10 +32,10 @@ partial class ThermostatRuntime : MeadowGumScreen
         _selectableElements.Add(ExitButton);
         HoverInstance.AttachTo(_selectableElements[_selectedElementIndex]);
 
-        TargetTempSlider.Maximum = 80;
+        TargetTempSlider.Maximum = 90;
         TargetTempSlider.Minimum = 60;
-        TargetTempSlider.Increment = 1;
-        TargetTempSlider.Value = 70;
+        TargetTempSlider.Increment = 5;
+        TargetTempSlider.Value = 85;
 
         ExitButton.OnSelected = () => _moveToMainMenu = true;
         ResetButton.OnSelected = OnResetSelected;
@@ -43,27 +43,15 @@ partial class ThermostatRuntime : MeadowGumScreen
 
     public override async Task<MeadowGumScreen?> RunAsync(CancellationToken cancellationToken)
     {
-        var buttonEventTask = InputManager.Instance.WaitForNextButtonAsync(cancellationToken);
-        var peripheralUpdateTask = PeripheralManager.Peripherals.WaitForNextUpdateAsync(cancellationToken);
-
         while (!_moveToMainMenu)
         {
             UpdateUiState();
             Render();
-
-            var completedTask = await Task.WhenAny(buttonEventTask, peripheralUpdateTask);
-            if (completedTask == buttonEventTask)
+            
+            var buttonEvent = await InputManager.Instance.WaitForNextButtonAsync(cancellationToken, TimeSpan.FromSeconds(1));
+            if (buttonEvent != null)
             {
-                if (buttonEventTask.Result != null)
-                {
-                    HandleButtonEvent(buttonEventTask.Result);
-                }
-
-                buttonEventTask = InputManager.Instance.WaitForNextButtonAsync(cancellationToken);
-            }
-            else if (completedTask == peripheralUpdateTask)
-            {
-                peripheralUpdateTask = PeripheralManager.Peripherals.WaitForNextUpdateAsync(cancellationToken);
+                HandleButtonEvent(buttonEvent);
             }
         }
 
@@ -142,6 +130,7 @@ partial class ThermostatRuntime : MeadowGumScreen
 
     private void UpdateUiState()
     {
+        SuspendLayout(true);
         var temperature = PeripheralManager.Peripherals.Temperature;
         if (FahrenheitToggle.IsOn)
         {
@@ -156,12 +145,14 @@ partial class ThermostatRuntime : MeadowGumScreen
             TargetValue.Text = $"{valueInCelsius:0}C";
             FahrenheitToggle.LabelText = "CELSIUS";
         }
+        
+        var distance = Math.Abs(temperature.Fahrenheit - TargetTempSlider.Value);
 
-        if (TargetTempSlider.Value < temperature.Fahrenheit)
+        if (TargetTempSlider.Value < (int)temperature.Fahrenheit && distance > 2)
         {
             ActivityState = Activity.Cooling;
         }
-        else if (TargetTempSlider.Value > temperature.Fahrenheit)
+        else if (TargetTempSlider.Value > (int)temperature.Fahrenheit && distance > 2)
         {
             ActivityState = Activity.Heating;
         }
@@ -183,6 +174,10 @@ partial class ThermostatRuntime : MeadowGumScreen
         TargetTempProgressBar.Percent = (int)Math.Min(Math.Max(temperature.Fahrenheit / 100 * 100, 0), 100);
         EcoProgressBar.Percent = (int)distanceFromMiddlePercent;
         EnergyProgressBar.Percent = (int)Math.Min(temperatureDifference / 60 * 100, 100);
+        
+        ResumeLayout(true);
+        UpdateLayout();
+        // this.Children.ForEach(x => (x as GraphicalUiElement)?.UpdateLayout());
 
         // Reattach the hover in case of size change
         HoverInstance.AttachTo(_selectableElements[_selectedElementIndex]);
@@ -190,7 +185,8 @@ partial class ThermostatRuntime : MeadowGumScreen
 
     private void OnResetSelected()
     {
-        TargetTempSlider.Value = 70;
+        SuspendLayout(true);
+        TargetTempSlider.Value = 85;
         if (EcoModeToggle.IsOn)
         {
             EcoModeToggle.SwapToggleState();
@@ -202,5 +198,7 @@ partial class ThermostatRuntime : MeadowGumScreen
         }
         
         ResetButton.Deselect();
+        ResumeLayout(true);
+        UpdateLayout();
     }
 }

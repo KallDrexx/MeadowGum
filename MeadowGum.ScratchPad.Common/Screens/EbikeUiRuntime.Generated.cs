@@ -143,9 +143,9 @@ namespace MeadowGum.ScratchPad.Common.Screens
         }
         protected virtual void AssignParents()
         {
-            this.Children.Add(BackgroundInstance);
-            this.Children.Add(ScreenLabelInstance);
-            this.Children.Add(PanelInstance);
+            this.WhatThisContains.Add(BackgroundInstance);
+            this.WhatThisContains.Add(ScreenLabelInstance);
+            this.WhatThisContains.Add(PanelInstance);
             PanelInstance.Children.Add(ContainerInstance);
             ContainerInstance.Children.Add(BatteryInfoContainer);
             ContainerInstance.Children.Add(SpeedContainer);
@@ -177,7 +177,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             ButtonsContainer.Children.Add(HomeIcon);
             ButtonsContainer.Children.Add(SettingsIcon);
             PanelInstance.Children.Add(ButtonsContainer);
-            this.Children.Add(HoverInstance);
+            this.WhatThisContains.Add(HoverInstance);
         }
         private void ApplyDefaultVariables()
         {

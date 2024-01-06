@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using Meadow.Foundation.Sensors.Buttons;
@@ -33,6 +34,7 @@ public class InputManager
         _buttons.Add(button, name);
 
         button.Clicked += ButtonOnClicked;
+        button.LongClicked += ButtonOnLongClicked;
     }
 
     public ButtonEvent? NextButtonEvent()
@@ -42,11 +44,16 @@ public class InputManager
         return null;
     }
 
-    public async Task<ButtonEvent?> WaitForNextButtonAsync(CancellationToken cancellationToken)
+    public async Task<ButtonEvent?> WaitForNextButtonAsync(CancellationToken cancellationToken, TimeSpan? timeout = null)
     {
+        var stopWatch = Stopwatch.StartNew();
         while (!cancellationToken.IsCancellationRequested)
         {
             if (_buttonEvents.TryDequeue(out var buttonEvent)) return buttonEvent;
+            if (timeout != null && stopWatch.Elapsed >= timeout.Value)
+            {
+                return null;
+            }
 
             await Task.Delay(100, cancellationToken);
         }
@@ -57,7 +64,17 @@ public class InputManager
     private void ButtonOnClicked(object sender, EventArgs e)
     {
         if (_buttons.TryGetValue((PushButton)sender, out var name))
+        {
             _buttonEvents.Enqueue(new ButtonEvent(name, ButtonState.Clicked));
+        }
+    }
+
+    private void ButtonOnLongClicked(object sender, EventArgs e)
+    {
+        if (_buttons.TryGetValue((PushButton)sender, out var name))
+        {
+            _buttonEvents.Enqueue(new ButtonEvent(name, ButtonState.Clicked));
+        }
     }
 
     public record ButtonEvent(string Name, ButtonState State);

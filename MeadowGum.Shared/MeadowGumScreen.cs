@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Threading;
 using System.Threading.Tasks;
+using Gum.Wireframe;
 using MeadowGum.Shared.Components;
 using RenderingLibrary.Graphics;
 
 namespace MeadowGum.Shared;
 
-public abstract class MeadowGumScreen
+public abstract class MeadowGumScreen : GraphicalUiElement
 {
-    protected List<IRenderableIpso> Children { get; } = new();
-
     /// <summary>
     ///     Runs the current screen.  Returns the next screen to run, or null if the application should exit.
     /// </summary>
@@ -20,7 +20,7 @@ public abstract class MeadowGumScreen
 
     protected void Render()
     {
-        foreach (var child in Children) DoRender(child);
+        foreach (var child in WhatThisContains) DoRender(child);
 
         MeadowGumComponent.DefaultRenderer!.Show();
     }

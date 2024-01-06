@@ -15,14 +15,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
 {
     public partial class MainMenuRuntime
     {
-        public SpriteButtonRuntime TestScreen1Button { get; protected set; }
         public BackgroundRuntime BackgroundInstance { get; protected set; }
         public ContainerRuntime ButtonContainer { get; protected set; }
         public SpriteButtonRuntime ControlsDemoScreenButton { get; protected set; }
         public SpriteButtonRuntime ThermostatButton { get; protected set; }
         public SpriteButtonRuntime SensorsScreenButton { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
-        public SpriteButtonRuntime EbikeButton { get; protected set; }
 
         public string ButtonText
         {
@@ -49,8 +47,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
         }
         protected virtual void InitializeInstances()
         {
-            TestScreen1Button = new SpriteButtonRuntime();
-            TestScreen1Button.Name = "TestScreen1Button";
             BackgroundInstance = new BackgroundRuntime();
             BackgroundInstance.Name = "BackgroundInstance";
             ButtonContainer = new ContainerRuntime();
@@ -63,28 +59,18 @@ namespace MeadowGum.ScratchPad.Common.Screens
             SensorsScreenButton.Name = "SensorsScreenButton";
             ScreenLabelInstance = new ScreenLabelRuntime();
             ScreenLabelInstance.Name = "ScreenLabelInstance";
-            EbikeButton = new SpriteButtonRuntime();
-            EbikeButton.Name = "EbikeButton";
         }
         protected virtual void AssignParents()
         {
-            ButtonContainer.Children.Add(TestScreen1Button);
-            this.Children.Add(BackgroundInstance);
-            this.Children.Add(ButtonContainer);
+            this.WhatThisContains.Add(BackgroundInstance);
+            this.WhatThisContains.Add(ButtonContainer);
             ButtonContainer.Children.Add(ControlsDemoScreenButton);
             ButtonContainer.Children.Add(ThermostatButton);
             ButtonContainer.Children.Add(SensorsScreenButton);
-            this.Children.Add(ScreenLabelInstance);
-            ButtonContainer.Children.Add(EbikeButton);
+            this.WhatThisContains.Add(ScreenLabelInstance);
         }
         private void ApplyDefaultVariables()
         {
-            this.TestScreen1Button.ButtonText = "QA Screen";
-            this.TestScreen1Button.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.TestScreen1Button.XUnits = GeneralUnitType.PixelsFromLarge;
-            this.TestScreen1Button.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
-            this.TestScreen1Button.YUnits = GeneralUnitType.PixelsFromSmall;
-
             this.BackgroundInstance.X = 0f;
 
             this.ButtonContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
@@ -114,11 +100,6 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.SensorsScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
             this.ScreenLabelInstance.Text = "Main Menu";
-
-            this.EbikeButton.ButtonText = "Ebike UI Demo";
-            this.EbikeButton.ChildrenLayout = global::Gum.Managers.ChildrenLayout.LeftToRightStack;
-            this.EbikeButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
-            this.EbikeButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
         }
         partial void CustomInitialize();

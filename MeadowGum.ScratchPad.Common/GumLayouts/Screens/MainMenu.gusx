@@ -113,36 +113,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
-      <Type>string</Type>
-      <Name>EbikeButton.ButtonText</Name>
-      <Value xsi:type="xsd:string">Ebike UI Demo</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>ChildrenLayout</Type>
-      <Name>EbikeButton.Children Layout</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>EbikeButton.Parent</Name>
-      <Value xsi:type="xsd:string">ButtonContainer</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>HorizontalAlignment</Type>
-      <Name>EbikeButton.X Origin</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>PositionUnitType</Type>
-      <Name>EbikeButton.X Units</Name>
-      <Value xsi:type="xsd:int">4</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
       <Type>bool</Type>
       <Name>IsOverrideInCodeGen</Name>
       <Value xsi:type="xsd:boolean">false</Value>
@@ -187,42 +157,6 @@
     </Variable>
     <Variable>
       <Type>string</Type>
-      <Name>TestScreen1Button.ButtonText</Name>
-      <Value xsi:type="xsd:string">QA Screen</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>TestScreen1Button.Parent</Name>
-      <Value xsi:type="xsd:string">ButtonContainer</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>HorizontalAlignment</Type>
-      <Name>TestScreen1Button.X Origin</Name>
-      <Value xsi:type="xsd:int">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>PositionUnitType</Type>
-      <Name>TestScreen1Button.X Units</Name>
-      <Value xsi:type="xsd:int">4</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>VerticalAlignment</Type>
-      <Name>TestScreen1Button.Y Origin</Name>
-      <Value xsi:type="xsd:int">0</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>PositionUnitType</Type>
-      <Name>TestScreen1Button.Y Units</Name>
-      <Value xsi:type="xsd:int">1</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
       <Name>ThermostatButton.ButtonText</Name>
       <Value xsi:type="xsd:string">Thermostat</Value>
       <SetsValue>true</SetsValue>
@@ -246,11 +180,6 @@
       <SetsValue>true</SetsValue>
     </Variable>
   </State>
-  <Instance>
-    <Name>TestScreen1Button</Name>
-    <BaseType>SpriteButton</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
   <Instance>
     <Name>BackgroundInstance</Name>
     <BaseType>Background</BaseType>
@@ -279,11 +208,6 @@
   <Instance>
     <Name>ScreenLabelInstance</Name>
     <BaseType>ScreenLabel</BaseType>
-    <DefinedByBase>false</DefinedByBase>
-  </Instance>
-  <Instance>
-    <Name>EbikeButton</Name>
-    <BaseType>SpriteButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

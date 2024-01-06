@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -57,15 +59,15 @@ namespace MeadowGum.ScratchPad.Common.Screens
                 else if (keyboardEvent?.Name == ButtonNames.Right &&
                          keyboardEvent.State == InputManager.ButtonState.Clicked)
                 {
-                    if (_buttons[_selectedIndex] == TestScreen1Button)
-                    {
-                        return new SplashScreenRuntime
-                        {
-                            TitleText = "Test Screen 1",
-                            DescriptionText = "Basic layout test screen. Press Left to go back to the main menu",
-                            NextScreen = () => new Screen1Runtime(),
-                        };
-                    }
+                    // if (_buttons[_selectedIndex] == TestScreen1Button)
+                    // {
+                    //     return new SplashScreenRuntime
+                    //     {
+                    //         TitleText = "Test Screen 1",
+                    //         DescriptionText = "Basic layout test screen. Press Left to go back to the main menu",
+                    //         NextScreen = () => new Screen1Runtime(),
+                    //     };
+                    // }
 
                     if (_buttons[_selectedIndex] == ControlsDemoScreenButton)
                     {
@@ -88,15 +90,15 @@ namespace MeadowGum.ScratchPad.Common.Screens
                         };
                     }
 
-                    if (_buttons[_selectedIndex] == EbikeButton)
-                    {
-                        return new SplashScreenRuntime
-                        {
-                            TitleText = "Ebike UI Demo",
-                            DescriptionText = "Example Ebike user interface",
-                            NextScreen = () => new EbikeUiRuntime(),
-                        };
-                    }
+                    // if (_buttons[_selectedIndex] == EbikeButton)
+                    // {
+                    //     return new SplashScreenRuntime
+                    //     {
+                    //         TitleText = "Ebike UI Demo",
+                    //         DescriptionText = "Example Ebike user interface",
+                    //         NextScreen = () => new EbikeUiRuntime(),
+                    //     };
+                    // }
 
                     if (_buttons[_selectedIndex] == ThermostatButton)
                     {
