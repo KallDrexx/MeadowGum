@@ -382,6 +382,9 @@
     <State>
       <Name>Red</Name>
     </State>
+    <State>
+      <Name>Yellow</Name>
+    </State>
   </Category>
   <Instance>
     <Name>Background</Name>

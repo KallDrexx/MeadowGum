@@ -19,6 +19,7 @@ namespace MeadowGum.ScratchPad.Common.Components
         {
             Green,
             Red,
+            Yellow,
         }
 
         Color mColorState;
@@ -36,6 +37,8 @@ namespace MeadowGum.ScratchPad.Common.Components
                         case Color.Green:
                             break;
                         case Color.Red:
+                            break;
+                        case Color.Yellow:
                             break;
                     }
                 }

@@ -77,7 +77,7 @@
     <Variable>
       <Type>string</Type>
       <Name>ActualLabel.Text</Name>
-      <Value xsi:type="xsd:string">Actual</Value>
+      <Value xsi:type="xsd:string">ACTUAL</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -101,7 +101,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ActualLabel.Y</Name>
-      <Value xsi:type="xsd:float">2</Value>
+      <Value xsi:type="xsd:float">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -126,6 +126,12 @@
       <Type>DimensionUnitType</Type>
       <Name>ActualTempDisplayValue.Height Units</Name>
       <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>ActualTempDisplayValue.HorizontalAlignment</Name>
+      <Value xsi:type="xsd:int">2</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -179,7 +185,7 @@
     <Variable>
       <Type>float</Type>
       <Name>ActualTempDisplayValue.Y</Name>
-      <Value xsi:type="xsd:float">2</Value>
+      <Value xsi:type="xsd:float">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -503,6 +509,18 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>string</Type>
+      <Name>EcoModeToggle.LabelText</Name>
+      <Value xsi:type="xsd:string">ECO MODE</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>EcoModeToggle.Parent</Name>
+      <Value xsi:type="xsd:string">TopRightContainer</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>Color</Type>
       <Name>EcoProgressBar.ColorState</Name>
       <Value xsi:type="xsd:string">Red</Value>
@@ -571,7 +589,7 @@
     <Variable>
       <Type>string</Type>
       <Name>ExitButton.ButtonText</Name>
-      <Value xsi:type="xsd:string">Exit</Value>
+      <Value xsi:type="xsd:string">EXIT</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -590,6 +608,24 @@
       <Type>PositionUnitType</Type>
       <Name>ExitButton.X Units</Name>
       <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>FahrenheitToggle.LabelText</Name>
+      <Value xsi:type="xsd:string">CELCIUS</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>FahrenheitToggle.Parent</Name>
+      <Value xsi:type="xsd:string">TopRightContainer</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>bool</Type>
+      <Name>HoverInstance.Visible</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -668,7 +704,7 @@
     <Variable>
       <Type>string</Type>
       <Name>ResetButton.ButtonText</Name>
-      <Value xsi:type="xsd:string">Reset</Value>
+      <Value xsi:type="xsd:string">RESET</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -692,19 +728,7 @@
     <Variable>
       <Type>string</Type>
       <Name>ScreenLabelInstance.Text</Name>
-      <Value xsi:type="xsd:string">MeadowStat</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>SliderInstance.Parent</Name>
-      <Value xsi:type="xsd:string">TopRightContainer</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>SliderInstance.SliderLabelText</Name>
-      <Value xsi:type="xsd:string">Target Temp</Value>
+      <Value xsi:type="xsd:string">MEADOWSTAT</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -830,7 +854,7 @@
     <Variable>
       <Type>string</Type>
       <Name>StatusLabel.Text</Name>
-      <Value xsi:type="xsd:string">Status</Value>
+      <Value xsi:type="xsd:string">STATUS</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -914,7 +938,7 @@
     <Variable>
       <Type>string</Type>
       <Name>StatusValue.Text</Name>
-      <Value xsi:type="xsd:string">Idle</Value>
+      <Value xsi:type="xsd:string">IDLE</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -927,6 +951,12 @@
       <Type>DimensionUnitType</Type>
       <Name>StatusValue.Width Units</Name>
       <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
+      <Name>StatusValue.X</Name>
+      <Value xsi:type="xsd:float">-5</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -1028,7 +1058,7 @@
     <Variable>
       <Type>string</Type>
       <Name>TargetLabel.Text</Name>
-      <Value xsi:type="xsd:string">Target</Value>
+      <Value xsi:type="xsd:string">TARGET</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -1052,7 +1082,7 @@
     <Variable>
       <Type>float</Type>
       <Name>TargetLabel.Y</Name>
-      <Value xsi:type="xsd:float">2</Value>
+      <Value xsi:type="xsd:float">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -1153,6 +1183,18 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>string</Type>
+      <Name>TargetTempSlider.Parent</Name>
+      <Value xsi:type="xsd:string">TopRightContainer</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>string</Type>
+      <Name>TargetTempSlider.SliderLabelText</Name>
+      <Value xsi:type="xsd:string">TARGET TEMP</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>int</Type>
       <Name>TargetTextBackground.Blue</Name>
       <Value xsi:type="xsd:int">56</Value>
@@ -1213,6 +1255,12 @@
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
+      <Type>HorizontalAlignment</Type>
+      <Name>TargetValue.HorizontalAlignment</Name>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
       <Type>string</Type>
       <Name>TargetValue.Parent</Name>
       <Value xsi:type="xsd:string">TargetTextBackground</Value>
@@ -1263,31 +1311,7 @@
     <Variable>
       <Type>float</Type>
       <Name>TargetValue.Y</Name>
-      <Value xsi:type="xsd:float">2</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ToggleButtonInstance.LabelText</Name>
-      <Value xsi:type="xsd:string">Eco Mode</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ToggleButtonInstance.Parent</Name>
-      <Value xsi:type="xsd:string">TopRightContainer</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ToggleButtonInstance1.LabelText</Name>
-      <Value xsi:type="xsd:string">Celcius</Value>
-      <SetsValue>true</SetsValue>
-    </Variable>
-    <Variable>
-      <Type>string</Type>
-      <Name>ToggleButtonInstance1.Parent</Name>
-      <Value xsi:type="xsd:string">TopRightContainer</Value>
+      <Value xsi:type="xsd:float">4</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -1542,7 +1566,7 @@
       <Variable>
         <Type>string</Type>
         <Name>StatusValue.Text</Name>
-        <Value xsi:type="xsd:string">Idle</Value>
+        <Value xsi:type="xsd:string">IDLE</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -1569,7 +1593,7 @@
       <Variable>
         <Type>string</Type>
         <Name>StatusValue.Text</Name>
-        <Value xsi:type="xsd:string">Heating</Value>
+        <Value xsi:type="xsd:string">HEAT</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -1596,7 +1620,7 @@
       <Variable>
         <Type>string</Type>
         <Name>StatusValue.Text</Name>
-        <Value xsi:type="xsd:string">Cooling</Value>
+        <Value xsi:type="xsd:string">COOL</Value>
         <SetsValue>true</SetsValue>
       </Variable>
     </State>
@@ -1672,17 +1696,17 @@
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>SliderInstance</Name>
+    <Name>TargetTempSlider</Name>
     <BaseType>Slider</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>ToggleButtonInstance</Name>
+    <Name>EcoModeToggle</Name>
     <BaseType>ToggleButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Instance>
-    <Name>ToggleButtonInstance1</Name>
+    <Name>FahrenheitToggle</Name>
     <BaseType>ToggleButton</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
@@ -1769,6 +1793,11 @@
   <Instance>
     <Name>ExitButton</Name>
     <BaseType>SpriteButton</BaseType>
+    <DefinedByBase>false</DefinedByBase>
+  </Instance>
+  <Instance>
+    <Name>HoverInstance</Name>
+    <BaseType>Hover</BaseType>
     <DefinedByBase>false</DefinedByBase>
   </Instance>
   <Behaviors />

@@ -127,7 +127,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
                 }
 
                 case ToggleButtonRuntime toggle:
-                    toggle.SetToggle();
+                    toggle.SwapToggleState();
                     break;
 
                 case SliderRuntime slider:

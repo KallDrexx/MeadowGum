@@ -12,18 +12,15 @@ namespace MeadowGum.ScratchPad.Common.Components
             ToggleState = Toggle.Off;
         }
         
-        public void SetToggle()
+        public void SwapToggleState()
         {
-            if (ToggleState == Toggle.Off)
-            {
-                ToggleState = Toggle.On;
-            }
-            else
-            {
-                ToggleState = Toggle.Off;
-            }
-            
+            ToggleState = ToggleState == Toggle.Off 
+                ? Toggle.On 
+                : Toggle.Off;
+
             OnToggleChanged?.Invoke(ToggleState == Toggle.On);
         }
+        
+        public bool IsOn => ToggleState == Toggle.On;
     }
 }

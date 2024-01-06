@@ -11,7 +11,7 @@ namespace MeadowGum.ScratchPad.Common.Components
 
         public int Minimum { get; set; }
         public int Maximum { get; set; }
-        public int Increment { get; set; }
+        public int Increment { get; set; } = 1;
 
         public int Value
         {
@@ -30,7 +30,7 @@ namespace MeadowGum.ScratchPad.Common.Components
 
                 const int minX = 3;
                 var maxX = (int)GetAbsoluteWidth() - 10;
-                var percent = _value / (decimal)Maximum;
+                var percent = (_value - Minimum) / ((decimal)Maximum - Minimum);
                 var x = (maxX - minX) * percent;
                 Indicator.X = (float)x;
 

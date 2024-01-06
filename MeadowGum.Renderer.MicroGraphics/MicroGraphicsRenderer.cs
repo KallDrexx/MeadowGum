@@ -14,6 +14,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
     private readonly Meadow.Foundation.Graphics.MicroGraphics _buffer;
     private readonly string _contentRoot;
     private readonly Font8x12 _font8X12 = new();
+    private readonly Font12x16 _font12X16 = new();
     private readonly Dictionary<string, IPixelBuffer> _textureBuffers = new();
 
     public MicroGraphicsRenderer(IGraphicsDisplay display, string contentRoot)
@@ -41,6 +42,10 @@ public class MicroGraphicsRenderer : IComponentRenderer
         {
             case MeadowFont.Font8X12:
                 _buffer.CurrentFont = _font8X12;
+                break;
+            
+            case MeadowFont.Font12X16:
+                _buffer.CurrentFont = _font12X16;
                 break;
 
             case MeadowFont.Unspecified:

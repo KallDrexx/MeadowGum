@@ -31,6 +31,7 @@ namespace MeadowGum.ScratchPad.Common.Components
             {
                 Color.Green => ProgressIndicatorRuntime.Color.Green,
                 Color.Red => ProgressIndicatorRuntime.Color.Red,
+                Color.Yellow => ProgressIndicatorRuntime.Color.Yellow,
             };
 
             foreach (var indicator in Indicators.Children.OfType<ProgressIndicatorRuntime>())

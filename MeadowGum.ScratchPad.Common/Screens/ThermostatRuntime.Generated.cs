@@ -38,19 +38,19 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             this.StatusBackground.Blue = 56;
                             this.StatusBackground.Green = 59;
                             this.StatusBackground.Red = 60;
-                            this.StatusValue.Text = "Idle";
+                            this.StatusValue.Text = "IDLE";
                             break;
                         case Activity.Heating:
                             this.StatusBackground.Blue = 49;
                             this.StatusBackground.Green = 61;
                             this.StatusBackground.Red = 228;
-                            this.StatusValue.Text = "Heating";
+                            this.StatusValue.Text = "HEAT";
                             break;
                         case Activity.Cooling:
                             this.StatusBackground.Blue = 150;
                             this.StatusBackground.Green = 116;
                             this.StatusBackground.Red = 81;
-                            this.StatusValue.Text = "Cooling";
+                            this.StatusValue.Text = "COOL";
                             break;
                     }
                 }
@@ -70,9 +70,9 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteRuntime EcoIcon { get; protected set; }
         public SpriteRuntime EcoIcon1 { get; protected set; }
         public ContainerRuntime TopRightContainer { get; protected set; }
-        public SliderRuntime SliderInstance { get; protected set; }
-        public ToggleButtonRuntime ToggleButtonInstance { get; protected set; }
-        public ToggleButtonRuntime ToggleButtonInstance1 { get; protected set; }
+        public SliderRuntime TargetTempSlider { get; protected set; }
+        public ToggleButtonRuntime EcoModeToggle { get; protected set; }
+        public ToggleButtonRuntime FahrenheitToggle { get; protected set; }
         public ContainerRuntime TopMiddleContainer { get; protected set; }
         public ColoredRectangleRuntime StatusBackground { get; protected set; }
         public ContainerRuntime StatusDisplay { get; protected set; }
@@ -90,6 +90,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteButtonRuntime ResetButton { get; protected set; }
         public ContainerRuntime BottomRightContainer { get; protected set; }
         public SpriteButtonRuntime ExitButton { get; protected set; }
+        public HoverRuntime HoverInstance { get; protected set; }
 
         public ThermostatRuntime(bool fullInstantiation = true)
         {
@@ -138,12 +139,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
             EcoIcon1.Name = "EcoIcon1";
             TopRightContainer = new ContainerRuntime();
             TopRightContainer.Name = "TopRightContainer";
-            SliderInstance = new SliderRuntime();
-            SliderInstance.Name = "SliderInstance";
-            ToggleButtonInstance = new ToggleButtonRuntime();
-            ToggleButtonInstance.Name = "ToggleButtonInstance";
-            ToggleButtonInstance1 = new ToggleButtonRuntime();
-            ToggleButtonInstance1.Name = "ToggleButtonInstance1";
+            TargetTempSlider = new SliderRuntime();
+            TargetTempSlider.Name = "TargetTempSlider";
+            EcoModeToggle = new ToggleButtonRuntime();
+            EcoModeToggle.Name = "EcoModeToggle";
+            FahrenheitToggle = new ToggleButtonRuntime();
+            FahrenheitToggle.Name = "FahrenheitToggle";
             TopMiddleContainer = new ContainerRuntime();
             TopMiddleContainer.Name = "TopMiddleContainer";
             StatusBackground = new ColoredRectangleRuntime();
@@ -178,6 +179,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             BottomRightContainer.Name = "BottomRightContainer";
             ExitButton = new SpriteButtonRuntime();
             ExitButton.Name = "ExitButton";
+            HoverInstance = new HoverRuntime();
+            HoverInstance.Name = "HoverInstance";
         }
         protected virtual void AssignParents()
         {
@@ -195,9 +198,9 @@ namespace MeadowGum.ScratchPad.Common.Screens
             EcoContainer.Children.Add(EcoIcon);
             EnergyContainer.Children.Add(EcoIcon1);
             PanelInstance.Children.Add(TopRightContainer);
-            TopRightContainer.Children.Add(SliderInstance);
-            TopRightContainer.Children.Add(ToggleButtonInstance);
-            TopRightContainer.Children.Add(ToggleButtonInstance1);
+            TopRightContainer.Children.Add(TargetTempSlider);
+            TopRightContainer.Children.Add(EcoModeToggle);
+            TopRightContainer.Children.Add(FahrenheitToggle);
             PanelInstance.Children.Add(TopMiddleContainer);
             StatusDisplay.Children.Add(StatusBackground);
             TopMiddleContainer.Children.Add(StatusDisplay);
@@ -215,11 +218,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
             BottomRightContainer.Children.Add(ResetButton);
             PanelInstance.Children.Add(BottomRightContainer);
             BottomRightContainer.Children.Add(ExitButton);
+            this.Children.Add(HoverInstance);
         }
         private void ApplyDefaultVariables()
         {
 
-            this.ScreenLabelInstance.Text = "MeadowStat";
+            this.ScreenLabelInstance.Text = "MEADOWSTAT";
 
             this.PanelInstance.ChildrenLayout = global::Gum.Managers.ChildrenLayout.Regular;
             this.PanelInstance.Height = 185f;
@@ -306,11 +310,11 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.TopRightContainer.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Top;
             this.TopRightContainer.YUnits = GeneralUnitType.PixelsFromSmall;
 
-            this.SliderInstance.SliderLabelText = "Target Temp";
+            this.TargetTempSlider.SliderLabelText = "TARGET TEMP";
 
-            this.ToggleButtonInstance.LabelText = "Eco Mode";
+            this.EcoModeToggle.LabelText = "ECO MODE";
 
-            this.ToggleButtonInstance1.LabelText = "Celcius";
+            this.FahrenheitToggle.LabelText = "CELCIUS";
 
             this.TopMiddleContainer.Height = 0f;
             this.TopMiddleContainer.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
@@ -339,7 +343,7 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.StatusLabel.Height = 0f;
             this.StatusLabel.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.StatusLabel.Red = 238;
-            this.StatusLabel.Text = "Status";
+            this.StatusLabel.Text = "STATUS";
             this.StatusLabel.Width = 0f;
             this.StatusLabel.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.StatusLabel.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
@@ -353,9 +357,10 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.StatusValue.Height = 0f;
             this.StatusValue.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.StatusValue.Red = 238;
-            this.StatusValue.Text = "Idle";
+            this.StatusValue.Text = "IDLE";
             this.StatusValue.Width = 0f;
             this.StatusValue.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.StatusValue.X = -5f;
             this.StatusValue.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.StatusValue.XUnits = GeneralUnitType.PixelsFromMiddle;
             this.StatusValue.Y = 5f;
@@ -366,6 +371,7 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.TargetValue.Green = 229;
             this.TargetValue.Height = 0f;
             this.TargetValue.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.TargetValue.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.TargetValue.Red = 238;
             this.TargetValue.Text = "75F";
             this.TargetValue.Width = 0f;
@@ -373,7 +379,7 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.TargetValue.X = -5f;
             this.TargetValue.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.TargetValue.XUnits = GeneralUnitType.PixelsFromLarge;
-            this.TargetValue.Y = 2f;
+            this.TargetValue.Y = 4f;
 
             this.BottomLeftContainer.ChildrenLayout = global::Gum.Managers.ChildrenLayout.TopToBottomStack;
             this.BottomLeftContainer.Height = 0f;
@@ -415,27 +421,28 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.TargetLabel.Height = 0f;
             this.TargetLabel.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.TargetLabel.Red = 238;
-            this.TargetLabel.Text = "Target";
+            this.TargetLabel.Text = "TARGET";
             this.TargetLabel.Width = 0f;
             this.TargetLabel.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.TargetLabel.X = 5f;
-            this.TargetLabel.Y = 2f;
+            this.TargetLabel.Y = 4f;
 
             this.ActualLabel.Blue = 194;
             this.ActualLabel.Green = 229;
             this.ActualLabel.Height = 0f;
             this.ActualLabel.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.ActualLabel.Red = 238;
-            this.ActualLabel.Text = "Actual";
+            this.ActualLabel.Text = "ACTUAL";
             this.ActualLabel.Width = 0f;
             this.ActualLabel.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
             this.ActualLabel.X = 5f;
-            this.ActualLabel.Y = 2f;
+            this.ActualLabel.Y = 4f;
 
             this.ActualTempDisplayValue.Blue = 194;
             this.ActualTempDisplayValue.Green = 229;
             this.ActualTempDisplayValue.Height = 0f;
             this.ActualTempDisplayValue.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToChildren;
+            this.ActualTempDisplayValue.HorizontalAlignment = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.ActualTempDisplayValue.Red = 238;
             this.ActualTempDisplayValue.Text = "65F";
             this.ActualTempDisplayValue.Width = 0f;
@@ -443,9 +450,9 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.ActualTempDisplayValue.X = -5f;
             this.ActualTempDisplayValue.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.ActualTempDisplayValue.XUnits = GeneralUnitType.PixelsFromLarge;
-            this.ActualTempDisplayValue.Y = 2f;
+            this.ActualTempDisplayValue.Y = 4f;
 
-            this.ResetButton.ButtonText = "Reset";
+            this.ResetButton.ButtonText = "RESET";
             this.ResetButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.ResetButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
@@ -462,9 +469,11 @@ this.EnergyProgressBar.ColorState = VerticalProgressBarRuntime.Color.Red;
             this.BottomRightContainer.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Bottom;
             this.BottomRightContainer.YUnits = GeneralUnitType.PixelsFromLarge;
 
-            this.ExitButton.ButtonText = "Exit";
+            this.ExitButton.ButtonText = "EXIT";
             this.ExitButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
             this.ExitButton.XUnits = GeneralUnitType.PixelsFromLarge;
+
+            this.HoverInstance.Visible = false;
 
         }
         partial void CustomInitialize();

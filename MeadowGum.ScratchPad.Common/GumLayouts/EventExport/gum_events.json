@@ -3311,6 +3311,125 @@
         "ElementType": "Screens",
         "EventType": 7,
         "TimestampUtc": "2024-01-05T21:41:09.1935648Z"
+      },
+      {
+        "NewName": "Thermostat.EcoModeToggle",
+        "OldName": "Thermostat.ToggleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:11:42.0554611Z"
+      },
+      {
+        "NewName": "Thermostat.EcoModeToggle",
+        "OldName": "Thermostat.ToggleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:11:42.0614633Z"
+      },
+      {
+        "NewName": "Thermostat.EcoModeToggle",
+        "OldName": "Thermostat.ToggleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:11:42.0634621Z"
+      },
+      {
+        "NewName": "Thermostat.EcoModeToggle",
+        "OldName": "Thermostat.ToggleButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:11:42.0654792Z"
+      },
+      {
+        "NewName": "Thermostat.TempUnitToggle",
+        "OldName": "Thermostat.ToggleButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:12:04.1452548Z"
+      },
+      {
+        "NewName": "Thermostat.TempUnitToggle",
+        "OldName": "Thermostat.ToggleButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:12:04.1482575Z"
+      },
+      {
+        "NewName": "Thermostat.TempUnitToggle",
+        "OldName": "Thermostat.ToggleButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:12:04.1522551Z"
+      },
+      {
+        "NewName": "Thermostat.TempUnitToggle",
+        "OldName": "Thermostat.ToggleButtonInstance1",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:12:04.1542547Z"
+      },
+      {
+        "NewName": "Thermostat.HoverInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T02:31:02.6013088Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempSlider",
+        "OldName": "Thermostat.SliderInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:32:36.8841242Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempSlider",
+        "OldName": "Thermostat.SliderInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:32:36.8871253Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempSlider",
+        "OldName": "Thermostat.SliderInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:32:36.8901416Z"
+      },
+      {
+        "NewName": "Thermostat.TargetTempSlider",
+        "OldName": "Thermostat.SliderInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T02:32:36.8921411Z"
+      },
+      {
+        "NewName": "Thermostat.FahrenheitToggle",
+        "OldName": "Thermostat.TempUnitToggle",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T03:01:27.9461361Z"
+      },
+      {
+        "NewName": "Thermostat.FahrenheitToggle",
+        "OldName": "Thermostat.TempUnitToggle",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T03:01:27.9491423Z"
+      },
+      {
+        "NewName": "Thermostat.FahrenheitToggle",
+        "OldName": "Thermostat.TempUnitToggle",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T03:01:27.9532431Z"
+      },
+      {
+        "NewName": "Thermostat.FahrenheitToggle",
+        "OldName": "Thermostat.TempUnitToggle",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T03:01:27.9552419Z"
       }
     ]
   }
