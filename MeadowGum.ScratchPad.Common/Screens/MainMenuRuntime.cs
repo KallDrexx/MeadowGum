@@ -109,6 +109,17 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             NextScreen = () => new ThermostatRuntime(),
                         };
                     }
+
+                    if (_buttons[_selectedIndex] == KeyboardDemoButton)
+                    {
+                        return new SplashScreenRuntime
+                        {
+                            TitleText = "Keyboard Demo",
+                            DescriptionText = "Example keyboard user interface. Left and right scroll through letters" +
+                                              " while up presses the key.",
+                            NextScreen = () => new KeyboardScreenRuntime(),
+                        };
+                    }
                 }
             }
 

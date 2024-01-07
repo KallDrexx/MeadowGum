@@ -3444,6 +3444,1056 @@
         "ElementType": "Screens",
         "EventType": 6,
         "TimestampUtc": "2024-01-06T18:29:10.0475169Z"
+      },
+      {
+        "NewName": "KeyboardScreen",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:06:08.2922353Z"
+      },
+      {
+        "NewName": "KeyboardScreen.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:10:18.8515131Z"
+      },
+      {
+        "NewName": "KeyboardScreen.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:10:22.1454917Z"
+      },
+      {
+        "NewName": "KeyboardScreen.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:10:38.0583247Z"
+      },
+      {
+        "NewName": "KeyboardScreen.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:12:43.4985185Z"
+      },
+      {
+        "NewName": "KeyboardScreen.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:12:46.3126222Z"
+      },
+      {
+        "NewName": "KeyboardScreen.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:12:55.3520257Z"
+      },
+      {
+        "NewName": "KeyboardScreen.BackgroundInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:13:39.6315405Z"
+      },
+      {
+        "NewName": "KeyboardScreen.ScreenLabelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:13:42.4772805Z"
+      },
+      {
+        "NewName": "KeyboardScreen.PanelInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:13:50.2240785Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:17:59.7355319Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.Text TextInstance in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:19:30.4324533Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:19:34.3220921Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.Text TextInstance in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:19:38.3883928Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:19:46.7584773Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TypedText",
+        "OldName": "KeyboardScreen.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:19:51.9839717Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:20:14.8388543Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TypedTextInstance",
+        "OldName": "KeyboardScreen.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:20:50.5676332Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TextInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:21:38.6702251Z"
+      },
+      {
+        "NewName": "KeyboardScreen.TypedTextDisplay",
+        "OldName": "KeyboardScreen.TextInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:21:50.254693Z"
+      },
+      {
+        "NewName": "KeyCap",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:23:26.8519117Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:23:31.3482291Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:23:42.1385922Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-06T21:23:50.7059912Z"
+      },
+      {
+        "NewName": "KeyCap",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:24:14.5323875Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:24:20.1985976Z"
+      },
+      {
+        "NewName": "KeyCap (Container).Border",
+        "OldName": "KeyCap (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:24:25.0288308Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:24:38.220056Z"
+      },
+      {
+        "NewName": "KeyCap (Container).Background",
+        "OldName": "KeyCap (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:24:41.8368866Z"
+      },
+      {
+        "NewName": "KeyCap (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:27:03.903075Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap (Container).ColoredRectangle Border in KeyCap (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:27:54.6953175Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap (Container).Text TextInstance in KeyCap (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:27:54.7878818Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap (Container).ColoredRectangle Background in KeyCap (Container)",
+        "ElementType": "Components",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:27:54.8099344Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-06T21:28:04.4314889Z"
+      },
+      {
+        "NewName": "KeyCap",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:28:15.6985951Z"
+      },
+      {
+        "NewName": "KeyCap (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:28:22.1858323Z"
+      },
+      {
+        "NewName": "KeyCap (Container).KeyLabel",
+        "OldName": "KeyCap (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:28:29.2513426Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:28:42.7303442Z"
+      },
+      {
+        "NewName": "KeyCap (Container).Background",
+        "OldName": "KeyCap (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:28:49.5392399Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-06T21:29:25.2546829Z"
+      },
+      {
+        "NewName": "KeyCap",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:29:39.4091954Z"
+      },
+      {
+        "NewName": "KeyCap (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:29:43.4945848Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:30:01.1634139Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-06T21:30:32.5070578Z"
+      },
+      {
+        "NewName": "KeyCap",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:30:45.711314Z"
+      },
+      {
+        "NewName": "KeyCap (Container).TextInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:30:50.0875962Z"
+      },
+      {
+        "NewName": "KeyCap (Container).KeyLabel",
+        "OldName": "KeyCap (Container).TextInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:30:54.6339282Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:31:07.803486Z"
+      },
+      {
+        "NewName": "KeyCap (Container).Background",
+        "OldName": "KeyCap (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:31:19.0167764Z"
+      },
+      {
+        "NewName": "KeyCap (Container).ColoredRectangleInstance",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:31:35.6088567Z"
+      },
+      {
+        "NewName": "KeyCap (Container).Border",
+        "OldName": "KeyCap (Container).ColoredRectangleInstance",
+        "ElementType": "Components",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:31:39.373506Z"
+      },
+      {
+        "NewName": "KeyboardScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:34:42.86038Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCaps",
+        "OldName": "KeyboardScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:34:48.5477747Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.Container KeyCaps in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:38:28.5787501Z"
+      },
+      {
+        "NewName": "KeyboardScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:38:41.5478342Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCapArea",
+        "OldName": "KeyboardScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:38:46.6298395Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCapInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:39:11.4350868Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap1",
+        "OldName": "KeyboardScreen.KeyCapInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:39:19.1974764Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.Container KeyCapArea in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:39:45.2057786Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap1 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:39:45.3433564Z"
+      },
+      {
+        "NewName": "KeyboardScreen.ContainerInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:40:57.5628198Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCapArea",
+        "OldName": "KeyboardScreen.ContainerInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:41:01.4365835Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCapInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:32.9467372Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap1",
+        "OldName": "KeyboardScreen.KeyCapInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:42:44.2577384Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:53.6640918Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap3",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:54.116699Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap4",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:54.4050136Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap5",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:54.713371Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap6",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:54.9510714Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap7",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:55.2237204Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap8",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:55.7029367Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap9",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:56.0019418Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap10",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:56.2857452Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap11",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:56.5542139Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap12",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:56.7932365Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap13",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:57.0293999Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap14",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:57.2937778Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap15",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:57.9926272Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap16",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:58.2309115Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap17",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:42:58.523771Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap18",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:08.7224521Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap19",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:09.7049938Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap20",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:49.8336233Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap21",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:50.8836692Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap22",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:51.4139137Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap23",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:51.9187243Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap24",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:52.4945129Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap25",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:52.9905949Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap26",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:53.4322742Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap27",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:44:58.2246726Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap1 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0172496Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap2 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0182501Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap3 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0202499Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap4 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0212503Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap5 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.02325Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap6 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0242493Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap7 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0253308Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap8 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0273301Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap9 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0293313Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap10 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0303308Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap11 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0323316Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap12 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0333303Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap13 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0348408Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap14 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0368501Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap15 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0378503Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap16 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0403638Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap17 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0423671Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap18 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0433663Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap19 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0448767Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap20 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0468863Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap21 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0478851Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap22 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0498855Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap23 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0508858Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap24 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.051885Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap25 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0528856Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap26 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0554007Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyboardScreen.KeyCap KeyCap27 in KeyboardScreen",
+        "ElementType": "Screens",
+        "EventType": 6,
+        "TimestampUtc": "2024-01-06T21:45:25.0573987Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCapInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:28.6667251Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap1",
+        "OldName": "KeyboardScreen.KeyCapInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-06T21:47:35.2845347Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap2",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:45.446246Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap3",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:46.0791776Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap4",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:46.3835264Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap5",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:46.8239765Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap6",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:47.321144Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap7",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:47.7368466Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap8",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:48.1290012Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap9",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:48.5687405Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap10",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:48.9539336Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap11",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:49.3033882Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap12",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:49.6675434Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap13",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:50.0341771Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap14",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:50.3894291Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap15",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:50.7430248Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap16",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:51.087693Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap17",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:51.4388016Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap18",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:51.8083291Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap19",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:52.153478Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap20",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:52.6632462Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap21",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:53.1003138Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap22",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:53.4991866Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap23",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:53.8677277Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap24",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:54.4240043Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap25",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:54.9320956Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap26",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:47:56.2566784Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap27",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:49:26.9896923Z"
+      },
+      {
+        "NewName": "KeyboardScreen.KeyCap28",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-06T21:49:29.0887009Z"
+      },
+      {
+        "NewName": "KeyCap1",
+        "OldName": null,
+        "ElementType": "Components",
+        "EventType": 0,
+        "TimestampUtc": "2024-01-06T21:57:21.5847445Z"
+      },
+      {
+        "NewName": null,
+        "OldName": "KeyCap1",
+        "ElementType": "Components",
+        "EventType": 1,
+        "TimestampUtc": "2024-01-06T21:57:35.2627872Z"
+      },
+      {
+        "NewName": "MainMenu.SpriteButtonInstance",
+        "OldName": null,
+        "ElementType": "Screens",
+        "EventType": 5,
+        "TimestampUtc": "2024-01-07T01:42:20.2349941Z"
+      },
+      {
+        "NewName": "MainMenu.KeyboardDemoButton",
+        "OldName": "MainMenu.SpriteButtonInstance",
+        "ElementType": "Screens",
+        "EventType": 7,
+        "TimestampUtc": "2024-01-07T01:43:04.290854Z"
       }
     ]
   }
