@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Gum.Wireframe;
 using MeadowGum.ScratchPad.Common.Components;
-using MeadowGum.Shared;
+using MeadowGum.Core;
 
 namespace MeadowGum.ScratchPad.Common.Screens
 {

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.Shared", "MeadowGum.Shared\MeadowGum.Shared.csproj", "{52D1F8BF-7EEC-474D-8612-39456FFD22A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.Core", "MeadowGum.Core\MeadowGum.Core.csproj", "{52D1F8BF-7EEC-474D-8612-39456FFD22A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gum", "Gum", "{B216E3DD-5B91-4EE6-A7EE-1D027B41807E}"
 EndProject

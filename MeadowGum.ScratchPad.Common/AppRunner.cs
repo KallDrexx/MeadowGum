@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using MeadowGum.ScratchPad.Common.Screens;
-using MeadowGum.Shared;
+using MeadowGum.Core;
 
 namespace MeadowGum.ScratchPad.Common;
 

@@ -5,7 +5,7 @@ using Meadow.Devices;
 using Meadow.Foundation.Graphics;
 using MeadowGum.Renderer.MicroGraphics;
 using MeadowGum.ScratchPad.Common;
-using MeadowGum.Shared.Components;
+using MeadowGum.Core.Components;
 
 namespace MeadowGum.ScratchPad.ProjectLab3;
 

@@ -2,9 +2,9 @@
 using Meadow.Foundation;
 using Meadow.Foundation.Graphics;
 using Meadow.Foundation.Graphics.Buffers;
-using MeadowGum.Shared;
+using MeadowGum.Core;
 using HorizontalAlignment = RenderingLibrary.Graphics.HorizontalAlignment;
-using Point = MeadowGum.Shared.Point;
+using Point = MeadowGum.Core.Point;
 using VerticalAlignment = RenderingLibrary.Graphics.VerticalAlignment;
 
 namespace MeadowGum.Renderer.MicroGraphics;

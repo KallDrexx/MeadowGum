@@ -3,10 +3,10 @@ using System.Collections.ObjectModel;
 using System.Threading;
 using System.Threading.Tasks;
 using Gum.Wireframe;
-using MeadowGum.Shared.Components;
+using MeadowGum.Core.Components;
 using RenderingLibrary.Graphics;
 
-namespace MeadowGum.Shared;
+namespace MeadowGum.Core;
 
 public abstract class MeadowGumScreen : GraphicalUiElement
 {

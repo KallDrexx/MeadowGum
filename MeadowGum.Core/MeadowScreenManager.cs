@@ -1,8 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using MeadowGum.Shared.Components;
+using MeadowGum.Core.Components;
 
-namespace MeadowGum.Shared;
+namespace MeadowGum.Core;
 
 public class MeadowScreenManager
 {

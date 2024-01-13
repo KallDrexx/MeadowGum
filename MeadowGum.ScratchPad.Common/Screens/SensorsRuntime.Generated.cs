@@ -6,8 +6,8 @@ using Gum.Wireframe;
 
 using RenderingLibrary.Graphics;
 
-using MeadowGum.Shared;
-using MeadowGum.Shared.Components;
+using MeadowGum.Core;
+using MeadowGum.Core.Components;
 using MeadowGum.ScratchPad.Common.Components;
 
 

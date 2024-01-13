@@ -1,6 +1,6 @@
 ﻿using Gum.Wireframe;
 
-namespace MeadowGum.Shared.Components;
+namespace MeadowGum.Core.Components;
 
 public abstract class MeadowGumComponent : GraphicalUiElement
 {

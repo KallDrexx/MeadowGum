@@ -1,6 +1,6 @@
 ﻿using Meadow.Foundation;
 using Meadow.Foundation.Graphics;
-using MeadowGum.Shared;
+using MeadowGum.Core;
 
 namespace MeadowGum.Renderer.MicroGraphics;
 

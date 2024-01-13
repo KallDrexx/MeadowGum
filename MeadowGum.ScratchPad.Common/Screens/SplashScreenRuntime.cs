@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using MeadowGum.Shared;
+using MeadowGum.Core;
 
 namespace MeadowGum.ScratchPad.Common.Screens;
 

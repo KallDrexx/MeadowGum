@@ -2,7 +2,7 @@
 using MeadowGum.Renderer.MicroGraphics;
 using MeadowGum.ScratchPad.Common;
 using MeadowGum.ScratchPad.Monogame;
-using MeadowGum.Shared.Components;
+using MeadowGum.Core.Components;
 using MeadowMgTestEnvironment;
 using Microsoft.Xna.Framework.Input;
 

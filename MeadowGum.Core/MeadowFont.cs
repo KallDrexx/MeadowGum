@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MeadowGum.Shared;
+namespace MeadowGum.Core;
 
 public enum MeadowFont
 {

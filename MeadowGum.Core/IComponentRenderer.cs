@@ -1,6 +1,6 @@
 ﻿using RenderingLibrary.Graphics;
 
-namespace MeadowGum.Shared;
+namespace MeadowGum.Core;
 
 public readonly record struct Point(int X, int Y);
 

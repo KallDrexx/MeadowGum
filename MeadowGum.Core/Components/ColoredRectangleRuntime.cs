@@ -2,7 +2,7 @@
 using RenderingLibrary;
 using RenderingLibrary.Graphics;
 
-namespace MeadowGum.Shared.Components;
+namespace MeadowGum.Core.Components;
 
 public class ColoredRectangleRuntime : MeadowGumComponent
 {
