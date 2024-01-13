@@ -109,6 +109,16 @@ namespace MeadowGum.ScratchPad.Common.Screens
                             NextScreen = () => new ThermostatRuntime(),
                         };
                     }
+
+                    if (_buttons[_selectedIndex] == NameEntryButton)
+                    {
+                        return new SplashScreenRuntime
+                        {
+                            TitleText = "Name Entry Demo",
+                            DescriptionText = "Tutorial for creating a name entry screen",
+                            NextScreen = () => new NameEntryRuntime(),
+                        };
+                    }
                 }
             }
 

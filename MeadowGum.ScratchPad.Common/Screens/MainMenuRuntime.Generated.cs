@@ -21,6 +21,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
         public SpriteButtonRuntime ThermostatButton { get; protected set; }
         public SpriteButtonRuntime SensorsScreenButton { get; protected set; }
         public ScreenLabelRuntime ScreenLabelInstance { get; protected set; }
+        public SpriteButtonRuntime NameEntryButton { get; protected set; }
 
         public string ButtonText
         {
@@ -59,6 +60,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
             SensorsScreenButton.Name = "SensorsScreenButton";
             ScreenLabelInstance = new ScreenLabelRuntime();
             ScreenLabelInstance.Name = "ScreenLabelInstance";
+            NameEntryButton = new SpriteButtonRuntime();
+            NameEntryButton.Name = "NameEntryButton";
         }
         protected virtual void AssignParents()
         {
@@ -68,6 +71,7 @@ namespace MeadowGum.ScratchPad.Common.Screens
             ButtonContainer.Children.Add(ThermostatButton);
             ButtonContainer.Children.Add(SensorsScreenButton);
             this.WhatThisContains.Add(ScreenLabelInstance);
+            ButtonContainer.Children.Add(NameEntryButton);
         }
         private void ApplyDefaultVariables()
         {
@@ -100,6 +104,10 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.SensorsScreenButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
             this.ScreenLabelInstance.Text = "Main Menu";
+
+            this.NameEntryButton.ButtonText = "Name Entry Demo";
+            this.NameEntryButton.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Right;
+            this.NameEntryButton.XUnits = GeneralUnitType.PixelsFromLarge;
 
         }
         partial void CustomInitialize();
