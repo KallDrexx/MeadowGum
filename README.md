@@ -6,3 +6,5 @@ Rapid user interface are laid out with the [Gum](https://docs.flatredball.com/gu
 
 A demonstration of `MeadowGum` in action can be seen in the video below:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OFuZCm4bBcc/0.jpg)](https://www.youtube.com/watch?v=OFuZCm4bBcc)
+
+Interested in trying out making your own UIs?  [Get started with our tutorial](https://github.com/KallDrexx/MeadowGum/wiki/Tutorial).
