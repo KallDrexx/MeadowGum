@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AssemblyName>App</AssemblyName>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Meadow.ProjectLab" Version="1.6.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MeadowGum.Renderer.Microgpu\MeadowGum.Renderer.Microgpu.csproj" />
+        <ProjectReference Include="..\MeadowGum.ScratchPad.Common\MeadowGum.ScratchPad.Common.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\spritesheet.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" Link="spritesheet.bmp"/>
+        <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\retro-meadow-ui.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" Link="retro-meadow-ui.bmp"/>
+        <None Include="..\MeadowGum.ScratchPad.Common\GumLayouts\retro-70s-UI.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" Link="retro-70s-UI.bmp"/>
+    </ItemGroup>
+
+</Project>

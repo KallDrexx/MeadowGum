@@ -2,3 +2,7 @@
 	path = Gum
 	url = https://github.com/vchelaru/Gum.git
 	branch = kalldrexx/allow_net_standard
+[submodule "microgpu"]
+	path = microgpu
+	url = https://github.com/KallDrexx/microgpu.git
+	branch = main

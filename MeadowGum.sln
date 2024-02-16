@@ -18,6 +18,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.Renderer.MicroGra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.ScratchPad.ProjectLab3", "MeadowGum.ScratchPad.ProjectLab3\MeadowGum.ScratchPad.ProjectLab3.csproj", "{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "microgpu", "microgpu", "{DF2AA757-169C-41AA-BFF9-9F119C703845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microgpu.Common", "microgpu\drivers\Microgpu.Common\Microgpu.Common.csproj", "{3B3C7A9D-1999-4F0A-AEB9-90ACCE428129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.Renderer.Microgpu", "MeadowGum.Renderer.Microgpu\MeadowGum.Renderer.Microgpu.csproj", "{7673A6C3-28C3-4A9A-BB95-15B2C2E62E8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.ScratchPad.Microgpu.ProjectLab3", "MeadowGum.ScratchPad.Microgpu.ProjectLab3\MeadowGum.ScratchPad.Microgpu.ProjectLab3.csproj", "{1DDA4D14-DFBA-4ACF-A856-0E1C15E0E100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadowGum.ScratchPad.Microgpu.Monogame", "MeadowGum.ScratchPad.Microgpu.Monogame\MeadowGum.ScratchPad.Microgpu.Monogame.csproj", "{1F94B201-D9AA-4F39-83E8-97BB081EC8B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,10 +66,27 @@ Global
 		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7FEA05D-452F-4AFE-A0DC-800F314BC0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B3C7A9D-1999-4F0A-AEB9-90ACCE428129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3C7A9D-1999-4F0A-AEB9-90ACCE428129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3C7A9D-1999-4F0A-AEB9-90ACCE428129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3C7A9D-1999-4F0A-AEB9-90ACCE428129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7673A6C3-28C3-4A9A-BB95-15B2C2E62E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7673A6C3-28C3-4A9A-BB95-15B2C2E62E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7673A6C3-28C3-4A9A-BB95-15B2C2E62E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7673A6C3-28C3-4A9A-BB95-15B2C2E62E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDA4D14-DFBA-4ACF-A856-0E1C15E0E100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDA4D14-DFBA-4ACF-A856-0E1C15E0E100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDA4D14-DFBA-4ACF-A856-0E1C15E0E100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDA4D14-DFBA-4ACF-A856-0E1C15E0E100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F94B201-D9AA-4F39-83E8-97BB081EC8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F94B201-D9AA-4F39-83E8-97BB081EC8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F94B201-D9AA-4F39-83E8-97BB081EC8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F94B201-D9AA-4F39-83E8-97BB081EC8B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D1B071D6-B3AC-4B2A-AD2C-E59E2F30ED10} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
 		{F5DCA451-CDD8-4451-9092-9F093A73D909} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
 		{1D30291E-4FA3-46D8-8890-B635644080DF} = {B216E3DD-5B91-4EE6-A7EE-1D027B41807E}
+		{3B3C7A9D-1999-4F0A-AEB9-90ACCE428129} = {DF2AA757-169C-41AA-BFF9-9F119C703845}
 	EndGlobalSection
 EndGlobal
