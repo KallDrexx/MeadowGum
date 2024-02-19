@@ -29,7 +29,7 @@ public abstract class MeadowGumScreen : GraphicalUiElement
     {
         if (!ipso.Visible) return;
 
-        ipso.Render(null);
+        ipso.Render(null!);
         foreach (var child in ipso.Children) DoRender(child);
     }
 }

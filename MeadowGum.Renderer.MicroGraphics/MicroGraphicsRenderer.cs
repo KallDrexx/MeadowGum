@@ -97,7 +97,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
 
             // Always make sure that the texture is formatted in the same color mode as the display
             var imgBuffer = CreateBuffer(img.Width, img.Height);
-            imgBuffer.WriteBuffer(0, 0, img.DisplayBuffer);
+            imgBuffer.WriteBuffer(0, 0, img.DisplayBuffer!);
             Console.WriteLine($"{name} loaded to buffer of type {imgBuffer.GetType()}");
             return imgBuffer;
         }

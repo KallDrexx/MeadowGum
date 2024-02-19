@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using Gum.Wireframe;
 
@@ -32,6 +33,7 @@ namespace MeadowGum.ScratchPad.Common.Components
                 Color.Green => ProgressIndicatorRuntime.Color.Green,
                 Color.Red => ProgressIndicatorRuntime.Color.Red,
                 Color.Yellow => ProgressIndicatorRuntime.Color.Yellow,
+                _ => throw new NotSupportedException(nameof(color)),
             };
 
             foreach (var indicator in Indicators.Children.OfType<ProgressIndicatorRuntime>())

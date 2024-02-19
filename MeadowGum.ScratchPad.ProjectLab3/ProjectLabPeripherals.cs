@@ -52,6 +52,8 @@ public class ProjectLabPeripherals : IPeripherals
             _projectLab.EnvironmentalSensor?.StartUpdating(_pollInterval);
             _projectLab.MotionSensor?.StartUpdating(_pollInterval);
             _projectLab.LightSensor?.StartUpdating(_pollInterval);
+
+            _isPolling = true;
         }
     }
 
@@ -62,6 +64,8 @@ public class ProjectLabPeripherals : IPeripherals
             _projectLab.EnvironmentalSensor?.StopUpdating();
             _projectLab.MotionSensor?.StopUpdating();
             _projectLab.LightSensor?.StartUpdating();
+            
+            _isPolling = false;
         }
     }
 

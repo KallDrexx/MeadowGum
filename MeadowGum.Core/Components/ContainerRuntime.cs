@@ -12,5 +12,5 @@ public class ContainerRuntime : MeadowGumComponent
         Height = 150;
     }
     
-    public string ContainedType { get; set; }
+    public string? ContainedType { get; set; }
 }

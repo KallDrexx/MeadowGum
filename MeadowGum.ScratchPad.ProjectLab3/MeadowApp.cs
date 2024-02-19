@@ -28,10 +28,10 @@ public class MeadowApp : App<F7CoreComputeV2>
         MeadowGumComponent.DefaultRenderer = renderer;
         PeripheralManager.Peripherals = new ProjectLabPeripherals(_projectLab, TimeSpan.FromMilliseconds(200));
 
-        InputManager.Instance.RegisterButton(_projectLab.UpButton, ButtonNames.Up);
-        InputManager.Instance.RegisterButton(_projectLab.RightButton, ButtonNames.Right);
-        InputManager.Instance.RegisterButton(_projectLab.DownButton, ButtonNames.Down);
-        InputManager.Instance.RegisterButton(_projectLab.LeftButton, ButtonNames.Left);
+        InputManager.Instance.RegisterButton(_projectLab.UpButton!, ButtonNames.Up);
+        InputManager.Instance.RegisterButton(_projectLab.RightButton!, ButtonNames.Right);
+        InputManager.Instance.RegisterButton(_projectLab.DownButton!, ButtonNames.Down);
+        InputManager.Instance.RegisterButton(_projectLab.LeftButton!, ButtonNames.Left);
 
         await AppRunner.RunAsync();
     }
