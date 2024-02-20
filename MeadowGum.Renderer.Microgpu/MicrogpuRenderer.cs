@@ -7,6 +7,7 @@ using Meadow.Foundation.Graphics.Buffers;
 using MeadowGum.Core;
 using Microgpu.Common;
 using Microgpu.Common.Operations;
+using RenderingLibrary.Graphics;
 
 namespace MeadowGum.Renderer.Microgpu;
 
@@ -49,18 +50,14 @@ public class MicrogpuRenderer : IComponentRenderer
 
     public void RenderText(Rectangle area, TextAlignment textAlignment, RgbColor color, MeadowFont font, bool wrap, string text)
     {
-        var gpuFont = font.ToGpuFontId();
-        var operation = new DrawCharsOperation<ColorRgb565>
+        if (!wrap)
         {
-            Color = color.ToColorRgb565(),
-            Font = gpuFont,
-            StartX = (ushort)area.X,
-            StartY = (ushort)area.Y,
-            Text = text,
-            TextureId = 0,
-        };
-        
-        AddOperation(operation);
+            RenderUnwrappedText(area, textAlignment, color, text, font);
+        }
+        else
+        {
+            RenderWrappedText(area, textAlignment, color, text, font);
+        }
     }
 
     public void RenderSprite(string textureName, Rectangle textureArea, Point screenPosition, RgbColor? transparentColor)
@@ -159,5 +156,120 @@ public class MicrogpuRenderer : IComponentRenderer
 
             bytesLeft -= bytesToSend;
         }
+    }
+
+    private void RenderUnwrappedText(
+        Rectangle area,
+        TextAlignment textAlignment,
+        RgbColor color,
+        string text,
+        MeadowFont font)
+    {
+        switch (textAlignment.HorizontalAlignment)
+        {
+            case HorizontalAlignment.Left:
+                break;
+            case HorizontalAlignment.Center:
+                area = area with { X = area.X + (area.Width / 2) - (text.Length * font.WidthPerCharacter() / 2) };
+                break;
+            case HorizontalAlignment.Right:
+                area = area with { X = area.X + area.Width - (text.Length * font.WidthPerCharacter()) };
+                break;
+        }
+        
+        var operation = new DrawCharsOperation<ColorRgb565>
+        {
+            Color = color.ToColorRgb565(),
+            Font = font.ToGpuFontId(),
+            StartX = (ushort)area.X,
+            StartY = (ushort)area.Y,
+            Text = text,
+            TextureId = 0,
+        };
+        
+        AddOperation(operation);
+    }
+
+    private void RenderWrappedText(
+        Rectangle area,
+        TextAlignment textAlignment,
+        RgbColor color,
+        string text,
+        MeadowFont font)
+    {
+        var lines = SplitText(text, font, area.Width);
+        var lineHeight = font.HeightPerCharacter();
+
+        switch (textAlignment.VerticalAlignment)
+        {
+            case VerticalAlignment.Top:
+                // Starting at the top of the given area, so nothing to do
+                break;
+
+            case VerticalAlignment.Center:
+            {
+                var centerY = area.Y + (area.Height / 2);
+                var totalHeight = lines.Count * lineHeight;
+                area = area with {Y = centerY - (totalHeight / 2), Height = lineHeight};
+                break;
+            }
+
+            case VerticalAlignment.Bottom:
+            {
+                var bottomY = area.Y + area.Height;
+                var totalHeight = lines.Count * lineHeight;
+                area = area with {Y = bottomY - totalHeight, Height = lineHeight};
+                break;
+            }
+        }
+        
+        foreach (var line in lines)
+        {
+            RenderUnwrappedText(area, textAlignment, color, line, font);
+            area = area with {Y = area.Y + lineHeight};
+        }
+    }
+
+    private static List<string> SplitText(string text, MeadowFont font, int areaWidth)
+    {
+        var lines = new List<string>();
+        var widthPerCharacter = font.WidthPerCharacter();
+        var lastSpaceIndex = 0;
+        var currentLineStartIndex = 0;
+        for (var x = 0; x < text.Length; x++)
+        {
+            switch (text[x])
+            {
+                case ' ':
+                    lastSpaceIndex = x;
+                    break;
+                
+                case '\n':
+                    lines.Add(text.Substring(currentLineStartIndex, x - currentLineStartIndex));
+                    currentLineStartIndex = x + 1;
+                    lastSpaceIndex = x + 1;
+                    continue;
+            }
+            
+            var lineWidth = (x - currentLineStartIndex) * widthPerCharacter;
+            if (lineWidth > areaWidth)
+            {
+                if (lastSpaceIndex == 0 || lastSpaceIndex <= currentLineStartIndex)
+                {
+                    // no spaces in the line, so we need to split the word
+                    lines.Add(text.Substring(currentLineStartIndex, x - currentLineStartIndex));
+                    currentLineStartIndex = x;
+                }
+                else
+                {
+                    // there was a space in the line, so we can split on that
+                    lines.Add(text.Substring(currentLineStartIndex, lastSpaceIndex - currentLineStartIndex));
+                    currentLineStartIndex = lastSpaceIndex + 1;
+                }
+            }
+        }
+        
+        lines.Add(text[currentLineStartIndex..]);
+        return lines;
     }
 }
