@@ -151,6 +151,8 @@ namespace MeadowGum.ScratchPad.Common.Screens
 
             this.ScreenLabelInstance.Text = "Controls Demo";
 
+            this.PanelInstance.Height = -70f;
+            this.PanelInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
             this.PanelInstance.Width = -20f;
             this.PanelInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
             this.PanelInstance.X = 0f;

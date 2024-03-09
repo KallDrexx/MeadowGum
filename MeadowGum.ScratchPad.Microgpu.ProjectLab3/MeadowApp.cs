@@ -43,8 +43,6 @@ public class MeadowApp : App<F7CoreComputeV2>
 
     public override async Task Run()
     {
-        // var renderer = new MicroGraphicsRenderer(_display, MeadowOS.FileSystem.UserFileSystemRoot);
-        // MeadowGumComponent.DefaultRenderer = renderer;
         PeripheralManager.Peripherals = new ProjectLabPeripherals(_projectLab, TimeSpan.FromMilliseconds(200));
 
         InputManager.Instance.RegisterButton(_projectLab.LeftButton!, ButtonNames.Up);

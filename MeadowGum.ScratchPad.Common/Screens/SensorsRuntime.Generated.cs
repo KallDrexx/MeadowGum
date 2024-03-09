@@ -106,10 +106,12 @@ namespace MeadowGum.ScratchPad.Common.Screens
         private void ApplyDefaultVariables()
         {
 
+            this.ScreenLabelInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
             this.ScreenLabelInstance.Text = "Sensors Demo";
 
             this.PanelInstance.ChildrenLayout = global::Gum.Managers.ChildrenLayout.Regular;
-            this.PanelInstance.Height = 180f;
+            this.PanelInstance.Height = -60f;
+            this.PanelInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
             this.PanelInstance.Width = 95f;
             this.PanelInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
             this.PanelInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;

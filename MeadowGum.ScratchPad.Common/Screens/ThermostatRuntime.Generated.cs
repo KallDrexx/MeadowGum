@@ -226,13 +226,14 @@ namespace MeadowGum.ScratchPad.Common.Screens
             this.ScreenLabelInstance.Text = "MEADOWSTAT";
 
             this.PanelInstance.ChildrenLayout = global::Gum.Managers.ChildrenLayout.Regular;
-            this.PanelInstance.Height = 185f;
-            this.PanelInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.Absolute;
-            this.PanelInstance.Width = 95f;
-            this.PanelInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.Percentage;
+            this.PanelInstance.Height = -45f;
+            this.PanelInstance.HeightUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
+            this.PanelInstance.Width = -12f;
+            this.PanelInstance.WidthUnits = global::Gum.DataTypes.DimensionUnitType.RelativeToContainer;
+            this.PanelInstance.X = 2f;
             this.PanelInstance.XOrigin = global::RenderingLibrary.Graphics.HorizontalAlignment.Center;
             this.PanelInstance.XUnits = GeneralUnitType.PixelsFromMiddle;
-            this.PanelInstance.Y = 15f;
+            this.PanelInstance.Y = 10f;
             this.PanelInstance.YOrigin = global::RenderingLibrary.Graphics.VerticalAlignment.Center;
             this.PanelInstance.YUnits = GeneralUnitType.PixelsFromMiddle;
 

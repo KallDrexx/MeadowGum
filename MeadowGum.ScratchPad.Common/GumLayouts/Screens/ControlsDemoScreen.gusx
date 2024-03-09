@@ -562,6 +562,18 @@
     </Variable>
     <Variable>
       <Type>float</Type>
+      <Name>PanelInstance.Height</Name>
+      <Value xsi:type="xsd:float">-70</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>PanelInstance.Height Units</Name>
+      <Value xsi:type="xsd:int">2</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>float</Type>
       <Name>PanelInstance.Width</Name>
       <Value xsi:type="xsd:float">-20</Value>
       <SetsValue>true</SetsValue>

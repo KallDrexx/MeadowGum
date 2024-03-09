@@ -457,7 +457,13 @@
     <Variable>
       <Type>float</Type>
       <Name>PanelInstance.Height</Name>
-      <Value xsi:type="xsd:float">180</Value>
+      <Value xsi:type="xsd:float">-60</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>PanelInstance.Height Units</Name>
+      <Value xsi:type="xsd:int">2</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
@@ -596,6 +602,12 @@
       <Type>DimensionUnitType</Type>
       <Name>PressureValue.Width Units</Name>
       <Value xsi:type="xsd:int">4</Value>
+      <SetsValue>true</SetsValue>
+    </Variable>
+    <Variable>
+      <Type>DimensionUnitType</Type>
+      <Name>ScreenLabelInstance.Height Units</Name>
+      <Value xsi:type="xsd:int">2</Value>
       <SetsValue>true</SetsValue>
     </Variable>
     <Variable>
