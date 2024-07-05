@@ -2,8 +2,8 @@
 using System.Threading.Tasks;
 using Meadow;
 using Meadow.Devices;
-using Meadow.Foundation.Graphics;
 using Meadow.Hardware;
+using Meadow.Peripherals.Displays;
 using Meadow.Units;
 using MeadowGum.Core.Components;
 using MeadowGum.Renderer.Microgpu;
@@ -15,7 +15,7 @@ namespace MeadowGum.ScratchPad.Microgpu.ProjectLab3;
 
 public class MeadowApp : App<F7CoreComputeV2>
 {
-    private IGraphicsDisplay _display = default!;
+    private IPixelDisplay _display = default!;
     private IProjectLabHardware _projectLab = default!;
     private Gpu _gpu = default!;
 

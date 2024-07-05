@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Meadow;
 using Meadow.Devices;
-using Meadow.Foundation.Graphics;
+using Meadow.Peripherals.Displays;
 using MeadowGum.Renderer.MicroGraphics;
 using MeadowGum.ScratchPad.Common;
 using MeadowGum.Core.Components;
@@ -11,7 +11,7 @@ namespace MeadowGum.ScratchPad.ProjectLab3;
 
 public class MeadowApp : App<F7CoreComputeV2>
 {
-    private IGraphicsDisplay _display = default!;
+    private IPixelDisplay _display = default!;
     private IProjectLabHardware _projectLab = default!;
 
     public override Task Initialize()

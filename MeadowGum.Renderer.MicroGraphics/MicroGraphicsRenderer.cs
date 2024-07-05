@@ -1,7 +1,11 @@
-﻿using Gum.Wireframe;
-using Meadow.Foundation;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using Gum.Wireframe;
+using Meadow;
 using Meadow.Foundation.Graphics;
 using Meadow.Foundation.Graphics.Buffers;
+using Meadow.Peripherals.Displays;
 using MeadowGum.Core;
 using HorizontalAlignment = RenderingLibrary.Graphics.HorizontalAlignment;
 using Point = MeadowGum.Core.Point;
@@ -17,7 +21,7 @@ public class MicroGraphicsRenderer : IComponentRenderer
     private readonly Font12x16 _font12X16 = new();
     private readonly Dictionary<string, IPixelBuffer> _textureBuffers = new();
 
-    public MicroGraphicsRenderer(IGraphicsDisplay display, string contentRoot)
+    public MicroGraphicsRenderer(IPixelDisplay display, string contentRoot)
     {
         _contentRoot = contentRoot;
         GraphicalUiElement.CanvasWidth = display.Width;

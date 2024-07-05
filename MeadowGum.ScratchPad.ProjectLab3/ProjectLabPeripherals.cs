@@ -20,9 +20,12 @@ public class ProjectLabPeripherals : IPeripherals
         _projectLab = projectLab;
         _pollInterval = pollInterval;
 
-        _projectLab.EnvironmentalSensor!.Updated += OnEnvironmentalSensorUpdated;
-        _projectLab.MotionSensor!.Updated += OnMotionSensorUpdated;
+        _projectLab.Gyroscope!.Updated += OnGyroscopeUpdated;
+        _projectLab.Accelerometer!.Updated += OnAccelerometerUpdated;
         _projectLab.LightSensor!.Updated += OnLightSensorUpdated;
+        _projectLab.TemperatureSensor!.Updated += OnTemperatureUpdated;
+        _projectLab.HumiditySensor!.Updated += OnHumidityUpdated;
+        _projectLab.BarometricPressureSensor!.Updated += OnPressureUdpated;
     }
 
     public Temperature Temperature { get; set; }
@@ -49,9 +52,11 @@ public class ProjectLabPeripherals : IPeripherals
     {
         if (!_isPolling)
         {
-            _projectLab.EnvironmentalSensor?.StartUpdating(_pollInterval);
-            _projectLab.MotionSensor?.StartUpdating(_pollInterval);
             _projectLab.LightSensor?.StartUpdating(_pollInterval);
+            _projectLab.Accelerometer?.StartUpdating(_pollInterval);
+            _projectLab.TemperatureSensor?.StartUpdating(_pollInterval);
+            _projectLab.Gyroscope?.StartUpdating(_pollInterval);
+            _projectLab.HumiditySensor?.StartUpdating(_pollInterval);
 
             _isPolling = true;
         }
@@ -61,10 +66,12 @@ public class ProjectLabPeripherals : IPeripherals
     {
         if (_isPolling)
         {
-            _projectLab.EnvironmentalSensor?.StopUpdating();
-            _projectLab.MotionSensor?.StopUpdating();
             _projectLab.LightSensor?.StartUpdating();
-            
+            _projectLab.Accelerometer?.StopUpdating();
+            _projectLab.TemperatureSensor?.StopUpdating();
+            _projectLab.Gyroscope?.StopUpdating();
+            _projectLab.HumiditySensor?.StopUpdating();
+
             _isPolling = false;
         }
     }
@@ -75,19 +82,13 @@ public class ProjectLabPeripherals : IPeripherals
         _hasBeenUpdated = true;
     }
 
-    private void OnMotionSensorUpdated(object sender, IChangeResult<(Acceleration3D? Acceleration3D, AngularVelocity3D? AngularVelocity3D, Temperature? Temperature)> e)
+    private void OnAccelerometerUpdated(object sender, IChangeResult<Acceleration3D> e)
     {
         Acceleration = new Vector3(
-            (float)e.New.Acceleration3D!.Value.X.Gravity,
-            (float)e.New.Acceleration3D!.Value.Y.Gravity,
-            (float)e.New.Acceleration3D!.Value.Z.Gravity);
-
-        AngularVelocity = new Vector3(
-            (float)e.New.AngularVelocity3D!.Value.X.DegreesPerSecond,
-            (float)e.New.AngularVelocity3D!.Value.Y.DegreesPerSecond,
-            (float)e.New.AngularVelocity3D!.Value.Z.DegreesPerSecond);
+            (float)e.New.X.Gravity,
+            (float)e.New.Y.Gravity,
+            (float)e.New.Z.Gravity);
         
-        Temperature = e.New.Temperature!.Value;
         _hasBeenUpdated = true;
     }
 
@@ -96,6 +97,34 @@ public class ProjectLabPeripherals : IPeripherals
         Temperature = e.New.Temperature!.Value;
         Humidity = e.New.Humidity!.Value;
         Pressure = e.New.Pressure!.Value;
+        _hasBeenUpdated = true;
+    }
+
+    private void OnGyroscopeUpdated(object sender, IChangeResult<AngularVelocity3D> e)
+    {
+        AngularVelocity = new Vector3(
+            (float)e.New.X.DegreesPerSecond,
+            (float)e.New.Y.DegreesPerSecond,
+            (float)e.New.Z.DegreesPerSecond);
+
+        _hasBeenUpdated = true;
+    }
+
+    private void OnTemperatureUpdated(object sender, IChangeResult<Temperature> e)
+    {
+        Temperature = e.New;
+        _hasBeenUpdated = true;
+    }
+
+    private void OnHumidityUpdated(object sender, IChangeResult<RelativeHumidity> e)
+    {
+        Humidity = e.New;
+        _hasBeenUpdated = true;
+    }
+
+    private void OnPressureUdpated(object sender, IChangeResult<Pressure> e)
+    {
+        Pressure = e.New;
         _hasBeenUpdated = true;
     }
 }

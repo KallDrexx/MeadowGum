@@ -4,6 +4,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Gum.Wireframe;
 using Meadow.Foundation.Graphics.Buffers;
+using Meadow.Peripherals.Displays;
 using MeadowGum.Core;
 using Microgpu.Common;
 using Microgpu.Common.Operations;

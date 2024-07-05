@@ -1,4 +1,6 @@
-﻿using Meadow.Foundation.Sensors.Buttons;
+﻿using System;
+using System.IO;
+using Meadow.Foundation.Sensors.Buttons;
 using MeadowGum.Renderer.MicroGraphics;
 using MeadowGum.ScratchPad.Common;
 using MeadowGum.ScratchPad.Monogame;
