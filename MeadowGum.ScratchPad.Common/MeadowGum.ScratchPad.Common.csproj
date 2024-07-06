@@ -11,7 +11,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Include="GumLayouts/**/*" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always"/>
+        <None Include="GumLayouts/**/*" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never"/>
+        <None Include="GumLayouts/*.bmp" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always"/>
     </ItemGroup>
 
     <ItemGroup>
